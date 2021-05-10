@@ -1,0 +1,3 @@
+https://arxiv.org/abs/1911.08265 이젠 알파고가 아타리도 한다. 모델 기반 RL에 아타리에서 MCTS를 적용한 결과라 재미있음. 아마 제목에 곧 스타크래프트도 추가되지 않을까...
+
+#reinforcement_learning 
