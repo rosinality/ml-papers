@@ -13,3 +13,5 @@
 특징적으로는 EvoNorm-B0처럼 mean centering이 없고 group norm처럼 group std를 활용해 normalize 한다는 것. group norm과 비슷하게 보이는데 activation과 normalization이 희한하게 결합되어 있다. 누가 먼저인가를 아예 뛰어넘어 activation은 normalization을 하지 않은 feature map에 적용하고 normalization은 activation을 통과하지 않은 feature map에 대해서 한다. 이건 무슨 둘 다 아닌 동시에 둘 다 하면 된다 이런 결과가 나온 것 같은데...
 activation이라고 볼 수 있는 부분은 swish와 같은 형태. swish가 이렇게 재발견됐다.
 종합해서 보면 꽤 흥미롭고 이해해보려고 하면 좀 이해가 가는 것도 같은 결과물이 나왔다. classification, instance segmentation, gan 셋에 모두 적용해서 괜찮은 결과가 나왔다는 것도 눈에 띄고. fused kernel을 만들어서 쓸 수 있으면 꽤 재미있을 것 같다.
+
+#review
