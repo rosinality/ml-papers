@@ -7,3 +7,5 @@ https://openreview.net/forum?id=1FvkSpWosOl
 Is Attention Better Than Matrix Decomposition?
 attention은 아닌데 attention 같고 attention이랑 바로 비교하면 안 될 것 같은데 어쨌든 attention을 대체하는 모듈. attention 대신 nmf 같은 matrix factorizaton을 수행하는 모듈을 끼워넣기. matrix factorization 특성상 n by n 행렬을 만드는 문제 같은 게 없기 때문에 특히 큰 길이의 입력에 대해 더 효율적. 각 샘플에 대해 iterative하게 code를 만들어나가는 과정이 사실 말이 되는 것 같기도 하고 그렇다. (물론 나온 성능이 이미 말이 된다.)
 semantic segmentation하고 좀 niche하게 보이기도 하는 gan에 self attention 대신 끼워넣기를 실험했다. 이 밖에서도 효과가 나타날지가 가장 문제가 되긴 할 텐데. 어쨌든 efficient attention에서 곧잘 나오는 접근 뿐만 아니라 이런 방향도 있을 수 있다는 것. (attention하고 바로 비교하면 안 될 것 같은데 계속 이쪽 방향과 맞춰보게 되는 건 어쩔 수 없다.)
+
+#review

@@ -10,18 +10,25 @@
 1. [bayesian](#bayesian)
 1. [bert](#bert)
 1. [bias](#bias)
+1. [causality](#causality)
 1. [channel attention](#channel-attention)
 1. [chat](#chat)
 1. [computation](#computation)
+1. [continual learning](#continual-learning)
 1. [contrastive learning](#contrastive-learning)
 1. [convolution](#convolution)
 1. [dataset](#dataset)
+1. [ddpm](#ddpm)
+1. [decoding](#decoding)
 1. [deep prior](#deep-prior)
 1. [detection](#detection)
 1. [differentiable operator](#differentiable-operator)
 1. [differentiable tree](#differentiable-tree)
+1. [discrete vae](#discrete-vae)
 1. [disentangle](#disentangle)
 1. [distillation](#distillation)
+1. [distributed training](#distributed-training)
+1. [domain adaptation](#domain-adaptation)
 1. [efficient attention](#efficient-attention)
 1. [embedding](#embedding)
 1. [energy based model](#energy-based-model)
@@ -40,6 +47,7 @@
 1. [hypernetwork](#hypernetwork)
 1. [hyperparameter](#hyperparameter)
 1. [identifiability](#identifiability)
+1. [image editing](#image-editing)
 1. [image generation](#image-generation)
 1. [img2img](#img2img)
 1. [initialization](#initialization)
@@ -73,6 +81,7 @@
 1. [optimization](#optimization)
 1. [optimizer](#optimizer)
 1. [oriented object detection](#oriented-object-detection)
+1. [out of distribution](#out-of-distribution)
 1. [panoptic segmentation](#panoptic-segmentation)
 1. [perceptual loss](#perceptual-loss)
 1. [pooling](#pooling)
@@ -87,10 +96,12 @@
 1. [reinforcement learning](#reinforcement-learning)
 1. [rendering](#rendering)
 1. [representation](#representation)
+1. [resampling](#resampling)
 1. [restoration](#restoration)
 1. [review](#review)
 1. [robustness](#robustness)
 1. [saliency](#saliency)
+1. [salient object detection](#salient-object-detection)
 1. [score](#score)
 1. [self supervised](#self-supervised)
 1. [semantic factor](#semantic-factor)
@@ -99,6 +110,7 @@
 1. [sgld](#sgld)
 1. [single image](#single-image)
 1. [speech](#speech)
+1. [structure learning](#structure-learning)
 1. [style transfer](#style-transfer)
 1. [stylegan](#stylegan)
 1. [super resolution](#super-resolution)
@@ -106,6 +118,7 @@
 1. [topic model](#topic-model)
 1. [topology](#topology)
 1. [tracking](#tracking)
+1. [transducer](#transducer)
 1. [transfer](#transfer)
 1. [transformer](#transformer)
 1. [tropical geometry](#tropical-geometry)
@@ -118,6 +131,7 @@
 1. [vision language](#vision-language)
 1. [vision transformer](#vision-transformer)
 1. [visual grounding](#visual-grounding)
+1. [vocoder](#vocoder)
 1. [uncategorized](#uncategorized)
 ## adaptation
 1. [200129 Side-Tuning](papers/200129%20Side-Tuning.md)
@@ -127,6 +141,15 @@
 1. [200711 Adversarially-Trained Deep Nets Transfer Better](papers/200711%20Adversarially-Trained%20Deep%20Nets%20Transfer%20Better.md) #transfer
 1. [200721 Adversarial Training Reduces Information and Improves Transferability](papers/200721%20Adversarial%20Training%20Reduces%20Information%20and%20Improves%20Transferability.md) #transfer
 ## asr
+1. [200220 Imputer](papers/200220%20Imputer.md) #non-autoregressive #ctc
+1. [200510 Listen Attentively, and Spell Once](papers/200510%20Listen%20Attentively%2C%20and%20Spell%20Once.md) #non-autoregressive
+1. [200516 Large scale weakly and semi-supervised learning for low-resource video ASR](papers/200516%20Large%20scale%20weakly%20and%20semi-supervised%20learning%20for%20low-resource%20video%20ASR.md) #weak_supervision #semi_supervised
+1. [200516 Reducing Spelling Inconsistencies in Code-Switching ASR using](papers/200516%20Reducing%20Spelling%20Inconsistencies%20in%20Code-Switching%20ASR%20using.md) #ctc
+1. [200516 Spike-Triggered Non-Autoregressive Transformer for End-to-End Speech Recognition](papers/200516%20Spike-Triggered%20Non-Autoregressive%20Transformer%20for%20End-to-End%20Speech%20Recognition.md) #non-autoregressive
+1. [200518 Attention-based Transducer for Online Speech Recognition](papers/200518%20Attention-based%20Transducer%20for%20Online%20Speech%20Recognition.md) #transducer
+1. [200518 Iterative Pseudo-Labeling for Speech Recognition](papers/200518%20Iterative%20Pseudo-Labeling%20for%20Speech%20Recognition.md)
+1. [200519 Distilling Knowledge from Ensembles of Acoustic Models for Joint CTC-Attention End-to-End Speech Recognition](papers/200519%20Distilling%20Knowledge%20from%20Ensembles%20of%20Acoustic%20Models%20for%20Joint%20CTC-Attention%20End-to-End%20Speech%20Recognition.md) #ctc
+1. [200519 Improved Noisy Student Training for Automatic Speech Recognition](papers/200519%20Improved%20Noisy%20Student%20Training%20for%20Automatic%20Speech%20Recognition.md) #semi_supervised
 1. [200729 Developing RNN-T Models Surpassing High-Performance Hybrid Models with](papers/200729%20Developing%20RNN-T%20Models%20Surpassing%20High-Performance%20Hybrid%20Models%20with.md) #rnn_t
 ## attention
 1. [200122 Object Contextual Representations](papers/200122%20Object%20Contextual%20Representations.md) #semantic_segmentation
@@ -141,6 +164,10 @@
 1. [200421 Attention is Not Only a Weight](papers/200421%20Attention%20is%20Not%20Only%20a%20Weight.md) #bert
 1. [200423 Self-Attention Attribution](papers/200423%20Self-Attention%20Attribution.md) #bert
 1. [200428 Exploring Self-attention for Image Recognition](papers/200428%20Exploring%20Self-attention%20for%20Image%20Recognition.md)
+1. [200510 CTC-synchronous Training for Monotonic Attention Model](papers/200510%20CTC-synchronous%20Training%20for%20Monotonic%20Attention%20Model.md) #asr #ctc
+1. [200516 Streaming Transformer-based Acoustic Models Using Self-attention with Augmented Memory](papers/200516%20Streaming%20Transformer-based%20Acoustic%20Models%20Using%20Self-attention%20with%20Augmented%20Memory.md) #asr #memory
+1. [200519 Normalized Attention Without Probability Cage](papers/200519%20Normalized%20Attention%20Without%20Probability%20Cage.md)
+1. [200519 Staying True to Your Word](papers/200519%20Staying%20True%20to%20Your%20Word.md)
 1. [201226 Spatial Contrastive Learning for Few-Shot Classification](papers/201226%20Spatial%20Contrastive%20Learning%20for%20Few-Shot%20Classification.md) #few_shot #contrastive_learning
 1. [210223 Linear Transformers Are Secretly Fast Weight Memory Systems](papers/210223%20Linear%20Transformers%20Are%20Secretly%20Fast%20Weight%20Memory%20Systems.md) #linear_attention #efficient_attention
 1. [210225 LazyFormer](papers/210225%20LazyFormer.md) #bert
@@ -198,16 +225,21 @@
 1. [200210 Liberty or Depth](papers/200210%20Liberty%20or%20Depth.md) #mean_field
 1. [200220 Neural Bayes](papers/200220%20Neural%20Bayes.md) #representation #clustering
 1. [200223 Being Bayesian, Even Just a Bit, Fixes Overconfidence in ReLU Networks](papers/200223%20Being%20Bayesian%2C%20Even%20Just%20a%20Bit%2C%20Fixes%20Overconfidence%20in%20ReLU%20Networks.md) #calibration
+1. [200514 Efficient and Scalable Bayesian Neural Nets with Rank-1 Factors](papers/200514%20Efficient%20and%20Scalable%20Bayesian%20Neural%20Nets%20with%20Rank-1%20Factors.md) #ensemble #variational_inference
 ## bert
-1. [200227 A Primer in BERTology](papers/200227%20A%20Primer%20in%20BERTology.md) #review
 1. [200305 What the [MASK]](papers/200305%20What%20the%20%5BMASK%5D.md)
 1. [200405 FastBERT](papers/200405%20FastBERT.md) #distillation #lightweight
 1. [200408 DynaBERT](papers/200408%20DynaBERT.md) #distillation #pruning
 1. [200408 Improving BERT with Self-Supervised Attention](papers/200408%20Improving%20BERT%20with%20Self-Supervised%20Attention.md) #distillation #self_supervised
 1. [200412 XtremeDistil](papers/200412%20XtremeDistil.md) #distillation #lightweight
 1. [200427 DeeBERT](papers/200427%20DeeBERT.md) #lightweight
+1. [200518 Audio ALBERT](papers/200518%20Audio%20ALBERT.md) #audio #representation
+1. [200601 Amnesic Probing](papers/200601%20Amnesic%20Probing.md)
 ## bias
+1. [200519 Identifying Statistical Bias in Dataset Replication](papers/200519%20Identifying%20Statistical%20Bias%20in%20Dataset%20Replication.md)
 1. [201202 Learning from others' mistakes](papers/201202%20Learning%20from%20others%27%20mistakes.md) #product_of_experts
+## causality
+1. [200518 An Analysis of the Adaptation Speed of Causal Models](papers/200518%20An%20Analysis%20of%20the%20Adaptation%20Speed%20of%20Causal%20Models.md)
 ## channel attention
 1. [200129 GCNet](papers/200129%20GCNet.md)
 ## chat
@@ -215,11 +247,14 @@
 ## computation
 1. [200213 Training Large Neural Networks with Constant Memory using a New Execution Algorithm](papers/200213%20Training%20Large%20Neural%20Networks%20with%20Constant%20Memory%20using%20a%20New%20Execution%20Algorithm.md)
 1. [201204 Nimble](papers/201204%20Nimble.md)
+## continual learning
+1. [200508 Transforming task representations to perform novel tasks](papers/200508%20Transforming%20task%20representations%20to%20perform%20novel%20tasks.md) #multitask
 ## contrastive learning
 1. [200213 A Simple Framework for Contrastive Learning of Visual Representations](papers/200213%20A%20Simple%20Framework%20for%20Contrastive%20Learning%20of%20Visual%20Representations.md) #augmentation
 1. [200309 Improved Baselines with Momentum Contrastive Learning](papers/200309%20Improved%20Baselines%20with%20Momentum%20Contrastive%20Learning.md)
-1. [200311 Improved Baselines with Momentum Contrastive Learning](papers/200311%20Improved%20Baselines%20with%20Momentum%20Contrastive%20Learning.md) #review
 1. [200423 Supervised Contrastive Learning](papers/200423%20Supervised%20Contrastive%20Learning.md) #metric_learning
+1. [200511 Prototypical Contrastive Learning of Unsupervised Representations](papers/200511%20Prototypical%20Contrastive%20Learning%20of%20Unsupervised%20Representations.md)
+1. [200520 What Makes for Good Views for Contrastive Learning](papers/200520%20What%20Makes%20for%20Good%20Views%20for%20Contrastive%20Learning.md)
 1. [200803 LoCo](papers/200803%20LoCo.md)
 1. [201204 Seed the Views](papers/201204%20Seed%20the%20Views.md) #mixup
 1. [201212 Contrastive Learning for Label-Efficient Semantic Segmentation](papers/201212%20Contrastive%20Learning%20for%20Label-Efficient%20Semantic%20Segmentation.md) #semantic_segmentation
@@ -228,18 +263,25 @@
 ## convolution
 1. [200316 SlimConv](papers/200316%20SlimConv.md)
 ## dataset
+1. [200509 Building a Manga Dataset](papers/200509%20Building%20a%20Manga%20Dataset.md)
 1. [201201 Weakly-Supervised Arbitrary-Shaped Text Detection with](papers/201201%20Weakly-Supervised%20Arbitrary-Shaped%20Text%20Detection%20with.md) #ocr #weak_supervision
+## ddpm
+1. [210511 Diffusion Models Beat GANs on Image Synthesis](papers/210511%20Diffusion%20Models%20Beat%20GANs%20on%20Image%20Synthesis.md)
+## decoding
+1. [200516 Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](papers/200516%20Layer-Wise%20Cross-View%20Decoding%20for%20Sequence-to-Sequence%20Learning.md)
 ## deep prior
 1. [200408 Deep Manifold Prior](papers/200408%20Deep%20Manifold%20Prior.md)
 ## detection
+1. [200129 AP Loss](papers/200129%20AP%20Loss.md) #loss
 1. [200211 Object Detection as a Positive-Unlabeled Problem](papers/200211%20Object%20Detection%20as%20a%20Positive-Unlabeled%20Problem.md) #positive_unlabled #dataset
 1. [200212 Solving Missing-Annotation Object Detection with Background](papers/200212%20Solving%20Missing-Annotation%20Object%20Detection%20with%20Background.md) #dataset #noise
 1. [200316 Frustratingly Simple Few-Shot Object Detection](papers/200316%20Frustratingly%20Simple%20Few-Shot%20Object%20Detection.md) #few_shot
 1. [200317 Revisiting the Sibling Head in Object Detector](papers/200317%20Revisiting%20the%20Sibling%20Head%20in%20Object%20Detector.md)
-1. [200319 Revisiting the Sibling Head in Object Detector](papers/200319%20Revisiting%20the%20Sibling%20Head%20in%20Object%20Detector.md) #review
 1. [200320 CentripetalNet](papers/200320%20CentripetalNet.md) #keypoint
 1. [200413 Dynamic R-CNN](papers/200413%20Dynamic%20R-CNN.md)
 1. [200423 YOLOv4](papers/200423%20YOLOv4.md)
+1. [200511 Scope Head for Accurate Localization in Object Detection](papers/200511%20Scope%20Head%20for%20Accurate%20Localization%20in%20Object%20Detection.md)
+1. [200526 End-to-End Object Detection with Transformers](papers/200526%20End-to-End%20Object%20Detection%20with%20Transformers.md) #end2end #matching
 1. [200706 LabelEnc](papers/200706%20LabelEnc.md) #kd
 1. [200707 AutoAssign](papers/200707%20AutoAssign.md) #anchor_free
 1. [200714 AQD](papers/200714%20AQD.md) #quantization
@@ -252,19 +294,28 @@
 1. [201223 SWA Object Detection](papers/201223%20SWA%20Object%20Detection.md) #swa
 1. [201227 Towards A Category-extended Object Detector without Relabeling or](papers/201227%20Towards%20A%20Category-extended%20Object%20Detector%20without%20Relabeling%20or.md) #continual_learning
 1. [210225 Simple multi-dataset detection](papers/210225%20Simple%20multi-dataset%20detection.md) #multi_dataset
+1. [210316 You Only Look One-level Feature](papers/210316%20You%20Only%20Look%20One-level%20Feature.md)
 ## differentiable operator
 1. [200220 Fast Differentiable Sorting and Ranking](papers/200220%20Fast%20Differentiable%20Sorting%20and%20Ranking.md)
 ## differentiable tree
 1. [200218 The Tree Ensemble Layer](papers/200218%20The%20Tree%20Ensemble%20Layer.md)
+## discrete vae
+1. [200518 Robust Training of Vector Quantized Bottleneck Models](papers/200518%20Robust%20Training%20of%20Vector%20Quantized%20Bottleneck%20Models.md)
 ## disentangle
+1. [200130 ID-GAN](papers/200130%20ID-GAN.md) #GAN
 1. [200130 MixNMatch](papers/200130%20MixNMatch.md) #conditional_generative_model
+1. [200515 Face Identity Disentanglement via Latent Space Mapping](papers/200515%20Face%20Identity%20Disentanglement%20via%20Latent%20Space%20Mapping.md)
 ## distillation
 1. [200129 Learning by Cheating](papers/200129%20Learning%20by%20Cheating.md)
 1. [200209 Understanding and Improving Knowledge Distillation](papers/200209%20Understanding%20and%20Improving%20Knowledge%20Distillation.md)
 1. [200210 Subclass Distillation](papers/200210%20Subclass%20Distillation.md)
-1. [200219 Knapsack Pruning with Inner Distillation](papers/200219%20Knapsack%20Pruning%20with%20Inner%20Distillation.md) #pruning #lightweight
 1. [200221 Residual Knowledge Distillation](papers/200221%20Residual%20Knowledge%20Distillation.md)
 1. [200309 Knowledge distillation via adaptive instance normalization](papers/200309%20Knowledge%20distillation%20via%20adaptive%20instance%20normalization.md) #normalization
+1. [200521 Why distillation helps](papers/200521%20Why%20distillation%20helps.md) #calibration
+## distributed training
+1. [210510 GSPMD](papers/210510%20GSPMD.md)
+## domain adaptation
+1. [200526 Keep it Simple](papers/200526%20Keep%20it%20Simple.md)
 ## efficient attention
 1. [200410 Longformer](papers/200410%20Longformer.md)
 1. [200412 ProFormer](papers/200412%20ProFormer.md)
@@ -283,15 +334,16 @@
 1. [200228 AdarGCN](papers/200228%20AdarGCN.md) #graph
 1. [200722 CrossTransformers](papers/200722%20CrossTransformers.md) #self_supervised
 ## finetuning
-1. [200214 AutoLR](papers/200214%20AutoLR.md) #pruning
 1. [200426 Masking as an Efficient Alternative to Finetuning for Pretrained](papers/200426%20Masking%20as%20an%20Efficient%20Alternative%20to%20Finetuning%20for%20Pretrained.md)
 1. [200709 Sample-based Regularization](papers/200709%20Sample-based%20Regularization.md) #transfer_learning
 ## flow
 1. [200220 Regularized Autoencoders via Relaxed Injective Probability Flow](papers/200220%20Regularized%20Autoencoders%20via%20Relaxed%20Injective%20Probability%20Flow.md)
 1. [200227 Woodbury Transformations for Deep Generative Flows](papers/200227%20Woodbury%20Transformations%20for%20Deep%20Generative%20Flows.md)
+1. [200512 Flowtron](papers/200512%20Flowtron.md) #tts
 ## fpn
 1. [200122 CARAFE](papers/200122%20CARAFE.md) #upsampling
 1. [200129 Mixture FPN](papers/200129%20Mixture%20FPN.md)
+1. [200506 Scale-Equalizing Pyramid Convolution for Object Detection](papers/200506%20Scale-Equalizing%20Pyramid%20Convolution%20for%20Object%20Detection.md)
 1. [201202 Dual Refinement Feature Pyramid Networks for Object Detection](papers/201202%20Dual%20Refinement%20Feature%20Pyramid%20Networks%20for%20Object%20Detection.md)
 1. [201202 Parallel Residual Bi-Fusion Feature Pyramid Network for Accurate](papers/201202%20Parallel%20Residual%20Bi-Fusion%20Feature%20Pyramid%20Network%20for%20Accurate.md)
 1. [201225 Implicit Feature Pyramid Network for Object Detection](papers/201225%20Implicit%20Feature%20Pyramid%20Network%20for%20Object%20Detection.md) #equilibrium_model #implicit_model
@@ -303,7 +355,6 @@
 1. [200129 OneGAN](papers/200129%20OneGAN.md)
 1. [200130 AttentionGAN](papers/200130%20AttentionGAN.md) #attention #img2img
 1. [200130 Evaluation metrics of GAN](papers/200130%20Evaluation%20metrics%20of%20GAN.md) #metric #evaluation #generative_model
-1. [200130 ID-GAN](papers/200130%20ID-GAN.md) #disentangle
 1. [200130 Local GAN](papers/200130%20Local%20GAN.md) #attention
 1. [200130 Noise Robust GAN](papers/200130%20Noise%20Robust%20GAN.md) #robustness
 1. [200130 Small-GAN](papers/200130%20Small-GAN.md)
@@ -335,6 +386,9 @@
 1. [200407 Inclusive GAN](papers/200407%20Inclusive%20GAN.md)
 1. [200408 Attentive Normalization for Conditional Image Generation](papers/200408%20Attentive%20Normalization%20for%20Conditional%20Image%20Generation.md) #attention
 1. [200504 Transforming and Projecting Images into Class-conditional Generative](papers/200504%20Transforming%20and%20Projecting%20Images%20into%20Class-conditional%20Generative.md) #generative_model
+1. [200518 Unconditional Audio Generation with Generative Adversarial Networks and Cycle Regularization](papers/200518%20Unconditional%20Audio%20Generation%20with%20Generative%20Adversarial%20Networks%20and%20Cycle%20Regularization.md) #audio_generation
+1. [200519 CIAGAN](papers/200519%20CIAGAN.md)
+1. [200519 Regularization Methods for Generative Adversarial Networks](papers/200519%20Regularization%20Methods%20for%20Generative%20Adversarial%20Networks.md) #review #regularization
 1. [200630 PriorGAN](papers/200630%20PriorGAN.md)
 1. [200708 InfoMax-GAN](papers/200708%20InfoMax-GAN.md) #regularization
 1. [200713 Closed-Form Factorization of Latent Semantics in GANs](papers/200713%20Closed-Form%20Factorization%20of%20Latent%20Semantics%20in%20GANs.md) #semantic_factor
@@ -385,6 +439,7 @@
 1. [201224 Soft-IntroVAE](papers/201224%20Soft-IntroVAE.md) #vae
 1. [210223 Zero-Shot Text-to-Image Generation](papers/210223%20Zero-Shot%20Text-to-Image%20Generation.md) #discrete_vae #autoregressive_model #multimodal
 1. [210302 Fixing Data Augmentation to Improve Adversarial Robustness](papers/210302%20Fixing%20Data%20Augmentation%20to%20Improve%20Adversarial%20Robustness.md) #ddpm #augmentation
+1. [210305 Fixing Data Augmentation to Improve Adversarial Robustness 2](papers/210305%20Fixing%20Data%20Augmentation%20to%20Improve%20Adversarial%20Robustness%202.md) #robustness #augmentation #ddpm
 1. [210318 Few-shot Semantic Image  Synthesis Using StyleGAN Prior](papers/210318%20Few-shot%20Semantic%20Image%20%20Synthesis%20Using%20StyleGAN%20Prior.md) #stylegan #few_shot
 ## graph
 1. [200129 Multi-Graph Transformer](papers/200129%20Multi-Graph%20Transformer.md)
@@ -395,8 +450,12 @@
 1. [200722 WeightNet](papers/200722%20WeightNet.md) #channel_attention
 ## hyperparameter
 1. [200425 Learning to Guide Random Search](papers/200425%20Learning%20to%20Guide%20Random%20Search.md)
+1. [200521 HyperSTAR](papers/200521%20HyperSTAR.md)
 ## identifiability
 1. [200701 On Linear Identifiability of Learned Representations](papers/200701%20On%20Linear%20Identifiability%20of%20Learned%20Representations.md)
+## image editing
+1. [200515 Semantic Photo Manipulation with a Generative Image Prior](papers/200515%20Semantic%20Photo%20Manipulation%20with%20a%20Generative%20Image%20Prior.md)
+1. [210318 Using latent space regression to analyze and leverage compositionality](papers/210318%20Using%20latent%20space%20regression%20to%20analyze%20and%20leverage%20compositionality.md)
 ## image generation
 1. [200426 Disentangled Image Generation Through Structured Noise Injection](papers/200426%20Disentangled%20Image%20Generation%20Through%20Structured%20Noise%20Injection.md)
 ## img2img
@@ -447,6 +506,8 @@
 1. [200406 Sparse Text Generation](papers/200406%20Sparse%20Text%20Generation.md) #language_generation #sampling
 1. [200427 Recall and Learn](papers/200427%20Recall%20and%20Learn.md) #finetuning #continual_learning
 1. [200505 Stolen Probability](papers/200505%20Stolen%20Probability.md)
+1. [200516 MicroNet for Efficient Language Modeling](papers/200516%20MicroNet%20for%20Efficient%20Language%20Modeling.md) #lightweight
+1. [200518 Contextual Embeddings](papers/200518%20Contextual%20Embeddings.md)
 1. [201228 Universal Sentence Representation Learning with Conditional Masked](papers/201228%20Universal%20Sentence%20Representation%20Learning%20with%20Conditional%20Masked.md) #sentence_embedding #mlm
 1. [210216 Non-Autoregressive Text Generation with Pre-trained Language Models](papers/210216%20Non-Autoregressive%20Text%20Generation%20with%20Pre-trained%20Language%20Models.md) #non-autoregressive #text_generation
 1. [210318 GPT Understands, Too](papers/210318%20GPT%20Understands%2C%20Too.md) #finetuning #prompt
@@ -466,7 +527,6 @@
 1. [200206 Product Kanerva Machines](papers/200206%20Product%20Kanerva%20Machines.md)
 ## meta learning
 1. [200221 Learning to Continually Learn](papers/200221%20Learning%20to%20Continually%20Learn.md) #continual_learning
-1. [200228 A Self-Tuning Actor-Critic Algorithm](papers/200228%20A%20Self-Tuning%20Actor-Critic%20Algorithm.md) #reinforcement_learning #hyperparameter #optimization
 1. [200312 Online Fast Adaptation and Knowledge Accumulation](papers/200312%20Online%20Fast%20Adaptation%20and%20Knowledge%20Accumulation.md)
 1. [200323 Meta Pseudo Labels](papers/200323%20Meta%20Pseudo%20Labels.md) #semi_supervised
 1. [200401 Editable Neural Networks](papers/200401%20Editable%20Neural%20Networks.md)
@@ -480,12 +540,17 @@
 1. [201220 ResizeMix](papers/201220%20ResizeMix.md)
 ## multimodal
 1. [200401 Pixel-BERT](papers/200401%20Pixel-BERT.md)
+1. [200513 INFOTABS](papers/200513%20INFOTABS.md)
+1. [200514 Behind the Scene](papers/200514%20Behind%20the%20Scene.md)
 ## nas
 1. [200324 BigNAS](papers/200324%20BigNAS.md)
 1. [200326 Are Labels Necessary for Neural Architecture Search](papers/200326%20Are%20Labels%20Necessary%20for%20Neural%20Architecture%20Search.md) #unsupervised_training
 1. [200406 Network Adjustment](papers/200406%20Network%20Adjustment.md)
 1. [200412 FBNetV2](papers/200412%20FBNetV2.md)
 1. [200428 Angle-based Search Space Shrinking for Neural Architecture Search](papers/200428%20Angle-based%20Search%20Space%20Shrinking%20for%20Neural%20Architecture%20Search.md)
+1. [200506 Local Search is State of the Art for Neural Architecture Search](papers/200506%20Local%20Search%20is%20State%20of%20the%20Art%20for%20Neural%20Architecture%20Search.md)
+1. [200507 Noisy Differentiable Architecture Search](papers/200507%20Noisy%20Differentiable%20Architecture%20Search.md)
+1. [200512 Neural Architecture Transfer](papers/200512%20Neural%20Architecture%20Transfer.md) #transfer_learning
 1. [200720 NSGANetV2](papers/200720%20NSGANetV2.md)
 ## nerf
 1. [201203 Learned Initializations for Optimizing Coordinate-Based Neural](papers/201203%20Learned%20Initializations%20for%20Optimizing%20Coordinate-Based%20Neural.md) #implicit_representation
@@ -500,12 +565,16 @@
 1. [200720 Distributed Associative Memory Network with Memory Refreshing Loss](papers/200720%20Distributed%20Associative%20Memory%20Network%20with%20Memory%20Refreshing%20Loss.md)
 ## neural ode
 1. [200207 How to train your neural ODE](papers/200207%20How%20to%20train%20your%20neural%20ODE.md)
+1. [200520 Neural Controlled Differential Equations](papers/200520%20Neural%20Controlled%20Differential%20Equations.md)
 1. [200708 Learning Differential Equations that are Easy to Solve](papers/200708%20Learning%20Differential%20Equations%20that%20are%20Easy%20to%20Solve.md)
 ## neural rendering
 1. [200226 Learning to Shadow Hand-drawn Sketches](papers/200226%20Learning%20to%20Shadow%20Hand-drawn%20Sketches.md)
 1. [200427 Neural Hair Rendering](papers/200427%20Neural%20Hair%20Rendering.md)
+1. [200506 CONFIG](papers/200506%20CONFIG.md)
+1. [210512 Enhancing Photorealism Enhancement](papers/210512%20Enhancing%20Photorealism%20Enhancement.md)
 ## nlp
 1. [200129 Meena](papers/200129%20Meena.md) #dialog
+1. [200518 (Re)construing Meaning in NLP](papers/200518%20%28Re%29construing%20Meaning%20in%20NLP.md)
 1. [200715 Towards Debiasing Sentence Representations](papers/200715%20Towards%20Debiasing%20Sentence%20Representations.md) #bias
 ## nmt
 1. [200207 A Multilingual View of Unsupervised Machine Translation](papers/200207%20A%20Multilingual%20View%20of%20Unsupervised%20Machine%20Translation.md) #multilingual
@@ -515,7 +584,6 @@
 ## noise
 1. [201223 Noisy Labels Can Induce Good Representations](papers/201223%20Noisy%20Labels%20Can%20Induce%20Good%20Representations.md) #representation
 ## non autoregressive
-1. [200220 Imputer](papers/200220%20Imputer.md) #asr #ctc
 1. [200403 Aligned Cross Entropy for Non-Autoregressive Machine Translation](papers/200403%20Aligned%20Cross%20Entropy%20for%20Non-Autoregressive%20Machine%20Translation.md)
 1. [200415 Non-Autoregressive Machine Translation with Latent Alignments](papers/200415%20Non-Autoregressive%20Machine%20Translation%20with%20Latent%20Alignments.md) #nmt #ctc
 1. [200422 A Study of Non-autoregressive Model for Sequence Generation](papers/200422%20A%20Study%20of%20Non-autoregressive%20Model%20for%20Sequence%20Generation.md)
@@ -550,19 +618,26 @@
 1. [210420 PP-YOLOv2](papers/210420%20PP-YOLOv2.md) #yolo
 1. [210426 MDETR -- Modulated Detection for End-to-End Multi-Modal Understanding](papers/210426%20MDETR%20--%20Modulated%20Detection%20for%20End-to-End%20Multi-Modal%20Understanding.md) #detr #visual_grounding
 ## ocr
+1. [191231 LayoutLM](papers/191231%20LayoutLM.md)
 1. [200217 Text Perceptron](papers/200217%20Text%20Perceptron.md)
 1. [210415 Rethinking Text Line Recognition Models](papers/210415%20Rethinking%20Text%20Line%20Recognition%20Models.md)
 ## optimization
 1. [200221 The Break-Even Point on Optimization Trajectories of Deep Neural Networks](papers/200221%20The%20Break-Even%20Point%20on%20Optimization%20Trajectories%20of%20Deep%20Neural%20Networks.md) #loss #training
 1. [200224 The Early Phase of Neural Network Training](papers/200224%20The%20Early%20Phase%20of%20Neural%20Network%20Training.md)
 1. [200227 Using a thousand optimization tasks to learn hyperparameter search strategies](papers/200227%20Using%20a%20thousand%20optimization%20tasks%20to%20learn%20hyperparameter%20search%20strategies.md) #optimizer #hyperparameter
+1. [200228 A Self-Tuning Actor-Critic Algorithm](papers/200228%20A%20Self-Tuning%20Actor-Critic%20Algorithm.md) #reinforcement_learning #hyperparameter #meta_learning
 1. [200316 Weak and Strong Gradient Directions](papers/200316%20Weak%20and%20Strong%20Gradient%20Directions.md)
 1. [200403 Gradient Centralization](papers/200403%20Gradient%20Centralization.md) #training
+1. [200508 An Investigation of Why Overparameterization Exacerbates Spurious](papers/200508%20An%20Investigation%20of%20Why%20Overparameterization%20Exacerbates%20Spurious.md) #training
+1. [200519 One Size Fits All](papers/200519%20One%20Size%20Fits%20All.md)
 ## optimizer
 1. [200130 LAMB](papers/200130%20LAMB.md) #large_batch
 ## oriented object detection
 1. [200129 Modulated Loss](papers/200129%20Modulated%20Loss.md)
 1. [200129 Oriented Objects as Middle Lines](papers/200129%20Oriented%20Objects%20as%20Middle%20Lines.md)
+## out of distribution
+1. [200509 Generalizing Outside the Training Set](papers/200509%20Generalizing%20Outside%20the%20Training%20Set.md)
+1. [200519 Bridging the Gap Between Training and Inference for Spatio-Temporal Forecasting](papers/200519%20Bridging%20the%20Gap%20Between%20Training%20and%20Inference%20for%20Spatio-Temporal%20Forecasting.md)
 ## panoptic segmentation
 1. [200129 Bridge gap of traininfer Panoptic Segmentation](papers/200129%20Bridge%20gap%20of%20traininfer%20Panoptic%20Segmentation.md)
 1. [200130 Panoptic-DeepLab](papers/200130%20Panoptic-DeepLab.md)
@@ -573,6 +648,7 @@
 ## perceptual loss
 1. [200206 Image Fine-grained Inpainting](papers/200206%20Image%20Fine-grained%20Inpainting.md) #inpainting
 1. [200330 Exploiting Deep Generative Prior for Versatile Image Restoration and](papers/200330%20Exploiting%20Deep%20Generative%20Prior%20for%20Versatile%20Image%20Restoration%20and.md) #gan_inversion
+1. [200515 Enhancing Perceptual Loss with Adversarial Feature Matching for Super-Resolution](papers/200515%20Enhancing%20Perceptual%20Loss%20with%20Adversarial%20Feature%20Matching%20for%20Super-Resolution.md)
 ## pooling
 1. [200325 What Deep CNNs Benefit from Global Covariance Pooling](papers/200325%20What%20Deep%20CNNs%20Benefit%20from%20Global%20Covariance%20Pooling.md)
 1. [200330 Strip Pooling](papers/200330%20Strip%20Pooling.md)
@@ -601,6 +677,7 @@
 1. [200420 MPNet](papers/200420%20MPNet.md) #language_model
 1. [200423 Don't Stop Pretraining](papers/200423%20Don%27t%20Stop%20Pretraining.md) #domain
 1. [200427 LightPAFF](papers/200427%20LightPAFF.md) #distillation #finetuning
+1. [200520 Pretraining with Contrastive Sentence Objectives Improves Discourse Performance of Language Models](papers/200520%20Pretraining%20with%20Contrastive%20Sentence%20Objectives%20Improves%20Discourse%20Performance%20of%20Language%20Models.md) #contrastive_learning #sentence_embedding
 1. [200703 Language-agnostic BERT Sentence Embedding](papers/200703%20Language-agnostic%20BERT%20Sentence%20Embedding.md) #embedding #multilingual
 1. [200713 An Empirical Study on Robustness to Spurious Correlations using](papers/200713%20An%20Empirical%20Study%20on%20Robustness%20to%20Spurious%20Correlations%20using.md) #nlp #multitask
 1. [200715 InfoXLM](papers/200715%20InfoXLM.md) #nlp #cross_lingual
@@ -618,15 +695,21 @@
 1. [200419 Roundtrip](papers/200419%20Roundtrip.md)
 ## pruning
 1. [200130 Rethinking Pruning](papers/200130%20Rethinking%20Pruning.md)
+1. [200214 AutoLR](papers/200214%20AutoLR.md) #finetuning
 1. [200218 Picking Winning Tickets Before Training by Preserving Gradient Flow](papers/200218%20Picking%20Winning%20Tickets%20Before%20Training%20by%20Preserving%20Gradient%20Flow.md) #lottery_ticket
+1. [200219 Knapsack Pruning with Inner Distillation](papers/200219%20Knapsack%20Pruning%20with%20Inner%20Distillation.md) #distillation #lightweight
 1. [200224 HRank](papers/200224%20HRank.md) #rank
 1. [200305 Comparing Rewinding and Fine-tuning in Neural Network Pruning](papers/200305%20Comparing%20Rewinding%20and%20Fine-tuning%20in%20Neural%20Network%20Pruning.md)
 1. [200424 Convolution-Weight-Distribution Assumption](papers/200424%20Convolution-Weight-Distribution%20Assumption.md)
+1. [200514 Bayesian Bits](papers/200514%20Bayesian%20Bits.md) #quantization #variational_inference
+1. [200515 Movement Pruning](papers/200515%20Movement%20Pruning.md)
+1. [200518 Joint Multi-Dimension Pruning](papers/200518%20Joint%20Multi-Dimension%20Pruning.md)
 1. [200706 Lossless CNN Channel Pruning via Decoupling Remembering and Forgetting](papers/200706%20Lossless%20CNN%20Channel%20Pruning%20via%20Decoupling%20Remembering%20and%20Forgetting.md)
 1. [200710 To Filter Prune, or to Layer Prune, That Is The Question](papers/200710%20To%20Filter%20Prune%2C%20or%20to%20Layer%20Prune%2C%20That%20Is%20The%20Question.md)
 ## qa
 1. [200222 Unsupervised Question Decomposition for Question Answering](papers/200222%20Unsupervised%20Question%20Decomposition%20for%20Question%20Answering.md)
 ## reasoning
+1. [200129 Neural Arithmetic Units](papers/200129%20Neural%20Arithmetic%20Units.md)
 1. [200409 Injecting Numerical Reasoning Skills into Language Models](papers/200409%20Injecting%20Numerical%20Reasoning%20Skills%20into%20Language%20Models.md)
 ## regularization
 1. [200130 DropAttention](papers/200130%20DropAttention.md) #dropout
@@ -637,6 +720,8 @@
 1. [200409 Orthogonal Over-Parameterized Training](papers/200409%20Orthogonal%20Over-Parameterized%20Training.md)
 1. [200424 Dropout as an Implicit Gating Mechanism For Continual Learning](papers/200424%20Dropout%20as%20an%20Implicit%20Gating%20Mechanism%20For%20Continual%20Learning.md)
 1. [200427 Scheduled DropHead](papers/200427%20Scheduled%20DropHead.md)
+1. [200506 RNN-T Models Fail to Generalize to Out-of-Domain Audio](papers/200506%20RNN-T%20Models%20Fail%20to%20Generalize%20to%20Out-of-Domain%20Audio.md) #transducer #out_of_distribution #domain #asr
+1. [200513 Implicit Regularization in Deep Learning May Not Be Explainable by Norms](papers/200513%20Implicit%20Regularization%20in%20Deep%20Learning%20May%20Not%20Be%20Explainable%20by%20Norms.md) #training #optimization
 1. [200707 RIFLE](papers/200707%20RIFLE.md) #finetuning
 1. [200707 Remix](papers/200707%20Remix.md) #imbalanced
 1. [200721 Improving compute efficacy frontiers with SliceOut](papers/200721%20Improving%20compute%20efficacy%20frontiers%20with%20SliceOut.md) #efficient_training
@@ -647,14 +732,21 @@
 1. [200130 Textured Neural Avatars](papers/200130%20Textured%20Neural%20Avatars.md)
 ## representation
 1. [200412 Gradients as Features for Deep Representation Learning](papers/200412%20Gradients%20as%20Features%20for%20Deep%20Representation%20Learning.md)
+## resampling
+1. [200512 Invertible Image Rescaling](papers/200512%20Invertible%20Image%20Rescaling.md)
 ## restoration
 1. [200402 Learning to See Through Obstructions](papers/200402%20Learning%20to%20See%20Through%20Obstructions.md)
 1. [200404 Deblurring by Realistic Blurring](papers/200404%20Deblurring%20by%20Realistic%20Blurring.md)
 1. [200406 Self-Supervised Scene De-occlusion](papers/200406%20Self-Supervised%20Scene%20De-occlusion.md)
 1. [200420 Bringing Old Photos Back to Life](papers/200420%20Bringing%20Old%20Photos%20Back%20to%20Life.md) #vae
 ## review
+1. [191210 Thoughts on recent papers](papers/191210%20Thoughts%20on%20recent%20papers.md)
+1. [200130 Filter Response Normalization](papers/200130%20Filter%20Response%20Normalization.md)
+1. [200227 A Primer in BERTology](papers/200227%20A%20Primer%20in%20BERTology.md) #bert
 1. [200306 What is the State of Neural Network Pruning](papers/200306%20What%20is%20the%20State%20of%20Neural%20Network%20Pruning.md) #pruning
+1. [200311 Improved Baselines with Momentum Contrastive Learning](papers/200311%20Improved%20Baselines%20with%20Momentum%20Contrastive%20Learning.md) #contrastive_learning
 1. [200318 A Metric Learning Reality Check](papers/200318%20A%20Metric%20Learning%20Reality%20Check.md) #metric_learning
+1. [200319 Revisiting the Sibling Head in Object Detector](papers/200319%20Revisiting%20the%20Sibling%20Head%20in%20Object%20Detector.md) #detection
 1. [200323 Thoughts on recent papers](papers/200323%20Thoughts%20on%20recent%20papers.md)
 1. [200324 A Systematic Evaluation](papers/200324%20A%20Systematic%20Evaluation.md)
 1. [200325 Rethinking Few-Shot Image Classification](papers/200325%20Rethinking%20Few-Shot%20Image%20Classification.md) #meta_learning
@@ -664,18 +756,34 @@
 1. [200409 EvoNorm](papers/200409%20EvoNorm.md)
 1. [200411 Thoughts on recent papers](papers/200411%20Thoughts%20on%20recent%20papers.md)
 1. [200428 Showing Your Work Doesn't Always Work](papers/200428%20Showing%20Your%20Work%20Doesn%27t%20Always%20Work.md)
+1. [201204 Thoughts on recent papers](papers/201204%20Thoughts%20on%20recent%20papers.md)
+1. [210121 Thoughts on recent papers](papers/210121%20Thoughts%20on%20recent%20papers.md)
+1. [210227 Thoughts on recent papers](papers/210227%20Thoughts%20on%20recent%20papers.md)
+1. [210305 Thoughts on recent papers](papers/210305%20Thoughts%20on%20recent%20papers.md)
+1. [210319 Thoughts on recent papers](papers/210319%20Thoughts%20on%20recent%20papers.md)
+1. [210323 Thoughts on recent papers](papers/210323%20Thoughts%20on%20recent%20papers.md)
+1. [210326 Thoughts on recent papers](papers/210326%20Thoughts%20on%20recent%20papers.md)
+1. [210403 Thoughts on recent papers](papers/210403%20Thoughts%20on%20recent%20papers.md)
+1. [210412 Thoughts on recent papers](papers/210412%20Thoughts%20on%20recent%20papers.md)
+1. [210424 Thoughts on recent papers](papers/210424%20Thoughts%20on%20recent%20papers.md)
+1. [210429 Thoughts on recent papers](papers/210429%20Thoughts%20on%20recent%20papers.md)
+1. [210430 Thoughts on recent papers 1](papers/210430%20Thoughts%20on%20recent%20papers%201.md)
+1. [210430 Thoughts on recent papers 2](papers/210430%20Thoughts%20on%20recent%20papers%202.md)
+1. [210505 Thoughts on recent papers](papers/210505%20Thoughts%20on%20recent%20papers.md)
+1. [210508 Thoughts on recent papers](papers/210508%20Thoughts%20on%20recent%20papers.md)
 ## robustness
 1. [200211 Fundamental Tradeoffs between Invariance and Sensitivity to Adversarial](papers/200211%20Fundamental%20Tradeoffs%20between%20Invariance%20and%20Sensitivity%20to%20Adversarial.md) #adversarial_training
 1. [200304 A Closer Look at Accuracy vs. Robustness](papers/200304%20A%20Closer%20Look%20at%20Accuracy%20vs.%20Robustness.md) #adversarial_training
 1. [200810 Informative Dropout for Robust Representation Learning](papers/200810%20Informative%20Dropout%20for%20Robust%20Representation%20Learning.md)
 ## saliency
 1. [200406 There and Back Again](papers/200406%20There%20and%20Back%20Again.md)
+## salient object detection
+1. [200518 U$^2$-Net](papers/200518%20U%24%5E2%24-Net.md)
 ## score
 1. [200319 GIQA](papers/200319%20GIQA.md)
 1. [200426 Evaluation Metrics for Conditional Image Generation](papers/200426%20Evaluation%20Metrics%20for%20Conditional%20Image%20Generation.md)
 ## self supervised
 1. [200213 Automatically Discovering and Learning New Visual Categories with Ranking Statistics](papers/200213%20Automatically%20Discovering%20and%20Learning%20New%20Visual%20Categories%20with%20Ranking%20Statistics.md) #weak_supervision
-1. [200218 MAST](papers/200218%20MAST.md) #tracking
 1. [200224 Self-Adaptive Training](papers/200224%20Self-Adaptive%20Training.md) #noise #dataset
 1. [201224 Self-supervised Pre-training with Hard Examples Improves Visual](papers/201224%20Self-supervised%20Pre-training%20with%20Hard%20Examples%20Improves%20Visual.md) #mixup
 ## semantic factor
@@ -685,6 +793,7 @@
 1. [201222 Time-Travel Rephotography](papers/201222%20Time-Travel%20Rephotography.md) #restoration #stylegan
 ## semantic segmentation
 1. [200323 Learning Dynamic Routing for Semantic Segmentation](papers/200323%20Learning%20Dynamic%20Routing%20for%20Semantic%20Segmentation.md)
+1. [200516 Single-Stage Semantic Segmentation from Image Labels](papers/200516%20Single-Stage%20Semantic%20Segmentation%20from%20Image%20Labels.md)
 ## semi supervised
 1. [200724 Deep Co-Training with Task Decomposition for Semi-Supervised Domain](papers/200724%20Deep%20Co-Training%20with%20Task%20Decomposition%20for%20Semi-Supervised%20Domain.md) #domain_adaptation
 ## sgld
@@ -694,6 +803,8 @@
 ## speech
 1. [200129 Speech Recognition](papers/200129%20Speech%20Recognition.md)
 1. [200129 WaveFlow](papers/200129%20WaveFlow.md) #conditional_generative_model
+## structure learning
+1. [200518 Large-scale empirical validation of Bayesian Network structure learning](papers/200518%20Large-scale%20empirical%20validation%20of%20Bayesian%20Network%20structure%20learning.md)
 ## style transfer
 1. [200318 A Content Transformation Block For Image Style Transfer](papers/200318%20A%20Content%20Transformation%20Block%20For%20Image%20Style%20Transfer.md)
 1. [200324 Deformable Style Transfer](papers/200324%20Deformable%20Style%20Transfer.md)
@@ -710,9 +821,13 @@
 ## topology
 1. [200413 Topology of deep neural networks](papers/200413%20Topology%20of%20deep%20neural%20networks.md) #theory
 ## tracking
+1. [200218 MAST](papers/200218%20MAST.md) #self_supervised
 1. [200402 Tracking Objects as Points](papers/200402%20Tracking%20Objects%20as%20Points.md) #keypoint
 1. [200403 FairMOT](papers/200403%20FairMOT.md)
+1. [200506 PeTra](papers/200506%20PeTra.md)
 1. [201215 Detecting Invisible People](papers/201215%20Detecting%20Invisible%20People.md)
+## transducer
+1. [200519 A New Training Pipeline for an Improved Neural Transducer](papers/200519%20A%20New%20Training%20Pipeline%20for%20an%20Improved%20Neural%20Transducer.md)
 ## transfer
 1. [200130 BiT ResNet](papers/200130%20BiT%20ResNet.md) #resnet
 1. [200716 Do Adversarially Robust ImageNet Models Transfer Better](papers/200716%20Do%20Adversarially%20Robust%20ImageNet%20Models%20Transfer%20Better.md) #robust
@@ -733,6 +848,10 @@
 1. [200221 Addressing Some Limitations of Transformers with Feedback Memory](papers/200221%20Addressing%20Some%20Limitations%20of%20Transformers%20with%20Feedback%20Memory.md) #recurrent
 1. [200305 Talking-Heads Attention](papers/200305%20Talking-Heads%20Attention.md) #attention
 1. [200424 Lite Transformer with Long-Short Range Attention](papers/200424%20Lite%20Transformer%20with%20Long-Short%20Range%20Attention.md) #lightweight
+1. [200515 Finding Experts in Transformer Models](papers/200515%20Finding%20Experts%20in%20Transformer%20Models.md)
+1. [200515 JDI-T](papers/200515%20JDI-T.md) #tts
+1. [200516 Conformer](papers/200516%20Conformer.md) #asr
+1. [200518 Weak-Attention Suppression For Transformer Based Speech Recognition](papers/200518%20Weak-Attention%20Suppression%20For%20Transformer%20Based%20Speech%20Recognition.md) #asr
 1. [200707 Do Transformers Need Deep Long-Range Memory](papers/200707%20Do%20Transformers%20Need%20Deep%20Long-Range%20Memory.md) #lm #attention
 1. [200709 Fast Transformers with Clustered Attention](papers/200709%20Fast%20Transformers%20with%20Clustered%20Attention.md) #attention
 1. [200715 AdapterHub](papers/200715%20AdapterHub.md) #nlp #finetuning
@@ -797,80 +916,10 @@
 ## visual grounding
 1. [210401 Towards General Purpose Vision Systems](papers/210401%20Towards%20General%20Purpose%20Vision%20Systems.md)
 1. [210510 Visual Grounding with Transformers](papers/210510%20Visual%20Grounding%20with%20Transformers.md)
-## uncategorized
-1. [191210 Thoughts on recent papers](papers/191210%20Thoughts%20on%20recent%20papers.md)
-1. [191231 LayoutLM](papers/191231%20LayoutLM.md)
-1. [200129 AP Loss](papers/200129%20AP%20Loss.md)
-1. [200129 Neural Arithmetic Units](papers/200129%20Neural%20Arithmetic%20Units.md)
-1. [200130 Filter Response Normalization](papers/200130%20Filter%20Response%20Normalization.md)
-1. [200211 fastai](papers/200211%20fastai.md)
-1. [200506 CONFIG](papers/200506%20CONFIG.md)
-1. [200506 Local Search is State of the Art for Neural Architecture Search](papers/200506%20Local%20Search%20is%20State%20of%20the%20Art%20for%20Neural%20Architecture%20Search.md)
-1. [200506 PeTra](papers/200506%20PeTra.md)
-1. [200506 RNN-T Models Fail to Generalize to Out-of-Domain Audio](papers/200506%20RNN-T%20Models%20Fail%20to%20Generalize%20to%20Out-of-Domain%20Audio.md)
-1. [200506 Scale-Equalizing Pyramid Convolution for Object Detection](papers/200506%20Scale-Equalizing%20Pyramid%20Convolution%20for%20Object%20Detection.md)
-1. [200507 Noisy Differentiable Architecture Search](papers/200507%20Noisy%20Differentiable%20Architecture%20Search.md)
-1. [200508 An Investigation of Why Overparameterization Exacerbates Spurious](papers/200508%20An%20Investigation%20of%20Why%20Overparameterization%20Exacerbates%20Spurious.md)
-1. [200508 Transforming task representations to perform novel tasks](papers/200508%20Transforming%20task%20representations%20to%20perform%20novel%20tasks.md)
-1. [200509 Building a Manga Dataset](papers/200509%20Building%20a%20Manga%20Dataset.md)
-1. [200509 Generalizing Outside the Training Set](papers/200509%20Generalizing%20Outside%20the%20Training%20Set.md)
-1. [200510 CTC-synchronous Training for Monotonic Attention Model](papers/200510%20CTC-synchronous%20Training%20for%20Monotonic%20Attention%20Model.md)
-1. [200510 Listen Attentively, and Spell Once](papers/200510%20Listen%20Attentively%2C%20and%20Spell%20Once.md)
-1. [200511 Prototypical Contrastive Learning of Unsupervised Representations](papers/200511%20Prototypical%20Contrastive%20Learning%20of%20Unsupervised%20Representations.md)
-1. [200511 Scope Head for Accurate Localization in Object Detection](papers/200511%20Scope%20Head%20for%20Accurate%20Localization%20in%20Object%20Detection.md)
+## vocoder
 1. [200512 FeatherWave](papers/200512%20FeatherWave.md)
-1. [200512 Flowtron](papers/200512%20Flowtron.md)
-1. [200512 Invertible Image Rescaling](papers/200512%20Invertible%20Image%20Rescaling.md)
-1. [200512 Neural Architecture Transfer](papers/200512%20Neural%20Architecture%20Transfer.md)
-1. [200513 INFOTABS](papers/200513%20INFOTABS.md)
-1. [200513 Implicit Regularization in Deep Learning May Not Be Explainable by Norms](papers/200513%20Implicit%20Regularization%20in%20Deep%20Learning%20May%20Not%20Be%20Explainable%20by%20Norms.md)
-1. [200514 Bayesian Bits](papers/200514%20Bayesian%20Bits.md)
-1. [200514 Behind the Scene](papers/200514%20Behind%20the%20Scene.md)
-1. [200514 Efficient and Scalable Bayesian Neural Nets with Rank-1 Factors](papers/200514%20Efficient%20and%20Scalable%20Bayesian%20Neural%20Nets%20with%20Rank-1%20Factors.md)
-1. [200515 Enhancing Perceptual Loss with Adversarial Feature Matching for Super-Resolution](papers/200515%20Enhancing%20Perceptual%20Loss%20with%20Adversarial%20Feature%20Matching%20for%20Super-Resolution.md)
-1. [200515 Face Identity Disentanglement via Latent Space Mapping](papers/200515%20Face%20Identity%20Disentanglement%20via%20Latent%20Space%20Mapping.md)
-1. [200515 Finding Experts in Transformer Models](papers/200515%20Finding%20Experts%20in%20Transformer%20Models.md)
-1. [200515 JDI-T](papers/200515%20JDI-T.md)
-1. [200515 Movement Pruning](papers/200515%20Movement%20Pruning.md)
-1. [200515 Semantic Photo Manipulation with a Generative Image Prior](papers/200515%20Semantic%20Photo%20Manipulation%20with%20a%20Generative%20Image%20Prior.md)
-1. [200516 Conformer](papers/200516%20Conformer.md)
-1. [200516 Large scale weakly and semi-supervised learning for low-resource video ASR](papers/200516%20Large%20scale%20weakly%20and%20semi-supervised%20learning%20for%20low-resource%20video%20ASR.md)
-1. [200516 Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](papers/200516%20Layer-Wise%20Cross-View%20Decoding%20for%20Sequence-to-Sequence%20Learning.md)
-1. [200516 MicroNet for Efficient Language Modeling](papers/200516%20MicroNet%20for%20Efficient%20Language%20Modeling.md)
-1. [200516 Reducing Spelling Inconsistencies in Code-Switching ASR using](papers/200516%20Reducing%20Spelling%20Inconsistencies%20in%20Code-Switching%20ASR%20using.md)
-1. [200516 Single-Stage Semantic Segmentation from Image Labels](papers/200516%20Single-Stage%20Semantic%20Segmentation%20from%20Image%20Labels.md)
-1. [200516 Spike-Triggered Non-Autoregressive Transformer for End-to-End Speech Recognition](papers/200516%20Spike-Triggered%20Non-Autoregressive%20Transformer%20for%20End-to-End%20Speech%20Recognition.md)
-1. [200516 Streaming Transformer-based Acoustic Models Using Self-attention with Augmented Memory](papers/200516%20Streaming%20Transformer-based%20Acoustic%20Models%20Using%20Self-attention%20with%20Augmented%20Memory.md)
-1. [200518 (Re)construing Meaning in NLP](papers/200518%20%28Re%29construing%20Meaning%20in%20NLP.md)
-1. [200518 An Analysis of the Adaptation Speed of Causal Models](papers/200518%20An%20Analysis%20of%20the%20Adaptation%20Speed%20of%20Causal%20Models.md)
-1. [200518 Attention-based Transducer for Online Speech Recognition](papers/200518%20Attention-based%20Transducer%20for%20Online%20Speech%20Recognition.md)
-1. [200518 Audio ALBERT](papers/200518%20Audio%20ALBERT.md)
-1. [200518 Contextual Embeddings](papers/200518%20Contextual%20Embeddings.md)
-1. [200518 Iterative Pseudo-Labeling for Speech Recognition](papers/200518%20Iterative%20Pseudo-Labeling%20for%20Speech%20Recognition.md)
-1. [200518 Joint Multi-Dimension Pruning](papers/200518%20Joint%20Multi-Dimension%20Pruning.md)
-1. [200518 Large-scale empirical validation of Bayesian Network structure learning](papers/200518%20Large-scale%20empirical%20validation%20of%20Bayesian%20Network%20structure%20learning.md)
-1. [200518 Robust Training of Vector Quantized Bottleneck Models](papers/200518%20Robust%20Training%20of%20Vector%20Quantized%20Bottleneck%20Models.md)
-1. [200518 U$^2$-Net](papers/200518%20U%24%5E2%24-Net.md)
-1. [200518 Unconditional Audio Generation with Generative Adversarial Networks and Cycle Regularization](papers/200518%20Unconditional%20Audio%20Generation%20with%20Generative%20Adversarial%20Networks%20and%20Cycle%20Regularization.md)
-1. [200518 Weak-Attention Suppression For Transformer Based Speech Recognition](papers/200518%20Weak-Attention%20Suppression%20For%20Transformer%20Based%20Speech%20Recognition.md)
-1. [200519 A New Training Pipeline for an Improved Neural Transducer](papers/200519%20A%20New%20Training%20Pipeline%20for%20an%20Improved%20Neural%20Transducer.md)
-1. [200519 Bridging the Gap Between Training and Inference for Spatio-Temporal Forecasting](papers/200519%20Bridging%20the%20Gap%20Between%20Training%20and%20Inference%20for%20Spatio-Temporal%20Forecasting.md)
-1. [200519 CIAGAN](papers/200519%20CIAGAN.md)
-1. [200519 Distilling Knowledge from Ensembles of Acoustic Models for Joint CTC-Attention End-to-End Speech Recognition](papers/200519%20Distilling%20Knowledge%20from%20Ensembles%20of%20Acoustic%20Models%20for%20Joint%20CTC-Attention%20End-to-End%20Speech%20Recognition.md)
-1. [200519 Identifying Statistical Bias in Dataset Replication](papers/200519%20Identifying%20Statistical%20Bias%20in%20Dataset%20Replication.md)
-1. [200519 Improved Noisy Student Training for Automatic Speech Recognition](papers/200519%20Improved%20Noisy%20Student%20Training%20for%20Automatic%20Speech%20Recognition.md)
-1. [200519 Normalized Attention Without Probability Cage](papers/200519%20Normalized%20Attention%20Without%20Probability%20Cage.md)
-1. [200519 One Size Fits All](papers/200519%20One%20Size%20Fits%20All.md)
-1. [200519 Regularization Methods for Generative Adversarial Networks](papers/200519%20Regularization%20Methods%20for%20Generative%20Adversarial%20Networks.md)
-1. [200519 Staying True to Your Word](papers/200519%20Staying%20True%20to%20Your%20Word.md)
-1. [200520 Neural Controlled Differential Equations](papers/200520%20Neural%20Controlled%20Differential%20Equations.md)
-1. [200520 Pretraining with Contrastive Sentence Objectives Improves Discourse Performance of Language Models](papers/200520%20Pretraining%20with%20Contrastive%20Sentence%20Objectives%20Improves%20Discourse%20Performance%20of%20Language%20Models.md)
-1. [200520 What Makes for Good Views for Contrastive Learning](papers/200520%20What%20Makes%20for%20Good%20Views%20for%20Contrastive%20Learning.md)
-1. [200521 HyperSTAR](papers/200521%20HyperSTAR.md)
-1. [200521 Why distillation helps](papers/200521%20Why%20distillation%20helps.md)
-1. [200526 End-to-End Object Detection with Transformers](papers/200526%20End-to-End%20Object%20Detection%20with%20Transformers.md)
-1. [200526 Keep it Simple](papers/200526%20Keep%20it%20Simple.md)
-1. [200601 Amnesic Probing](papers/200601%20Amnesic%20Probing.md)
+## uncategorized
+1. [200211 fastai](papers/200211%20fastai.md)
 1. [200601 Cascaded Text Generation with Markov Transformers](papers/200601%20Cascaded%20Text%20Generation%20with%20Markov%20Transformers.md)
 1. [200602 FBNetV3](papers/200602%20FBNetV3.md)
 1. [200603 DetectoRS](papers/200603%20DetectoRS.md)
@@ -1024,21 +1073,3 @@
 1. [201201 Towards Good Practices in Self-supervised Representation Learning](papers/201201%20Towards%20Good%20Practices%20in%20Self-supervised%20Representation%20Learning.md)
 1. [201201 Unpaired Image-to-Image Translation via Latent Energy Transport](papers/201201%20Unpaired%20Image-to-Image%20Translation%20via%20Latent%20Energy%20Transport.md)
 1. [201201 pi-GAN](papers/201201%20pi-GAN.md)
-1. [201204 Thoughts on recent papers](papers/201204%20Thoughts%20on%20recent%20papers.md)
-1. [210121 Thoughts on recent papers](papers/210121%20Thoughts%20on%20recent%20papers.md)
-1. [210227 Thoughts on recent papers](papers/210227%20Thoughts%20on%20recent%20papers.md)
-1. [210305 Fixing Data Augmentation to Improve Adversarial Robustness 2](papers/210305%20Fixing%20Data%20Augmentation%20to%20Improve%20Adversarial%20Robustness%202.md)
-1. [210305 Thoughts on recent papers](papers/210305%20Thoughts%20on%20recent%20papers.md)
-1. [210316 You Only Look One-level Feature](papers/210316%20You%20Only%20Look%20One-level%20Feature.md)
-1. [210318 Using latent space regression to analyze and leverage compositionality](papers/210318%20Using%20latent%20space%20regression%20to%20analyze%20and%20leverage%20compositionality.md)
-1. [210319 Thoughts on recent papers](papers/210319%20Thoughts%20on%20recent%20papers.md)
-1. [210323 Thoughts on recent papers](papers/210323%20Thoughts%20on%20recent%20papers.md)
-1. [210326 Thoughts on recent papers](papers/210326%20Thoughts%20on%20recent%20papers.md)
-1. [210403 Thoughts on recent papers](papers/210403%20Thoughts%20on%20recent%20papers.md)
-1. [210412 Thoughts on recent papers](papers/210412%20Thoughts%20on%20recent%20papers.md)
-1. [210424 Thoughts on recent papers](papers/210424%20Thoughts%20on%20recent%20papers.md)
-1. [210429 Thoughts on recent papers](papers/210429%20Thoughts%20on%20recent%20papers.md)
-1. [210430 Thoughts on recent papers 1](papers/210430%20Thoughts%20on%20recent%20papers%201.md)
-1. [210430 Thoughts on recent papers 2](papers/210430%20Thoughts%20on%20recent%20papers%202.md)
-1. [210505 Thoughts on recent papers](papers/210505%20Thoughts%20on%20recent%20papers.md)
-1. [210508 Thoughts on recent papers](papers/210508%20Thoughts%20on%20recent%20papers.md)

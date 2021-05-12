@@ -19,3 +19,5 @@ https://arxiv.org/abs/2104.13921 zero-shot object detection. 결과적으로는 
 그리고 눈에 띈 multimodal한 데이터를 트랜스포머로 결합해낸 사례.
 https://arxiv.org/abs/2104.11896 raw point cloud + voxel + 2d birds' eye view를 결합하는 트랜스포머 3d object detection. 다양한 형태의 정보를 결합하는 장치로서의 트랜스포머의 위력을 새삼스럽게 잘 보여주는군요.
 이런 의미에서 트랜스포머의 위력은 기존 과제를 더 잘 하게 해주는 것 이상으로 새로운 과제를 발견하고 풀 수 있는 기회를 제공하는 것에 있지 않을까 싶다. 물론 효율성을 개선할 수 있다면 더 좋겠지만...
+
+#review

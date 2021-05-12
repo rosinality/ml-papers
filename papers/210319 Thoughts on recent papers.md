@@ -19,3 +19,5 @@ TrivialAugment: Tuning-free Yet State-of-the-Art Data Augmentation (https://arxi
 randaugment의 뒤를 잇는 심플한 augmentation 파이프라인. 수치는 좀 미묘해보이지만 autoaugment/randaugment가 트레이닝 파이프라인의 중요한 레시피라는 것을 생각해보면 의미가 있을 듯.
 Using latent space regression to analyze and leverage compositionality in GANs (https://arxiv.org/abs/2103.10426)
 masked reconstruction 모델에 gan을 합쳐서 image prior를 만듦. 사진 조각들을 콜라주한 다음에 generator로 consistent한 이미지를 생성하는데 흥미로움.
+
+#review

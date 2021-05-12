@@ -17,3 +17,5 @@ batch normalization은 굳이 말을 얹을 필요도 없을 정도로 강력한
 결과적으로는 imagenet classification과 coco object detection에서 batch norm과 group norm보다 나은 성능을 보여주고 있다. 기존의 normalization 방법과는 다르게 fully connected layer에 적용해본 결과도 있는데 이것도 꽤 흥미롭다.
 
 train/valid 커브를 보면 group norm/weight standardization과 비슷하게 트레이닝이 더 잘 되고 그만큼 validation accuracy가 상승하는 형태를 보여주고 있다. 아무래도 배치 통계를 쓰지 않으니 노이즈에 의한 regularization 효과가 약하다는 의미일 수 있는데 적절한 regularization과 결합했을 때의 결과도 의미있는 튜닝 시도가 될 수 있을 것 같다. weight standardization을 결합하는 것도 가능할 듯 한데 같이 사용했을 때의 결과도 흥미로울 듯 싶다.
+
+#review

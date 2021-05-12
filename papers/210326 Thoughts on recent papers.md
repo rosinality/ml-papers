@@ -10,3 +10,5 @@ self supervised learning의 transfer/task 성능 측정 (https://arxiv.org/abs/2
 minimax 대신 duality gap으로 gan 학습시키기 (https://arxiv.org/abs/2103.12685)
 semantic segmentation을 위해 spinenet을 다시 서치한다거나 (https://arxiv.org/abs/2103.12270)
 등등등.
+
+#review

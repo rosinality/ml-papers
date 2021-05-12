@@ -4,3 +4,5 @@ Flowtron: an Autoregressive Flow-based Generative Network for
   Text-to-Speech Synthesis (Rafael Valle, Kevin Shih, Ryan Prenger, Bryan Catanzaro)
 
 | Flowtron: an Autoregressive Flow-based Generative Network for Text-to-Speech Synthesis - 2005.05957
+
+#flow #tts

@@ -11,3 +11,5 @@ performer의 발전형 같은 느낌인데...efficient attention의 결과가 �
 Perceiver: General Perception with Iterative Attention
 https://arxiv.org/abs/2103.03206
 pixel (224 * 224!)-latent (1024) attention과 latent에 대한 transformer를 결합해서 pixel level attention 모델링.
+
+#review

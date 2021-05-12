@@ -6,3 +6,5 @@ augmentation을 model ema와 결합하면 robustness가 향상된다는 결과. 
 아, 그리고 Score-Based Generative Modeling through Stochastic Differential Equations (https://arxiv.org/abs/2011.13456)의 jax 기반 구현이 공개되었다. https://github.com/yang-song/score_sde 한 번 보시는 것도 좋겠다.
 
 [[210302 Fixing Data Augmentation to Improve Adversarial Robustness]]
+
+#robustness #augmentation #generative_model #ddpm
