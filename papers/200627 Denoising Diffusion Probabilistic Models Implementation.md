@@ -4,4 +4,4 @@ Denoising Diffusion Probabilistic Models (https://arxiv.org/abs/2006.11239)ÏùÑ Î
 
 [[200619 Denoising Diffusion Probabilistic Models]]
 
-#ddpm #generative_model
+#review

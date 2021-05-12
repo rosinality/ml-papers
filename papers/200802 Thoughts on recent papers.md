@@ -33,3 +33,5 @@ LevelSet R-CNN: A Deep Variational Method for Instance Segmentation (Namdar Homa
 Mumford-Sha (https://arxiv.org/abs/2007.11576) 에 이어 Chan-Vese가 instance segmentation에 등장! 이 경우에는 오브젝트의 안과 밖에 서로 다른 값을 부여하는 문제가 됨. 이렇게 보면 object vs non object 분류 문제처럼 보이지만 몇 가지 요소가 추가됨. 
 Contrastive Learning for Unpaired Image-to-Image Translation (Taesung Park, Alexei A. Efros, Richard Zhang, Jun-Yan Zhu)
 contrastive learning을 활용한 unsupervised img2img. 핵심 아이디어는 입력 이미지의 패치를 잘라내서 그 패치에 해당하는 출력 이미지의 패치는 positive로 두고 나머지는 negative로 활용하는 것. 패치를 활용할 수 있다는 게 이렇게 유용. 
+
+#review

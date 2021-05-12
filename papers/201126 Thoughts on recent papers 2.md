@@ -10,3 +10,5 @@ Learning Semantic-aware Normalization for Generative Adversarial Networks(https:
 한쪽은 spatial dimension이고 한쪽은 channel dimension이라 어떻게 보면 반대 방향이라고 할 수도 있겠는데...여튼 cnn의 구조 측면에서도 시사하는 바가 있는 흥미로운 결과라고 생각한다.
 (Semantic-aware Normalization을 재현을 할 수 있었으면 좋겠는데...뭘 빠뜨렸는지 아직 못 하고 있다. 😕)
 나머지 큰 유행은 contrastive learning과 detr이 떠오르는데...이것도 좀 모아볼 수 있을지도.
+
+#review

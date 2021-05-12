@@ -87,3 +87,5 @@ Fast Transformers with Clustered Attention (Apoorv Vyas, Angelos Katharopoulos, 
 reformer, longformer 등 이후에 최근 long range attention을 효율적으로 만들기 위한 연구들이 좀 나왔다. 한 가지 큰 갈래가 linear attention. efficient attention이 (https://arxiv.org/abs/1812.01243) 좀 전에 나왔었고 linearly scalable transformer(https://arxiv.org/abs/2006.03555), transformer are rnns (https://arxiv.org/abs/2006.162360) 같은 연구들이 나왔다.
 
 이쪽은 attention 쿼리들을 k-means로 클러스터링한 다음 같은 클러스터에 있는 쿼리들은 같은 attention weight를 사용하게 해서 연산량을 감소시킨다는 접근이다. 실질적으로 query 방향으로 길이를 축소한 것이라고 볼 수 있겠다. 길이를 축소했다는 점에서는 마찬가지로 최근에 나온 funnel transformer(https://arxiv.org/abs/2006.03236)나 linformer(https://arxiv.org/abs/2006.04768)가 떠오른다. 쿼리에 lsh를 적용하고 그 위에 hamming distance 기반 k-means를 돌린다는 게 거의 묘기 같이 느껴지는데 대단하다. 
+
+#review

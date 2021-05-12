@@ -11,3 +11,5 @@ Closed-Form Factorization of Latent Semantics in GANs (https://arxiv.org/abs/200
 위 두 논문의 핵심은 즉 latent space가 크게 변화하는 방향을 찾는다에 있는 것이 아닐까? noise가 fc 레이어 W에 의해 latent vector로 변환된다고 가정해보자. 그렇다면 A(z + v) - A(z)를 최대화하는 v를 찾는 문제라고 생각할 수 있겠다. 그렇다면 ||Av||를 최대화하는 v를 찾는 문제가 된다. 적당한 제약을 주면 이 AᵀA의 eigenvector를 찾는 문제가 된다.
 AᵀA의 eigenvector야 SVD 한 방이면 되고 A는 여러분의 모델 체크포인트에 들어있으니 그대로 불러오면 끝. 산뜻하다!
 그런데 뭐 이번 주 논문 정리에 한 번 써놓고 다시 이렇게 정리해서 올리는 건...그냥 마음에 들어서 한 번 만들어서 결과를 뽑아봤기 때문이다. 이 방법으로 찾은 체형, 인종, 성별, 포즈 요인이다.
+
+#review
