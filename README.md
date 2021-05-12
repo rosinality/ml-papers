@@ -21,7 +21,6 @@
 1. [ddpm](#ddpm)
 1. [decoding](#decoding)
 1. [deep prior](#deep-prior)
-1. [detection](#detection)
 1. [differentiable operator](#differentiable-operator)
 1. [differentiable tree](#differentiable-tree)
 1. [discrete vae](#discrete-vae)
@@ -53,7 +52,6 @@
 1. [initialization](#initialization)
 1. [instance segmentation](#instance-segmentation)
 1. [interpolation](#interpolation)
-1. [kd](#kd)
 1. [knowledge base](#knowledge-base)
 1. [language generation](#language-generation)
 1. [language model](#language-model)
@@ -106,7 +104,7 @@
 1. [self supervised](#self-supervised)
 1. [semantic factor](#semantic-factor)
 1. [semantic segmentation](#semantic-segmentation)
-1. [semi supervised](#semi-supervised)
+1. [semi supervised learning](#semi-supervised-learning)
 1. [sgld](#sgld)
 1. [single image](#single-image)
 1. [speech](#speech)
@@ -143,13 +141,13 @@
 ## asr
 1. [200220 Imputer](papers/200220%20Imputer.md) #non-autoregressive #ctc
 1. [200510 Listen Attentively, and Spell Once](papers/200510%20Listen%20Attentively%2C%20and%20Spell%20Once.md) #non-autoregressive
-1. [200516 Large scale weakly and semi-supervised learning for low-resource video ASR](papers/200516%20Large%20scale%20weakly%20and%20semi-supervised%20learning%20for%20low-resource%20video%20ASR.md) #weak_supervision #semi_supervised
+1. [200516 Large scale weakly and semi-supervised learning for low-resource video ASR](papers/200516%20Large%20scale%20weakly%20and%20semi-supervised%20learning%20for%20low-resource%20video%20ASR.md) #weak_supervision #semi_supervised_learning
 1. [200516 Reducing Spelling Inconsistencies in Code-Switching ASR using](papers/200516%20Reducing%20Spelling%20Inconsistencies%20in%20Code-Switching%20ASR%20using.md) #ctc
 1. [200516 Spike-Triggered Non-Autoregressive Transformer for End-to-End Speech Recognition](papers/200516%20Spike-Triggered%20Non-Autoregressive%20Transformer%20for%20End-to-End%20Speech%20Recognition.md) #non-autoregressive
 1. [200518 Attention-based Transducer for Online Speech Recognition](papers/200518%20Attention-based%20Transducer%20for%20Online%20Speech%20Recognition.md) #transducer
 1. [200518 Iterative Pseudo-Labeling for Speech Recognition](papers/200518%20Iterative%20Pseudo-Labeling%20for%20Speech%20Recognition.md)
 1. [200519 Distilling Knowledge from Ensembles of Acoustic Models for Joint CTC-Attention End-to-End Speech Recognition](papers/200519%20Distilling%20Knowledge%20from%20Ensembles%20of%20Acoustic%20Models%20for%20Joint%20CTC-Attention%20End-to-End%20Speech%20Recognition.md) #ctc
-1. [200519 Improved Noisy Student Training for Automatic Speech Recognition](papers/200519%20Improved%20Noisy%20Student%20Training%20for%20Automatic%20Speech%20Recognition.md) #semi_supervised
+1. [200519 Improved Noisy Student Training for Automatic Speech Recognition](papers/200519%20Improved%20Noisy%20Student%20Training%20for%20Automatic%20Speech%20Recognition.md) #semi_supervised_learning
 1. [200729 Developing RNN-T Models Surpassing High-Performance Hybrid Models with](papers/200729%20Developing%20RNN-T%20Models%20Surpassing%20High-Performance%20Hybrid%20Models%20with.md) #rnn_t
 ## attention
 1. [200122 Object Contextual Representations](papers/200122%20Object%20Contextual%20Representations.md) #semantic_segmentation
@@ -172,7 +170,7 @@
 1. [210223 Linear Transformers Are Secretly Fast Weight Memory Systems](papers/210223%20Linear%20Transformers%20Are%20Secretly%20Fast%20Weight%20Memory%20Systems.md) #linear_attention #efficient_attention
 1. [210225 LazyFormer](papers/210225%20LazyFormer.md) #bert
 ## augmentation
-1. [200122 FixMatch](papers/200122%20FixMatch.md) #semi-supervised_learning #manifold #mixup
+1. [200122 FixMatch](papers/200122%20FixMatch.md) #semi_supervised_learning #manifold #mixup
 1. [200220 Affinity and Diversity](papers/200220%20Affinity%20and%20Diversity.md)
 1. [200710 Meta-Learning Requires Meta-Augmentation](papers/200710%20Meta-Learning%20Requires%20Meta-Augmentation.md) #metalearning
 1. [201213 Simple Copy-Paste is a Strong Data Augmentation Method for Instance](papers/201213%20Simple%20Copy-Paste%20is%20a%20Strong%20Data%20Augmentation%20Method%20for%20Instance.md) #instance_segmentation
@@ -183,7 +181,6 @@
 1. [200129 Semi Autorgressive Training](papers/200129%20Semi%20Autorgressive%20Training.md)
 ## backbone
 1. [190724 MixNet](papers/190724%20MixNet.md) #convolution
-1. [191118 CenterMask](papers/191118%20CenterMask.md) #object_detection #instance_segmentation #1stage
 1. [200123 Antialiasing](papers/200123%20Antialiasing.md) #invariance
 1. [200128 Attentive Normalization](papers/200128%20Attentive%20Normalization.md)
 1. [200128 IBN-Net](papers/200128%20IBN-Net.md)
@@ -193,9 +190,7 @@
 1. [200128 Switchable Normalization](papers/200128%20Switchable%20Normalization.md)
 1. [200128 Switchable Whitening](papers/200128%20Switchable%20Whitening.md)
 1. [200129 Assembled Techniques](papers/200129%20Assembled%20Techniques.md) #regularization
-1. [200129 Backbone Reallocation for Detection](papers/200129%20Backbone%20Reallocation%20for%20Detection.md) #object_detection #nas
 1. [200129 DenseNet](papers/200129%20DenseNet.md)
-1. [200129 DetNAS](papers/200129%20DetNAS.md) #object_detection #nas
 1. [200129 Dual Path Networks](papers/200129%20Dual%20Path%20Networks.md)
 1. [200129 HarDNet](papers/200129%20HarDNet.md)
 1. [200129 PyramidNet](papers/200129%20PyramidNet.md)
@@ -271,30 +266,6 @@
 1. [200516 Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](papers/200516%20Layer-Wise%20Cross-View%20Decoding%20for%20Sequence-to-Sequence%20Learning.md)
 ## deep prior
 1. [200408 Deep Manifold Prior](papers/200408%20Deep%20Manifold%20Prior.md)
-## detection
-1. [200129 AP Loss](papers/200129%20AP%20Loss.md) #loss
-1. [200211 Object Detection as a Positive-Unlabeled Problem](papers/200211%20Object%20Detection%20as%20a%20Positive-Unlabeled%20Problem.md) #positive_unlabled #dataset
-1. [200212 Solving Missing-Annotation Object Detection with Background](papers/200212%20Solving%20Missing-Annotation%20Object%20Detection%20with%20Background.md) #dataset #noise
-1. [200316 Frustratingly Simple Few-Shot Object Detection](papers/200316%20Frustratingly%20Simple%20Few-Shot%20Object%20Detection.md) #few_shot
-1. [200317 Revisiting the Sibling Head in Object Detector](papers/200317%20Revisiting%20the%20Sibling%20Head%20in%20Object%20Detector.md)
-1. [200320 CentripetalNet](papers/200320%20CentripetalNet.md) #keypoint
-1. [200413 Dynamic R-CNN](papers/200413%20Dynamic%20R-CNN.md)
-1. [200423 YOLOv4](papers/200423%20YOLOv4.md)
-1. [200511 Scope Head for Accurate Localization in Object Detection](papers/200511%20Scope%20Head%20for%20Accurate%20Localization%20in%20Object%20Detection.md)
-1. [200526 End-to-End Object Detection with Transformers](papers/200526%20End-to-End%20Object%20Detection%20with%20Transformers.md) #end2end #matching
-1. [200706 LabelEnc](papers/200706%20LabelEnc.md) #kd
-1. [200707 AutoAssign](papers/200707%20AutoAssign.md) #anchor_free
-1. [200714 AQD](papers/200714%20AQD.md) #quantization
-1. [200715 Probabilistic Anchor Assignment with IoU Prediction for Object Detection](papers/200715%20Probabilistic%20Anchor%20Assignment%20with%20IoU%20Prediction%20for%20Object%20Detection.md) #anchor #1stage
-1. [200716 RepPoints V2](papers/200716%20RepPoints%20V2.md) #1stage #anchor_free
-1. [200723 PP-YOLO](papers/200723%20PP-YOLO.md) #tuning
-1. [200723 The Devil is in Classification](papers/200723%20The%20Devil%20is%20in%20Classification.md) #longtail
-1. [200727 Corner Proposal Network for Anchor-free, Two-stage Object Detection](papers/200727%20Corner%20Proposal%20Network%20for%20Anchor-free%2C%20Two-stage%20Object%20Detection.md) #anchor_free #2stage
-1. [201207 End-to-End Object Detection with Fully Convolutional Network](papers/201207%20End-to-End%20Object%20Detection%20with%20Fully%20Convolutional%20Network.md) #end2end
-1. [201223 SWA Object Detection](papers/201223%20SWA%20Object%20Detection.md) #swa
-1. [201227 Towards A Category-extended Object Detector without Relabeling or](papers/201227%20Towards%20A%20Category-extended%20Object%20Detector%20without%20Relabeling%20or.md) #continual_learning
-1. [210225 Simple multi-dataset detection](papers/210225%20Simple%20multi-dataset%20detection.md) #multi_dataset
-1. [210316 You Only Look One-level Feature](papers/210316%20You%20Only%20Look%20One-level%20Feature.md)
 ## differentiable operator
 1. [200220 Fast Differentiable Sorting and Ranking](papers/200220%20Fast%20Differentiable%20Sorting%20and%20Ranking.md)
 ## differentiable tree
@@ -309,9 +280,11 @@
 1. [200129 Learning by Cheating](papers/200129%20Learning%20by%20Cheating.md)
 1. [200209 Understanding and Improving Knowledge Distillation](papers/200209%20Understanding%20and%20Improving%20Knowledge%20Distillation.md)
 1. [200210 Subclass Distillation](papers/200210%20Subclass%20Distillation.md)
+1. [200219 Knapsack Pruning with Inner Distillation](papers/200219%20Knapsack%20Pruning%20with%20Inner%20Distillation.md) #pruning #lightweight
 1. [200221 Residual Knowledge Distillation](papers/200221%20Residual%20Knowledge%20Distillation.md)
 1. [200309 Knowledge distillation via adaptive instance normalization](papers/200309%20Knowledge%20distillation%20via%20adaptive%20instance%20normalization.md) #normalization
 1. [200521 Why distillation helps](papers/200521%20Why%20distillation%20helps.md) #calibration
+1. [200702 Interactive Knowledge Distillation](papers/200702%20Interactive%20Knowledge%20Distillation.md)
 ## distributed training
 1. [210510 GSPMD](papers/210510%20GSPMD.md)
 ## domain adaptation
@@ -341,7 +314,7 @@
 1. [200227 Woodbury Transformations for Deep Generative Flows](papers/200227%20Woodbury%20Transformations%20for%20Deep%20Generative%20Flows.md)
 1. [200512 Flowtron](papers/200512%20Flowtron.md) #tts
 ## fpn
-1. [200122 CARAFE](papers/200122%20CARAFE.md) #upsampling
+1. [200122 CARAFE](papers/200122%20CARAFE.md) #resampling
 1. [200129 Mixture FPN](papers/200129%20Mixture%20FPN.md)
 1. [200506 Scale-Equalizing Pyramid Convolution for Object Detection](papers/200506%20Scale-Equalizing%20Pyramid%20Convolution%20for%20Object%20Detection.md)
 1. [201202 Dual Refinement Feature Pyramid Networks for Object Detection](papers/201202%20Dual%20Refinement%20Feature%20Pyramid%20Networks%20for%20Object%20Detection.md)
@@ -463,13 +436,13 @@
 1. [200305 SketchyCOCO](papers/200305%20SketchyCOCO.md)
 1. [200315 GMM-UNIT](papers/200315%20GMM-UNIT.md) #multimodal_generation
 1. [200319 High-Resolution Daytime Translation Without Domain Labels](papers/200319%20High-Resolution%20Daytime%20Translation%20Without%20Domain%20Labels.md)
-1. [200330 Semi-supervised Learning for Few-shot Image-to-Image Translation](papers/200330%20Semi-supervised%20Learning%20for%20Few-shot%20Image-to-Image%20Translation.md) #semi_supervised #few_shot
+1. [200330 Semi-supervised Learning for Few-shot Image-to-Image Translation](papers/200330%20Semi-supervised%20Learning%20for%20Few-shot%20Image-to-Image%20Translation.md) #semi_supervised_learning #few_shot
 1. [200406 Rethinking Spatially-Adaptive Normalization](papers/200406%20Rethinking%20Spatially-Adaptive%20Normalization.md) #lightweight
 1. [200409 TuiGAN](papers/200409%20TuiGAN.md) #few_shot #single_image
 1. [200419 TriGAN](papers/200419%20TriGAN.md) #domain_adaptation
 1. [200709 Improving Style-Content Disentanglement in Image-to-Image Translation](papers/200709%20Improving%20Style-Content%20Disentanglement%20in%20Image-to-Image%20Translation.md) #disentangle
 1. [200714 COCO-FUNIT](papers/200714%20COCO-FUNIT.md)
-1. [200715 Transformation Consistency Regularization- A Semi-Supervised Paradigm](papers/200715%20Transformation%20Consistency%20Regularization-%20A%20Semi-Supervised%20Paradigm.md) #augmentation #semisupervision
+1. [200715 Transformation Consistency Regularization- A Semi-Supervised Paradigm](papers/200715%20Transformation%20Consistency%20Regularization-%20A%20Semi-Supervised%20Paradigm.md) #augmentation #semi_supervised_learning
 1. [200723 TSIT](papers/200723%20TSIT.md)
 1. [200724 The Surprising Effectiveness of Linear Unsupervised Image-to-Image](papers/200724%20The%20Surprising%20Effectiveness%20of%20Linear%20Unsupervised%20Image-to-Image.md)
 1. [200730 Contrastive Learning for Unpaired Image-to-Image Translation](papers/200730%20Contrastive%20Learning%20for%20Unpaired%20Image-to-Image%20Translation.md) #contrastive_learning
@@ -489,8 +462,6 @@
 1. [201203 BoxInst](papers/201203%20BoxInst.md) #dataset #weak_supervision
 ## interpolation
 1. [200804 Autoencoder Image Interpolation by Shaping the Latent Space](papers/200804%20Autoencoder%20Image%20Interpolation%20by%20Shaping%20the%20Latent%20Space.md)
-## kd
-1. [200702 Interactive Knowledge Distillation](papers/200702%20Interactive%20Knowledge%20Distillation.md)
 ## knowledge base
 1. [200214 Scalable Neural Methods for Reasoning With a Symbolic Knowledge Base](papers/200214%20Scalable%20Neural%20Methods%20for%20Reasoning%20With%20a%20Symbolic%20Knowledge%20Base.md)
 ## language generation
@@ -528,15 +499,13 @@
 ## meta learning
 1. [200221 Learning to Continually Learn](papers/200221%20Learning%20to%20Continually%20Learn.md) #continual_learning
 1. [200312 Online Fast Adaptation and Knowledge Accumulation](papers/200312%20Online%20Fast%20Adaptation%20and%20Knowledge%20Accumulation.md)
-1. [200323 Meta Pseudo Labels](papers/200323%20Meta%20Pseudo%20Labels.md) #semi_supervised
+1. [200323 Meta Pseudo Labels](papers/200323%20Meta%20Pseudo%20Labels.md) #semi_supervised_learning
 1. [200401 Editable Neural Networks](papers/200401%20Editable%20Neural%20Networks.md)
 1. [200402 Tracking by Instance Detection](papers/200402%20Tracking%20by%20Instance%20Detection.md) #tracking
 1. [200706 Meta-Learning Symmetries by Reparameterization](papers/200706%20Meta-Learning%20Symmetries%20by%20Reparameterization.md) #group_equivariance
 ## metric learning
 1. [200319 A unifying mutual information view of metric learning](papers/200319%20A%20unifying%20mutual%20information%20view%20of%20metric%20learning.md)
 ## mixup
-1. [200218 DivideMix](papers/200218%20DivideMix.md) #noise #dataset #semi-supervised_learning
-1. [200306 Semi-Supervised StyleGAN for Disentanglement Learning](papers/200306%20Semi-Supervised%20StyleGAN%20for%20Disentanglement%20Learning.md) #stylegan #semi_supervised
 1. [201220 ResizeMix](papers/201220%20ResizeMix.md)
 ## multimodal
 1. [200401 Pixel-BERT](papers/200401%20Pixel-BERT.md)
@@ -600,10 +569,14 @@
 1. [200427 A Batch Normalized Inference Network Keeps the KL Vanishing Away](papers/200427%20A%20Batch%20Normalized%20Inference%20Network%20Keeps%20the%20KL%20Vanishing%20Away.md)
 ## object detection
 1. [191118 Anchor-Free](papers/191118%20Anchor-Free.md)
+1. [191118 CenterMask](papers/191118%20CenterMask.md) #instance_segmentation #backbone #1stage
 1. [191121 EfficientDet](papers/191121%20EfficientDet.md)
 1. [200103 BlendMask](papers/200103%20BlendMask.md) #instance_segmentation #1stage
 1. [200122 SABL](papers/200122%20SABL.md)
+1. [200129 AP Loss](papers/200129%20AP%20Loss.md) #loss
+1. [200129 Backbone Reallocation for Detection](papers/200129%20Backbone%20Reallocation%20for%20Detection.md) #backbone #nas
 1. [200129 Dense RepPoints](papers/200129%20Dense%20RepPoints.md)
+1. [200129 DetNAS](papers/200129%20DetNAS.md) #nas #backbone
 1. [200129 IOU-aware single stage detector](papers/200129%20IOU-aware%20single%20stage%20detector.md) #1stage
 1. [200130 ATSS](papers/200130%20ATSS.md) #anchor #retinanet #fcos
 1. [200130 AutoAugment](papers/200130%20AutoAugment.md) #augmentation #search
@@ -613,7 +586,30 @@
 1. [200130 Multiple Anchor Learning](papers/200130%20Multiple%20Anchor%20Learning.md) #anchor
 1. [200130 Objects as Points](papers/200130%20Objects%20as%20Points.md) #keypoint
 1. [200130 Soft Anchor-Point](papers/200130%20Soft%20Anchor-Point.md) #anchor
+1. [200211 Object Detection as a Positive-Unlabeled Problem](papers/200211%20Object%20Detection%20as%20a%20Positive-Unlabeled%20Problem.md) #positive_unlabled #dataset
+1. [200212 Solving Missing-Annotation Object Detection with Background](papers/200212%20Solving%20Missing-Annotation%20Object%20Detection%20with%20Background.md) #dataset #noise
 1. [200218 Universal-RCNN](papers/200218%20Universal-RCNN.md) #multi_dataset #graph
+1. [200316 Frustratingly Simple Few-Shot Object Detection](papers/200316%20Frustratingly%20Simple%20Few-Shot%20Object%20Detection.md) #few_shot
+1. [200317 Revisiting the Sibling Head in Object Detector](papers/200317%20Revisiting%20the%20Sibling%20Head%20in%20Object%20Detector.md)
+1. [200319 Revisiting the Sibling Head in Object Detector](papers/200319%20Revisiting%20the%20Sibling%20Head%20in%20Object%20Detector.md) #review
+1. [200320 CentripetalNet](papers/200320%20CentripetalNet.md) #keypoint
+1. [200413 Dynamic R-CNN](papers/200413%20Dynamic%20R-CNN.md)
+1. [200423 YOLOv4](papers/200423%20YOLOv4.md)
+1. [200511 Scope Head for Accurate Localization in Object Detection](papers/200511%20Scope%20Head%20for%20Accurate%20Localization%20in%20Object%20Detection.md)
+1. [200526 End-to-End Object Detection with Transformers](papers/200526%20End-to-End%20Object%20Detection%20with%20Transformers.md) #end2end #matching
+1. [200706 LabelEnc](papers/200706%20LabelEnc.md) #distillation
+1. [200707 AutoAssign](papers/200707%20AutoAssign.md) #anchor_free
+1. [200714 AQD](papers/200714%20AQD.md) #quantization
+1. [200715 Probabilistic Anchor Assignment with IoU Prediction for Object Detection](papers/200715%20Probabilistic%20Anchor%20Assignment%20with%20IoU%20Prediction%20for%20Object%20Detection.md) #anchor #1stage
+1. [200716 RepPoints V2](papers/200716%20RepPoints%20V2.md) #1stage #anchor_free
+1. [200723 PP-YOLO](papers/200723%20PP-YOLO.md) #tuning
+1. [200723 The Devil is in Classification](papers/200723%20The%20Devil%20is%20in%20Classification.md) #longtail
+1. [200727 Corner Proposal Network for Anchor-free, Two-stage Object Detection](papers/200727%20Corner%20Proposal%20Network%20for%20Anchor-free%2C%20Two-stage%20Object%20Detection.md) #anchor_free #2stage
+1. [201207 End-to-End Object Detection with Fully Convolutional Network](papers/201207%20End-to-End%20Object%20Detection%20with%20Fully%20Convolutional%20Network.md) #end2end
+1. [201223 SWA Object Detection](papers/201223%20SWA%20Object%20Detection.md) #swa
+1. [201227 Towards A Category-extended Object Detector without Relabeling or](papers/201227%20Towards%20A%20Category-extended%20Object%20Detector%20without%20Relabeling%20or.md) #continual_learning
+1. [210225 Simple multi-dataset detection](papers/210225%20Simple%20multi-dataset%20detection.md) #multi_dataset
+1. [210316 You Only Look One-level Feature](papers/210316%20You%20Only%20Look%20One-level%20Feature.md)
 1. [210417 TransVG](papers/210417%20TransVG.md) #visual_grounding
 1. [210420 PP-YOLOv2](papers/210420%20PP-YOLOv2.md) #yolo
 1. [210426 MDETR -- Modulated Detection for End-to-End Multi-Modal Understanding](papers/210426%20MDETR%20--%20Modulated%20Detection%20for%20End-to-End%20Multi-Modal%20Understanding.md) #detr #visual_grounding
@@ -697,7 +693,6 @@
 1. [200130 Rethinking Pruning](papers/200130%20Rethinking%20Pruning.md)
 1. [200214 AutoLR](papers/200214%20AutoLR.md) #finetuning
 1. [200218 Picking Winning Tickets Before Training by Preserving Gradient Flow](papers/200218%20Picking%20Winning%20Tickets%20Before%20Training%20by%20Preserving%20Gradient%20Flow.md) #lottery_ticket
-1. [200219 Knapsack Pruning with Inner Distillation](papers/200219%20Knapsack%20Pruning%20with%20Inner%20Distillation.md) #distillation #lightweight
 1. [200224 HRank](papers/200224%20HRank.md) #rank
 1. [200305 Comparing Rewinding and Fine-tuning in Neural Network Pruning](papers/200305%20Comparing%20Rewinding%20and%20Fine-tuning%20in%20Neural%20Network%20Pruning.md)
 1. [200424 Convolution-Weight-Distribution Assumption](papers/200424%20Convolution-Weight-Distribution%20Assumption.md)
@@ -746,7 +741,6 @@
 1. [200306 What is the State of Neural Network Pruning](papers/200306%20What%20is%20the%20State%20of%20Neural%20Network%20Pruning.md) #pruning
 1. [200311 Improved Baselines with Momentum Contrastive Learning](papers/200311%20Improved%20Baselines%20with%20Momentum%20Contrastive%20Learning.md) #contrastive_learning
 1. [200318 A Metric Learning Reality Check](papers/200318%20A%20Metric%20Learning%20Reality%20Check.md) #metric_learning
-1. [200319 Revisiting the Sibling Head in Object Detector](papers/200319%20Revisiting%20the%20Sibling%20Head%20in%20Object%20Detector.md) #detection
 1. [200323 Thoughts on recent papers](papers/200323%20Thoughts%20on%20recent%20papers.md)
 1. [200324 A Systematic Evaluation](papers/200324%20A%20Systematic%20Evaluation.md)
 1. [200325 Rethinking Few-Shot Image Classification](papers/200325%20Rethinking%20Few-Shot%20Image%20Classification.md) #meta_learning
@@ -794,7 +788,9 @@
 ## semantic segmentation
 1. [200323 Learning Dynamic Routing for Semantic Segmentation](papers/200323%20Learning%20Dynamic%20Routing%20for%20Semantic%20Segmentation.md)
 1. [200516 Single-Stage Semantic Segmentation from Image Labels](papers/200516%20Single-Stage%20Semantic%20Segmentation%20from%20Image%20Labels.md)
-## semi supervised
+## semi supervised learning
+1. [200218 DivideMix](papers/200218%20DivideMix.md) #mixup #noise #dataset
+1. [200306 Semi-Supervised StyleGAN for Disentanglement Learning](papers/200306%20Semi-Supervised%20StyleGAN%20for%20Disentanglement%20Learning.md) #stylegan #mixup
 1. [200724 Deep Co-Training with Task Decomposition for Semi-Supervised Domain](papers/200724%20Deep%20Co-Training%20with%20Task%20Decomposition%20for%20Semi-Supervised%20Domain.md) #domain_adaptation
 ## sgld
 1. [200706 Kernel Stein Generative Modeling](papers/200706%20Kernel%20Stein%20Generative%20Modeling.md) #svgd

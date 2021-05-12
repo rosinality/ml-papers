@@ -4,4 +4,4 @@ CentripetalNet: Pursuing High-quality Keypoint Pairs for Object Detection (Zhiwe
 
 키포인트 기반 object detection. 코너 키포인트에서 박스 중앙 방향으로의 오프셋을 예측하게 만드는 방법.
 
-#detection #keypoint 
+#object_detection #keypoint 

@@ -6,4 +6,4 @@ End-to-End Object Detection with Transformers (Nicolas Carion, Francisco Massa, 
 
 POTD!
 
-#detection #end2end #matching
+#object_detection #end2end #matching

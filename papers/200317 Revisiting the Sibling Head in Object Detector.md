@@ -6,4 +6,4 @@ detector에서 regressor와 classifier가 같은 헤드와 같은 위치를 공�
 
 POTD!
 
-#detection 
+#object_detection 

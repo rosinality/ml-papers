@@ -4,4 +4,4 @@ Scope Head for Accurate Localization in Object Detection (Geng Zhan, Dan Xu, Guo
 
 | 2005.04854
 
-#detection 
+#object_detection 

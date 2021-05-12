@@ -5,4 +5,4 @@ Dynamic R-CNN: Towards High Quality Object Detection via Dynamic
 
 2 stage detection 모델의 학습 과정에서 성능이 변화하는 것에 맞춰 proposal label assignment의 threshold와 regression loss의 형태를 변화시키는 방법.
 
-#detection 
+#object_detection 

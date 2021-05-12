@@ -6,4 +6,4 @@ Revisiting the Sibling Head in Object Detector (Guanglu Song, Yu Liu, Xiaogang W
 SABL 같은 요즘 나오는 boundary aware 방법들이나 Cascade R-CNN 같은 방법들, 그리고 DCN 자체와도 겹치는 부분이나 공통된 부분이 좀 있는 것 같아서 고려해볼 부분이 좀 있을 것 같지만, 어쨌든 흥미로운 결과.
 저자들이 이 방법을 사용해서 OpenImage 2019 챌린지 1위를 달성했는데 그에 대한 리포트도 있다: https://arxiv.org/abs/2003.07557
 
-#detection #review 
+#object_detection #review 
