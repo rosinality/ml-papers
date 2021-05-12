@@ -170,6 +170,7 @@
 1. [200519 Improved Noisy Student Training for Automatic Speech Recognition](papers/200519%20Improved%20Noisy%20Student%20Training%20for%20Automatic%20Speech%20Recognition.md) #semi_supervised_learning
 1. [200729 Developing RNN-T Models Surpassing High-Performance Hybrid Models with](papers/200729%20Developing%20RNN-T%20Models%20Surpassing%20High-Performance%20Hybrid%20Models%20with.md) #rnn_t
 1. [201021 FastEmit](papers/201021%20FastEmit.md) #transducer #decoding
+1. [201027 CASS-NAT](papers/201027%20CASS-NAT.md) #non-autoregressive
 1. [201125 Streaming end-to-end multi-talker speech recognition](papers/201125%20Streaming%20end-to-end%20multi-talker%20speech%20recognition.md) #transducer
 ## attention
 1. [200122 Object Contextual Representations](papers/200122%20Object%20Contextual%20Representations.md) #semantic_segmentation
@@ -438,6 +439,7 @@
 1. [200804 Open-Edit](papers/200804%20Open-Edit.md) #image_editing
 1. [200807 Improving the Speed and Quality of GAN by Adversarial Training](papers/200807%20Improving%20the%20Speed%20and%20Quality%20of%20GAN%20by%20Adversarial%20Training.md) #robustness
 1. [201028 Training Generative Adversarial Networks by Solving Ordinary](papers/201028%20Training%20Generative%20Adversarial%20Networks%20by%20Solving%20Ordinary.md) #neural_ode
+1. [201109 Learning Semantic-aware Normalization for Generative Adversarial Networks](papers/201109%20Learning%20Semantic-aware%20Normalization%20for%20Generative%20Adversarial%20Networks.md) #normalization
 1. [201109 Towards a Better Global Loss Landscape of GANs](papers/201109%20Towards%20a%20Better%20Global%20Loss%20Landscape%20of%20GANs.md) #training
 1. [201118 Style Intervention](papers/201118%20Style%20Intervention.md) #semantic_factor
 1. [201124 Adversarial Generation of Continuous Images](papers/201124%20Adversarial%20Generation%20of%20Continuous%20Images.md) #implicit_representation
@@ -483,6 +485,7 @@
 1. [200313 Semantic Pyramid for Image Generation](papers/200313%20Semantic%20Pyramid%20for%20Image%20Generation.md) #perceptual_loss #image_editing
 1. [200616 Improved Techniques for Training Score-Based Generative Models](papers/200616%20Improved%20Techniques%20for%20Training%20Score-Based%20Generative%20Models.md) #ncsn
 1. [201117 DeepNAG](papers/201117%20DeepNAG.md)
+1. [201126 Score-Based Generative Modeling through Stochastic Differential](papers/201126%20Score-Based%20Generative%20Modeling%20through%20Stochastic%20Differential.md) #ddpm
 1. [201202 Improved Contrastive Divergence Training of Energy Based Models](papers/201202%20Improved%20Contrastive%20Divergence%20Training%20of%20Energy%20Based%20Models.md) #energy_based_model
 1. [201204 Few-shot Image Generation with Elastic Weight Consolidation](papers/201204%20Few-shot%20Image%20Generation%20with%20Elastic%20Weight%20Consolidation.md) #few_shot #continual_learning
 1. [201209 Positional Encoding as Spatial Inductive Bias in GANs](papers/201209%20Positional%20Encoding%20as%20Spatial%20Inductive%20Bias%20in%20GANs.md) #positional_encoding
@@ -1092,6 +1095,3 @@
 1. [201126 SelfText Beyond Polygon](papers/201126%20SelfText%20Beyond%20Polygon.md) #ocr
 ## uncategorized
 1. [200211 fastai](papers/200211%20fastai.md)
-1. [201027 CASS-NAT](papers/201027%20CASS-NAT.md)
-1. [201109 Learning Semantic-aware Normalization for Generative Adversarial Networks](papers/201109%20Learning%20Semantic-aware%20Normalization%20for%20Generative%20Adversarial%20Networks.md)
-1. [201126 Score-Based Generative Modeling through Stochastic Differential](papers/201126%20Score-Based%20Generative%20Modeling%20through%20Stochastic%20Differential.md)
