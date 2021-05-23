@@ -197,6 +197,7 @@
 1. [201119 On the Dynamics of Training Attention Models](papers/201119%20On%20the%20Dynamics%20of%20Training%20Attention%20Models.md) #training
 1. [210223 Linear Transformers Are Secretly Fast Weight Memory Systems](papers/210223%20Linear%20Transformers%20Are%20Secretly%20Fast%20Weight%20Memory%20Systems.md) #linear_attention #efficient_attention
 1. [210225 LazyFormer](papers/210225%20LazyFormer.md) #bert
+1. [210517 Pay Attention to MLPs](papers/210517%20Pay%20Attention%20to%20MLPs.md) #mlp
 ## augmentation
 1. [200122 FixMatch](papers/200122%20FixMatch.md) #semi_supervised_learning #manifold #mixup
 1. [200220 Affinity and Diversity](papers/200220%20Affinity%20and%20Diversity.md)
@@ -256,10 +257,6 @@
 1. [200514 Efficient and Scalable Bayesian Neural Nets with Rank-1 Factors](papers/200514%20Efficient%20and%20Scalable%20Bayesian%20Neural%20Nets%20with%20Rank-1%20Factors.md) #ensemble #variational_inference
 ## bert
 1. [200305 What the [MASK]](papers/200305%20What%20the%20%5BMASK%5D.md)
-1. [200405 FastBERT](papers/200405%20FastBERT.md) #distillation #lightweight
-1. [200408 DynaBERT](papers/200408%20DynaBERT.md) #distillation #pruning
-1. [200408 Improving BERT with Self-Supervised Attention](papers/200408%20Improving%20BERT%20with%20Self-Supervised%20Attention.md) #distillation #self_supervised
-1. [200412 XtremeDistil](papers/200412%20XtremeDistil.md) #distillation #lightweight
 1. [200427 DeeBERT](papers/200427%20DeeBERT.md) #lightweight
 1. [200518 Audio ALBERT](papers/200518%20Audio%20ALBERT.md) #audio #representation
 1. [200601 Amnesic Probing](papers/200601%20Amnesic%20Probing.md)
@@ -318,6 +315,7 @@
 1. [210429 With a Little Help from My Friends](papers/210429%20With%20a%20Little%20Help%20from%20My%20Friends.md) #knn
 1. [210510 Self-Supervised Learning with Swin Transformers](papers/210510%20Self-Supervised%20Learning%20with%20Swin%20Transformers.md) #vision_transformer
 1. [210511 VICReg](papers/210511%20VICReg.md)
+1. [210517 Divide and Contrast](papers/210517%20Divide%20and%20Contrast.md) #self_supervised #dataset #distillation
 ## convolution
 1. [200316 SlimConv](papers/200316%20SlimConv.md)
 1. [210429 Decoupled Dynamic Filter Networks](papers/210429%20Decoupled%20Dynamic%20Filter%20Networks.md)
@@ -350,6 +348,10 @@
 1. [200219 Knapsack Pruning with Inner Distillation](papers/200219%20Knapsack%20Pruning%20with%20Inner%20Distillation.md) #pruning #lightweight
 1. [200221 Residual Knowledge Distillation](papers/200221%20Residual%20Knowledge%20Distillation.md)
 1. [200309 Knowledge distillation via adaptive instance normalization](papers/200309%20Knowledge%20distillation%20via%20adaptive%20instance%20normalization.md) #normalization
+1. [200405 FastBERT](papers/200405%20FastBERT.md) #bert #lightweight
+1. [200408 DynaBERT](papers/200408%20DynaBERT.md) #bert #pruning
+1. [200408 Improving BERT with Self-Supervised Attention](papers/200408%20Improving%20BERT%20with%20Self-Supervised%20Attention.md) #bert #self_supervised
+1. [200412 XtremeDistil](papers/200412%20XtremeDistil.md) #bert #lightweight
 1. [200521 Why distillation helps](papers/200521%20Why%20distillation%20helps.md) #calibration
 1. [200629 An EM Approach to Non-autoregressive Conditional Sequence Generation](papers/200629%20An%20EM%20Approach%20to%20Non-autoregressive%20Conditional%20Sequence%20Generation.md) #non-autoregressive
 1. [200701 Go Wide, Then Narrow](papers/200701%20Go%20Wide%2C%20Then%20Narrow.md) #lightweight
@@ -1126,6 +1128,8 @@
 1. [210427 ConTNet](papers/210427%20ConTNet.md)
 1. [210428 Twins](papers/210428%20Twins.md) #local_attention #positional_encoding
 1. [210509 Conformer](papers/210509%20Conformer.md)
+1. [210515 Are Convolutional Neural Networks or Transformers more like human vision](papers/210515%20Are%20Convolutional%20Neural%20Networks%20or%20Transformers%20more%20like%20human%20vision.md) #cnn #inductive_bias
+1. [210517 Rethinking the Design Principles of Robust Vision Transformer](papers/210517%20Rethinking%20the%20Design%20Principles%20of%20Robust%20Vision%20Transformer.md) #robustness
 ## visual grounding
 1. [210401 Towards General Purpose Vision Systems](papers/210401%20Towards%20General%20Purpose%20Vision%20Systems.md)
 1. [210510 Visual Grounding with Transformers](papers/210510%20Visual%20Grounding%20with%20Transformers.md)
