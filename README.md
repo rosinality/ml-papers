@@ -63,6 +63,7 @@
 1. [language generation](#language-generation)
 1. [language model](#language-model)
 1. [lightweight](#lightweight)
+1. [lm](#lm)
 1. [local attention](#local-attention)
 1. [loss](#loss)
 1. [loss surface](#loss-surface)
@@ -156,8 +157,6 @@
 1. [200130 Once for All](papers/200130%20Once%20for%20All.md) #deploy
 ## adversarial training
 1. [200130 Adversarial Examples Improve Image Recognition](papers/200130%20Adversarial%20Examples%20Improve%20Image%20Recognition.md)
-1. [200211 Fundamental Tradeoffs between Invariance and Sensitivity to Adversarial](papers/200211%20Fundamental%20Tradeoffs%20between%20Invariance%20and%20Sensitivity%20to%20Adversarial.md) #robustness
-1. [200304 A Closer Look at Accuracy vs. Robustness](papers/200304%20A%20Closer%20Look%20at%20Accuracy%20vs.%20Robustness.md) #robustness
 1. [200625 Smooth Adversarial Training](papers/200625%20Smooth%20Adversarial%20Training.md)
 ## antialiasing
 1. [201120 An Effective Anti-Aliasing Approach for Residual Networks](papers/201120%20An%20Effective%20Anti-Aliasing%20Approach%20for%20Residual%20Networks.md)
@@ -176,6 +175,7 @@
 1. [201021 FastEmit](papers/201021%20FastEmit.md) #transducer #decoding
 1. [201027 CASS-NAT](papers/201027%20CASS-NAT.md) #non-autoregressive
 1. [201125 Streaming end-to-end multi-talker speech recognition](papers/201125%20Streaming%20end-to-end%20multi-talker%20speech%20recognition.md) #transducer
+1. [210524 Unsupervised Speech Recognition](papers/210524%20Unsupervised%20Speech%20Recognition.md) #unsupervised_training
 ## attention
 1. [200122 Object Contextual Representations](papers/200122%20Object%20Contextual%20Representations.md) #semantic_segmentation
 1. [200129 Empirical Attention](papers/200129%20Empirical%20Attention.md)
@@ -198,6 +198,7 @@
 1. [210223 Linear Transformers Are Secretly Fast Weight Memory Systems](papers/210223%20Linear%20Transformers%20Are%20Secretly%20Fast%20Weight%20Memory%20Systems.md) #linear_attention #efficient_attention
 1. [210225 LazyFormer](papers/210225%20LazyFormer.md) #bert
 1. [210517 Pay Attention to MLPs](papers/210517%20Pay%20Attention%20to%20MLPs.md) #mlp
+1. [210524 Self-Attention Networks Can Process Bounded Hierarchical Languages](papers/210524%20Self-Attention%20Networks%20Can%20Process%20Bounded%20Hierarchical%20Languages.md) #nlp
 ## augmentation
 1. [200122 FixMatch](papers/200122%20FixMatch.md) #semi_supervised_learning #manifold #mixup
 1. [200220 Affinity and Diversity](papers/200220%20Affinity%20and%20Diversity.md)
@@ -387,6 +388,7 @@
 1. [210415 See through Gradients](papers/210415%20See%20through%20Gradients.md)
 ## few shot
 1. [200228 AdarGCN](papers/200228%20AdarGCN.md) #graph
+1. [210524 True Few-Shot Learning with Language Models](papers/210524%20True%20Few-Shot%20Learning%20with%20Language%20Models.md) #lm
 ## finetuning
 1. [200214 AutoLR](papers/200214%20AutoLR.md) #pruning
 1. [200426 Masking as an Efficient Alternative to Finetuning for Pretrained](papers/200426%20Masking%20as%20an%20Efficient%20Alternative%20to%20Finetuning%20for%20Pretrained.md)
@@ -597,8 +599,11 @@
 1. [200624 Neural Architecture Design for GPU-Efficient Networks](papers/200624%20Neural%20Architecture%20Design%20for%20GPU-Efficient%20Networks.md)
 1. [201124 MicroNet](papers/201124%20MicroNet.md)
 1. [210507 Pareto-Optimal Quantized ResNet Is Mostly 4-bit](papers/210507%20Pareto-Optimal%20Quantized%20ResNet%20Is%20Mostly%204-bit.md) #quantization
+## lm
+1. [210524 StructuralLM](papers/210524%20StructuralLM.md) #layout
 ## local attention
 1. [210323 Scaling Local Self-Attention for Parameter Efficient Visual Backbones](papers/210323%20Scaling%20Local%20Self-Attention%20for%20Parameter%20Efficient%20Visual%20Backbones.md)
+1. [210526 Aggregating Nested Transformers](papers/210526%20Aggregating%20Nested%20Transformers.md) #vit
 ## loss
 1. [200712 It Is Likely That Your Loss Should be a Likelihood](papers/200712%20It%20Is%20Likely%20That%20Your%20Loss%20Should%20be%20a%20Likelihood.md)
 ## loss surface
@@ -955,7 +960,10 @@
 1. [210508 Thoughts on recent papers](papers/210508%20Thoughts%20on%20recent%20papers.md)
 1. [210512 When Does Contrastive Visual Representation Learning Work](papers/210512%20When%20Does%20Contrastive%20Visual%20Representation%20Learning%20Work.md) #contrastive_learning #self_supervised #transfer
 ## robustness
+1. [200211 Fundamental Tradeoffs between Invariance and Sensitivity to Adversarial](papers/200211%20Fundamental%20Tradeoffs%20between%20Invariance%20and%20Sensitivity%20to%20Adversarial.md) #adversarial_training
+1. [200304 A Closer Look at Accuracy vs. Robustness](papers/200304%20A%20Closer%20Look%20at%20Accuracy%20vs.%20Robustness.md) #adversarial_training
 1. [200810 Informative Dropout for Robust Representation Learning](papers/200810%20Informative%20Dropout%20for%20Robust%20Representation%20Learning.md)
+1. [210521 Intriguing Properties of Vision Transformers](papers/210521%20Intriguing%20Properties%20of%20Vision%20Transformers.md) #vit
 ## saliency
 1. [200406 There and Back Again](papers/200406%20There%20and%20Back%20Again.md)
 ## salient object detection
