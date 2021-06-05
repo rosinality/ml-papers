@@ -62,7 +62,9 @@
 1. [knowledge base](#knowledge-base)
 1. [language generation](#language-generation)
 1. [language model](#language-model)
+1. [layout](#layout)
 1. [lightweight](#lightweight)
+1. [line](#line)
 1. [lm](#lm)
 1. [local attention](#local-attention)
 1. [loss](#loss)
@@ -145,6 +147,7 @@
 1. [vision language](#vision-language)
 1. [vision transformer](#vision-transformer)
 1. [visual grounding](#visual-grounding)
+1. [vit](#vit)
 1. [vocoder](#vocoder)
 1. [weak supervision](#weak-supervision)
 1. [uncategorized](#uncategorized)
@@ -317,6 +320,7 @@
 1. [210510 Self-Supervised Learning with Swin Transformers](papers/210510%20Self-Supervised%20Learning%20with%20Swin%20Transformers.md) #vision_transformer
 1. [210511 VICReg](papers/210511%20VICReg.md)
 1. [210517 Divide and Contrast](papers/210517%20Divide%20and%20Contrast.md) #self_supervised #dataset #distillation
+1. [210601 Exploring the Diversity and Invariance in Yourself for Visual Pre-Training Task](papers/210601%20Exploring%20the%20Diversity%20and%20Invariance%20in%20Yourself%20for%20Visual%20Pre-Training%20Task.md)
 ## convolution
 1. [200316 SlimConv](papers/200316%20SlimConv.md)
 1. [210429 Decoupled Dynamic Filter Networks](papers/210429%20Decoupled%20Dynamic%20Filter%20Networks.md)
@@ -324,10 +328,14 @@
 1. [200509 Building a Manga Dataset](papers/200509%20Building%20a%20Manga%20Dataset.md)
 1. [201130 Image Quality Assessment for Perceptual Image Restoration](papers/201130%20Image%20Quality%20Assessment%20for%20Perceptual%20Image%20Restoration.md) #score
 1. [201201 Weakly-Supervised Arbitrary-Shaped Text Detection with](papers/201201%20Weakly-Supervised%20Arbitrary-Shaped%20Text%20Detection%20with.md) #ocr #weak_supervision
+1. [210601 Comparing Test Sets with Item Response Theory](papers/210601%20Comparing%20Test%20Sets%20with%20Item%20Response%20Theory.md)
 ## ddpm
 1. [200619 Denoising Diffusion Probabilistic Models](papers/200619%20Denoising%20Diffusion%20Probabilistic%20Models.md)
+1. [201214 Learning Energy-Based Models by Diffusion Recovery Likelihood](papers/201214%20Learning%20Energy-Based%20Models%20by%20Diffusion%20Recovery%20Likelihood.md) #energy_based_model
 1. [210506 DiffSinger](papers/210506%20DiffSinger.md) #singing_voice_synthesis
 1. [210511 Diffusion Models Beat GANs on Image Synthesis](papers/210511%20Diffusion%20Models%20Beat%20GANs%20on%20Image%20Synthesis.md)
+1. [210528 Gotta Go Fast When Generating Data with Score-Based Models](papers/210528%20Gotta%20Go%20Fast%20When%20Generating%20Data%20with%20Score-Based%20Models.md)
+1. [210531 On Fast Sampling of Diffusion Probabilistic Models](papers/210531%20On%20Fast%20Sampling%20of%20Diffusion%20Probabilistic%20Models.md)
 ## decoding
 1. [200516 Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](papers/200516%20Layer-Wise%20Cross-View%20Decoding%20for%20Sequence-to-Sequence%20Learning.md)
 ## deep prior
@@ -371,6 +379,7 @@
 1. [210324 Finetuning Pretrained Transformers into RNNs](papers/210324%20Finetuning%20Pretrained%20Transformers%20into%20RNNs.md)
 1. [210505 Beyond Self-attention](papers/210505%20Beyond%20Self-attention.md)
 1. [210510 Poolingformer](papers/210510%20Poolingformer.md)
+1. [210603 Luna](papers/210603%20Luna.md)
 ## embedding
 1. [200424 All Word Embeddings from One Embedding](papers/200424%20All%20Word%20Embeddings%20from%20One%20Embedding.md)
 1. [200717 A Unifying Perspective on Neighbor Embeddings along the](papers/200717%20A%20Unifying%20Perspective%20on%20Neighbor%20Embeddings%20along%20the.md)
@@ -381,7 +390,6 @@
 ## energy based model
 1. [200504 How to Train Your Energy-Based Model for Regression](papers/200504%20How%20to%20Train%20Your%20Energy-Based%20Model%20for%20Regression.md)
 1. [201124 Energy-Based Models for Continual Learning](papers/201124%20Energy-Based%20Models%20for%20Continual%20Learning.md) #continual_learning
-1. [201214 Learning Energy-Based Models by Diffusion Recovery Likelihood](papers/201214%20Learning%20Energy-Based%20Models%20by%20Diffusion%20Recovery%20Likelihood.md) #ddpm
 ## ensemble
 1. [200217 BatchEnsemble](papers/200217%20BatchEnsemble.md)
 ## federated learning
@@ -595,15 +603,19 @@
 1. [210318 GPT Understands, Too](papers/210318%20GPT%20Understands%2C%20Too.md) #finetuning #prompt
 1. [210407 Revisiting Simple Neural Probabilistic Language Models](papers/210407%20Revisiting%20Simple%20Neural%20Probabilistic%20Language%20Models.md)
 1. [210420 Carbon Emissions and Large Neural Network Training](papers/210420%20Carbon%20Emissions%20and%20Large%20Neural%20Network%20Training.md) #nlp
+## layout
+1. [210601 Incorporating Visual Layout Structures for Scientific Text Classification](papers/210601%20Incorporating%20Visual%20Layout%20Structures%20for%20Scientific%20Text%20Classification.md)
 ## lightweight
 1. [200624 Neural Architecture Design for GPU-Efficient Networks](papers/200624%20Neural%20Architecture%20Design%20for%20GPU-Efficient%20Networks.md)
 1. [201124 MicroNet](papers/201124%20MicroNet.md)
 1. [210507 Pareto-Optimal Quantized ResNet Is Mostly 4-bit](papers/210507%20Pareto-Optimal%20Quantized%20ResNet%20Is%20Mostly%204-bit.md) #quantization
+## line
+1. [210601 Towards Real-time and Light-weight Line Segment Detection](papers/210601%20Towards%20Real-time%20and%20Light-weight%20Line%20Segment%20Detection.md)
 ## lm
 1. [210524 StructuralLM](papers/210524%20StructuralLM.md) #layout
+1. [210528 ByT5](papers/210528%20ByT5.md)
 ## local attention
 1. [210323 Scaling Local Self-Attention for Parameter Efficient Visual Backbones](papers/210323%20Scaling%20Local%20Self-Attention%20for%20Parameter%20Efficient%20Visual%20Backbones.md)
-1. [210526 Aggregating Nested Transformers](papers/210526%20Aggregating%20Nested%20Transformers.md) #vit
 ## loss
 1. [200712 It Is Likely That Your Loss Should be a Likelihood](papers/200712%20It%20Is%20Likely%20That%20Your%20Loss%20Should%20be%20a%20Likelihood.md)
 ## loss surface
@@ -761,6 +773,7 @@
 1. [210417 TransVG](papers/210417%20TransVG.md) #visual_grounding
 1. [210420 PP-YOLOv2](papers/210420%20PP-YOLOv2.md) #yolo
 1. [210426 MDETR -- Modulated Detection for End-to-End Multi-Modal Understanding](papers/210426%20MDETR%20--%20Modulated%20Detection%20for%20End-to-End%20Multi-Modal%20Understanding.md) #detr #visual_grounding
+1. [210601 You Only Look at One Sequence](papers/210601%20You%20Only%20Look%20at%20One%20Sequence.md) #vit
 ## ocr
 1. [191231 LayoutLM](papers/191231%20LayoutLM.md)
 1. [200217 Text Perceptron](papers/200217%20Text%20Perceptron.md)
@@ -889,6 +902,7 @@
 1. [200707 Remix](papers/200707%20Remix.md) #imbalanced
 1. [200721 Improving compute efficacy frontiers with SliceOut](papers/200721%20Improving%20compute%20efficacy%20frontiers%20with%20SliceOut.md) #efficient_training
 1. [201122 Stable Weight Decay Regularization](papers/201122%20Stable%20Weight%20Decay%20Regularization.md)
+1. [210603 When Vision Transformers Outperform ResNets without Pretraining or Strong Data Augmentations](papers/210603%20When%20Vision%20Transformers%20Outperform%20ResNets%20without%20Pretraining%20or%20Strong%20Data%20Augmentations.md) #vit
 ## reinforcement learning
 1. [191120 Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](papers/191120%20Mastering%20Atari%2C%20Go%2C%20Chess%20and%20Shogi%20by%20Planning%20with%20a%20Learned%20Model.md)
 1. [200130 Mastering Atari, Go, Chess, Shogi](papers/200130%20Mastering%20Atari%2C%20Go%2C%20Chess%2C%20Shogi.md)
@@ -1141,6 +1155,10 @@
 ## visual grounding
 1. [210401 Towards General Purpose Vision Systems](papers/210401%20Towards%20General%20Purpose%20Vision%20Systems.md)
 1. [210510 Visual Grounding with Transformers](papers/210510%20Visual%20Grounding%20with%20Transformers.md)
+## vit
+1. [210526 Aggregating Nested Transformers](papers/210526%20Aggregating%20Nested%20Transformers.md) #local_attention
+1. [210529 Less is More](papers/210529%20Less%20is%20More.md)
+1. [210603 DynamicViT](papers/210603%20DynamicViT.md) #sparse_attention
 ## vocoder
 1. [200512 FeatherWave](papers/200512%20FeatherWave.md)
 1. [201118 Universal MelGAN](papers/201118%20Universal%20MelGAN.md)
@@ -1148,3 +1166,4 @@
 1. [201126 SelfText Beyond Polygon](papers/201126%20SelfText%20Beyond%20Polygon.md) #ocr
 ## uncategorized
 1. [200211 fastai](papers/200211%20fastai.md)
+1. [210603 The Case for Translation-Invariant Self-Attention in Transformer-Based Language Models](papers/210603%20The%20Case%20for%20Translation-Invariant%20Self-Attention%20in%20Transformer-Based%20Language%20Models.md)
