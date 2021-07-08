@@ -57,7 +57,6 @@
 1. [image generation](#image-generation)
 1. [img2img](#img2img)
 1. [implicit model](#implicit-model)
-1. [implicit representation](#implicit-representation)
 1. [instance segmentation](#instance-segmentation)
 1. [interpolation](#interpolation)
 1. [knowledge base](#knowledge-base)
@@ -206,6 +205,7 @@
 1. [210517 Pay Attention to MLPs](papers/210517%20Pay%20Attention%20to%20MLPs.md) #mlp
 1. [210524 Self-Attention Networks Can Process Bounded Hierarchical Languages](papers/210524%20Self-Attention%20Networks%20Can%20Process%20Bounded%20Hierarchical%20Languages.md) #nlp
 1. [210607 Refiner](papers/210607%20Refiner.md) #vit
+1. [210705 What Makes for Hierarchical Vision Transformer](papers/210705%20What%20Makes%20for%20Hierarchical%20Vision%20Transformer.md) #vit #mlp #local_attention
 ## augmentation
 1. [200122 FixMatch](papers/200122%20FixMatch.md) #semi_supervised_learning #manifold #mixup
 1. [200220 Affinity and Diversity](papers/200220%20Affinity%20and%20Diversity.md)
@@ -257,6 +257,7 @@
 1. [210505 RepMLP](papers/210505%20RepMLP.md) #mlp
 1. [210506 Do You Even Need Attention](papers/210506%20Do%20You%20Even%20Need%20Attention.md) #mlp
 1. [210510 ResMLP](papers/210510%20ResMLP.md) #mlp
+1. [210617 Layer Folding](papers/210617%20Layer%20Folding.md) #efficiency #pruning
 ## bayesian
 1. [200207 Bayes Posterior](papers/200207%20Bayes%20Posterior.md)
 1. [200210 Liberty or Depth](papers/200210%20Liberty%20or%20Depth.md) #mean_field
@@ -347,6 +348,7 @@
 1. [210610 Cascaded Diffusion Models for High Fidelity Image Generation](papers/210610%20Cascaded%20Diffusion%20Models%20for%20High%20Fidelity%20Image%20Generation.md)
 1. [210610 Score-based Generative Modeling in Latent Space](papers/210610%20Score-based%20Generative%20Modeling%20in%20Latent%20Space.md)
 1. [210612 D2C](papers/210612%20D2C.md)
+1. [210701 Variational Diffusion Models](papers/210701%20Variational%20Diffusion%20Models.md)
 ## decoding
 1. [200516 Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](papers/200516%20Layer-Wise%20Cross-View%20Decoding%20for%20Sequence-to-Sequence%20Learning.md)
 1. [200601 Cascaded Text Generation with Markov Transformers](papers/200601%20Cascaded%20Text%20Generation%20with%20Markov%20Transformers.md) #text_generation
@@ -389,6 +391,8 @@
 1. [210505 Beyond Self-attention](papers/210505%20Beyond%20Self-attention.md)
 1. [210510 Poolingformer](papers/210510%20Poolingformer.md)
 1. [210603 Luna](papers/210603%20Luna.md)
+1. [210623 Stable, Fast and Accurate](papers/210623%20Stable%2C%20Fast%20and%20Accurate.md)
+1. [210705 Long-Short Transformer](papers/210705%20Long-Short%20Transformer.md) #local_attention
 ## embedding
 1. [200424 All Word Embeddings from One Embedding](papers/200424%20All%20Word%20Embeddings%20from%20One%20Embedding.md)
 1. [200717 A Unifying Perspective on Neighbor Embeddings along the](papers/200717%20A%20Unifying%20Perspective%20on%20Neighbor%20Embeddings%20along%20the.md)
@@ -411,6 +415,7 @@
 1. [200214 AutoLR](papers/200214%20AutoLR.md) #pruning
 1. [200426 Masking as an Efficient Alternative to Finetuning for Pretrained](papers/200426%20Masking%20as%20an%20Efficient%20Alternative%20to%20Finetuning%20for%20Pretrained.md)
 1. [200709 Sample-based Regularization](papers/200709%20Sample-based%20Regularization.md) #transfer
+1. [210617 LoRA](papers/210617%20LoRA.md) #adapter #lm
 ## flow
 1. [200220 Regularized Autoencoders via Relaxed Injective Probability Flow](papers/200220%20Regularized%20Autoencoders%20via%20Relaxed%20Injective%20Probability%20Flow.md)
 1. [200227 Woodbury Transformations for Deep Generative Flows](papers/200227%20Woodbury%20Transformations%20for%20Deep%20Generative%20Flows.md)
@@ -504,6 +509,7 @@
 1. [210426 EigenGAN](papers/210426%20EigenGAN.md) #semantic_factor
 1. [210608 Data-Efficient Instance Generation from Instance Discrimination](papers/210608%20Data-Efficient%20Instance%20Generation%20from%20Instance%20Discrimination.md) #contrastive_learning
 1. [210614 Improved Transformer for High-Resolution GANs](papers/210614%20Improved%20Transformer%20for%20High-Resolution%20GANs.md) #transformer #efficient_training
+1. [210623 Alias-Free Generative Adversarial Networks](papers/210623%20Alias-Free%20Generative%20Adversarial%20Networks.md) #antialiasing
 ## gan inversion
 1. [200331 In-Domain GAN Inversion for Real Image Editing](papers/200331%20In-Domain%20GAN%20Inversion%20for%20Real%20Image%20Editing.md)
 1. [200703 Collaborative Learning for Faster StyleGAN Embedding](papers/200703%20Collaborative%20Learning%20for%20Faster%20StyleGAN%20Embedding.md)
@@ -570,8 +576,6 @@
 1. [201205 Spatially-Adaptive Pixelwise Networks for Fast Image Translation](papers/201205%20Spatially-Adaptive%20Pixelwise%20Networks%20for%20Fast%20Image%20Translation.md) #implicit_representation
 ## implicit model
 1. [200615 Multiscale Deep Equilibrium Models](papers/200615%20Multiscale%20Deep%20Equilibrium%20Models.md)
-## implicit representation
-1. [210506 ACORN](papers/210506%20ACORN.md) #positional_encoding
 ## instance segmentation
 1. [200129 BlendMask](papers/200129%20BlendMask.md)
 1. [200129 COCO 2018 Instance Segmentation](papers/200129%20COCO%202018%20Instance%20Segmentation.md) #challenge
@@ -627,6 +631,7 @@
 ## lm
 1. [210524 StructuralLM](papers/210524%20StructuralLM.md) #layout
 1. [210528 ByT5](papers/210528%20ByT5.md)
+1. [210623 Charformer](papers/210623%20Charformer.md) #tokenizer
 ## local attention
 1. [210323 Scaling Local Self-Attention for Parameter Efficient Visual Backbones](papers/210323%20Scaling%20Local%20Self-Attention%20for%20Parameter%20Efficient%20Visual%20Backbones.md)
 ## loss
@@ -681,6 +686,7 @@
 1. [210324 Mip-NeRF](papers/210324%20Mip-NeRF.md)
 1. [210325 KiloNeRF](papers/210325%20KiloNeRF.md)
 1. [210325 PlenOctrees for Real-time Rendering of Neural Radiance Fields](papers/210325%20PlenOctrees%20for%20Real-time%20Rendering%20of%20Neural%20Radiance%20Fields.md)
+1. [210706 Depth-supervised NeRF](papers/210706%20Depth-supervised%20NeRF.md)
 ## neural computer
 1. [200720 Distributed Associative Memory Network with Memory Refreshing Loss](papers/200720%20Distributed%20Associative%20Memory%20Network%20with%20Memory%20Refreshing%20Loss.md)
 ## neural ode
@@ -832,6 +838,8 @@
 ## positional encoding
 1. [200628 Rethinking Positional Encoding in Language Pre-training](papers/200628%20Rethinking%20Positional%20Encoding%20in%20Language%20Pre-training.md)
 1. [210408 Modulated Periodic Activations for Generalizable Local Functional](papers/210408%20Modulated%20Periodic%20Activations%20for%20Generalizable%20Local%20Functional.md) #periodic_activation #implicit_representation
+1. [210506 ACORN](papers/210506%20ACORN.md) #implicit_representation
+1. [210706 Rethinking Positional Encoding](papers/210706%20Rethinking%20Positional%20Encoding.md)
 ## pretraining
 1. [190620 XLNet](papers/190620%20XLNet.md) #language_model
 1. [190729 RoBERTa](papers/190729%20RoBERTa.md) #language_model
@@ -1121,10 +1129,12 @@
 1. [210423 M3DeTR](papers/210423%20M3DeTR.md) #3d
 1. [210509 FNet](papers/210509%20FNet.md) #efficient_attention #fourier
 1. [210613 Thinking Like Transformers](papers/210613%20Thinking%20Like%20Transformers.md)
+1. [210617 Multi-head or Single-head](papers/210617%20Multi-head%20or%20Single-head.md)
 ## tropical geometry
 1. [200220 On the Decision Boundaries of Neural Networks](papers/200220%20On%20the%20Decision%20Boundaries%20of%20Neural%20Networks.md)
 ## tts
 1. [200512 Flowtron](papers/200512%20Flowtron.md) #flow
+1. [210617 WaveGrad 2](papers/210617%20WaveGrad%202.md)
 ## unsupervised img2img
 1. [200310 Unpaired Image-to-Image Translation using Adversarial Consistency Loss](papers/200310%20Unpaired%20Image-to-Image%20Translation%20using%20Adversarial%20Consistency%20Loss.md)
 1. [200611 Rethinking the Truly Unsupervised Image-to-Image Translation](papers/200611%20Rethinking%20the%20Truly%20Unsupervised%20Image-to-Image%20Translation.md)
@@ -1184,6 +1194,12 @@
 1. [210609 CoAtNet](papers/210609%20CoAtNet.md)
 1. [210614 Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](papers/210614%20Delving%20Deep%20into%20the%20Generalization%20of%20Vision%20Transformers%20under%20Distribution%20Shifts.md) #robustness
 1. [210615 Revisiting the Calibration of Modern Neural Networks](papers/210615%20Revisiting%20the%20Calibration%20of%20Modern%20Neural%20Networks.md) #mlp #calibration
+1. [210617 XCiT](papers/210617%20XCiT.md) #efficient_attention
+1. [210624 Exploring Corruption Robustness](papers/210624%20Exploring%20Corruption%20Robustness.md) #robustness #mlp
+1. [210624 VOLO](papers/210624%20VOLO.md) #efficient_attention
+1. [210624 Video Swin Transformer](papers/210624%20Video%20Swin%20Transformer.md) #local_attention #video #video_transformer
+1. [210701 CSWin Transformer](papers/210701%20CSWin%20Transformer.md) #efficient_attention #local_attention
+1. [210701 Focal Self-attention for Local-Global Interactions in Vision Transformers](papers/210701%20Focal%20Self-attention%20for%20Local-Global%20Interactions%20in%20Vision%20Transformers.md) #local_attention
 ## vocoder
 1. [200512 FeatherWave](papers/200512%20FeatherWave.md)
 1. [201118 Universal MelGAN](papers/201118%20Universal%20MelGAN.md)
