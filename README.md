@@ -19,13 +19,13 @@
 1. [channel attention](#channel-attention)
 1. [chat](#chat)
 1. [computation](#computation)
-1. [continual learning](#continual-learning)
 1. [contrastive learning](#contrastive-learning)
 1. [convolution](#convolution)
 1. [dataset](#dataset)
 1. [ddpm](#ddpm)
 1. [decoding](#decoding)
 1. [deep prior](#deep-prior)
+1. [dialog](#dialog)
 1. [differentiable operator](#differentiable-operator)
 1. [differentiable tree](#differentiable-tree)
 1. [discrete vae](#discrete-vae)
@@ -98,6 +98,7 @@
 1. [pooling](#pooling)
 1. [pose](#pose)
 1. [positional encoding](#positional-encoding)
+1. [practice](#practice)
 1. [pretraining](#pretraining)
 1. [probabilistic model](#probabilistic-model)
 1. [pruning](#pruning)
@@ -109,6 +110,7 @@
 1. [representation](#representation)
 1. [resampling](#resampling)
 1. [restoration](#restoration)
+1. [retrieval](#retrieval)
 1. [review](#review)
 1. [robustness](#robustness)
 1. [saliency](#saliency)
@@ -137,6 +139,7 @@
 1. [transformer](#transformer)
 1. [tropical geometry](#tropical-geometry)
 1. [tts](#tts)
+1. [uncertainty](#uncertainty)
 1. [unsupervised img2img](#unsupervised-img2img)
 1. [unsupervised nmt](#unsupervised-nmt)
 1. [vae](#vae)
@@ -154,6 +157,7 @@
 1. [201019 Smooth activations and reproducibility in deep networks](papers/201019%20Smooth%20activations%20and%20reproducibility%20in%20deep%20networks.md) #stability
 ## active learning
 1. [200630 Similarity Search for Efficient Active Learning and Search of Rare](papers/200630%20Similarity%20Search%20for%20Efficient%20Active%20Learning%20and%20Search%20of%20Rare.md)
+1. [210729 Batch Active Learning at Scale](papers/210729%20Batch%20Active%20Learning%20at%20Scale.md)
 ## adaptation
 1. [200129 Side-Tuning](papers/200129%20Side-Tuning.md)
 1. [200130 Once for All](papers/200130%20Once%20for%20All.md) #deploy
@@ -249,6 +253,7 @@
 1. [201015 HS-ResNet](papers/201015%20HS-ResNet.md) #multiscale
 1. [201221 FcaNet](papers/201221%20FcaNet.md) #channel_attention
 1. [210226 Transformer in Transformer](papers/210226%20Transformer%20in%20Transformer.md) #vision_transformer
+1. [210304 Barlow Twins](papers/210304%20Barlow%20Twins.md) #self_supervised #contrastive_learning
 1. [210310 Involution](papers/210310%20Involution.md) #convolution #attention
 1. [210312 Revisiting ResNets](papers/210312%20Revisiting%20ResNets.md) #resnet
 1. [210317 Learning to Resize Images for Computer Vision Tasks](papers/210317%20Learning%20to%20Resize%20Images%20for%20Computer%20Vision%20Tasks.md) #resizing
@@ -258,6 +263,9 @@
 1. [210506 Do You Even Need Attention](papers/210506%20Do%20You%20Even%20Need%20Attention.md) #mlp
 1. [210510 ResMLP](papers/210510%20ResMLP.md) #mlp
 1. [210617 Layer Folding](papers/210617%20Layer%20Folding.md) #efficiency #pruning
+1. [210628 Early Convolutions Help Transformers See Better](papers/210628%20Early%20Convolutions%20Help%20Transformers%20See%20Better.md) #cnn #vit
+1. [210718 AS-MLP](papers/210718%20AS-MLP.md) #mlp
+1. [210726 Contextual Transformer Networks for Visual Recognition](papers/210726%20Contextual%20Transformer%20Networks%20for%20Visual%20Recognition.md)
 ## bayesian
 1. [200207 Bayes Posterior](papers/200207%20Bayes%20Posterior.md)
 1. [200210 Liberty or Depth](papers/200210%20Liberty%20or%20Depth.md) #mean_field
@@ -265,10 +273,6 @@
 1. [200514 Efficient and Scalable Bayesian Neural Nets with Rank-1 Factors](papers/200514%20Efficient%20and%20Scalable%20Bayesian%20Neural%20Nets%20with%20Rank-1%20Factors.md) #ensemble #variational_inference
 ## bert
 1. [200305 What the [MASK]](papers/200305%20What%20the%20%5BMASK%5D.md)
-1. [200405 FastBERT](papers/200405%20FastBERT.md) #distillation #lightweight
-1. [200408 DynaBERT](papers/200408%20DynaBERT.md) #distillation #pruning
-1. [200408 Improving BERT with Self-Supervised Attention](papers/200408%20Improving%20BERT%20with%20Self-Supervised%20Attention.md) #distillation #self_supervised
-1. [200412 XtremeDistil](papers/200412%20XtremeDistil.md) #distillation #lightweight
 1. [200427 DeeBERT](papers/200427%20DeeBERT.md) #lightweight
 1. [200518 Audio ALBERT](papers/200518%20Audio%20ALBERT.md) #audio #representation
 1. [200601 Amnesic Probing](papers/200601%20Amnesic%20Probing.md)
@@ -281,6 +285,7 @@
 1. [200221 Calibrating Deep Neural Networks using Focal Loss](papers/200221%20Calibrating%20Deep%20Neural%20Networks%20using%20Focal%20Loss.md) #loss
 1. [200223 Being Bayesian, Even Just a Bit, Fixes Overconfidence in ReLU Networks](papers/200223%20Being%20Bayesian%2C%20Even%20Just%20a%20Bit%2C%20Fixes%20Overconfidence%20in%20ReLU%20Networks.md) #bayesian
 1. [200620 Regression Prior Networks](papers/200620%20Regression%20Prior%20Networks.md)
+1. [210730 Soft Calibration Objectives for Neural Networks](papers/210730%20Soft%20Calibration%20Objectives%20for%20Neural%20Networks.md)
 ## causality
 1. [200518 An Analysis of the Adaptation Speed of Causal Models](papers/200518%20An%20Analysis%20of%20the%20Adaptation%20Speed%20of%20Causal%20Models.md)
 ## channel attention
@@ -290,8 +295,6 @@
 ## computation
 1. [200213 Training Large Neural Networks with Constant Memory using a New Execution Algorithm](papers/200213%20Training%20Large%20Neural%20Networks%20with%20Constant%20Memory%20using%20a%20New%20Execution%20Algorithm.md)
 1. [201204 Nimble](papers/201204%20Nimble.md)
-## continual learning
-1. [200508 Transforming task representations to perform novel tasks](papers/200508%20Transforming%20task%20representations%20to%20perform%20novel%20tasks.md) #multitask
 ## contrastive learning
 1. [200213 A Simple Framework for Contrastive Learning of Visual Representations](papers/200213%20A%20Simple%20Framework%20for%20Contrastive%20Learning%20of%20Visual%20Representations.md) #augmentation
 1. [200309 Improved Baselines with Momentum Contrastive Learning](papers/200309%20Improved%20Baselines%20with%20Momentum%20Contrastive%20Learning.md)
@@ -318,7 +321,6 @@
 1. [201212 Contrastive Learning for Label-Efficient Semantic Segmentation](papers/201212%20Contrastive%20Learning%20for%20Label-Efficient%20Semantic%20Segmentation.md) #semantic_segmentation
 1. [201221 Online Bag-of-Visual-Words Generation for Unsupervised Representation](papers/201221%20Online%20Bag-of-Visual-Words%20Generation%20for%20Unsupervised%20Representation.md) #self_supervised #discrete_vae
 1. [201226 Spatial Contrastive Learning for Few-Shot Classification](papers/201226%20Spatial%20Contrastive%20Learning%20for%20Few-Shot%20Classification.md) #few_shot #attention
-1. [210304 Barlow Twins](papers/210304%20Barlow%20Twins.md) #self_supervised #backbone
 1. [210325 Rethinking Self-Supervised Learning](papers/210325%20Rethinking%20Self-Supervised%20Learning.md) #training
 1. [210405 An Empirical Study of Training Self-Supervised Vision Transformers](papers/210405%20An%20Empirical%20Study%20of%20Training%20Self-Supervised%20Vision%20Transformers.md) #vision_transformer
 1. [210426 Multimodal Contrastive Training for Visual Representation Learning](papers/210426%20Multimodal%20Contrastive%20Training%20for%20Visual%20Representation%20Learning.md) #multimodal
@@ -349,12 +351,16 @@
 1. [210610 Score-based Generative Modeling in Latent Space](papers/210610%20Score-based%20Generative%20Modeling%20in%20Latent%20Space.md)
 1. [210612 D2C](papers/210612%20D2C.md)
 1. [210701 Variational Diffusion Models](papers/210701%20Variational%20Diffusion%20Models.md)
+1. [210802 SDEdit](papers/210802%20SDEdit.md)
 ## decoding
 1. [200516 Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](papers/200516%20Layer-Wise%20Cross-View%20Decoding%20for%20Sequence-to-Sequence%20Learning.md)
 1. [200601 Cascaded Text Generation with Markov Transformers](papers/200601%20Cascaded%20Text%20Generation%20with%20Markov%20Transformers.md) #text_generation
 1. [210608 FastSeq](papers/210608%20FastSeq.md)
 ## deep prior
 1. [200408 Deep Manifold Prior](papers/200408%20Deep%20Manifold%20Prior.md)
+## dialog
+1. [200129 Meena](papers/200129%20Meena.md) #NLP
+1. [210715 Beyond Goldfish Memory](papers/210715%20Beyond%20Goldfish%20Memory.md)
 ## differentiable operator
 1. [200220 Fast Differentiable Sorting and Ranking](papers/200220%20Fast%20Differentiable%20Sorting%20and%20Ranking.md)
 ## differentiable tree
@@ -372,10 +378,15 @@
 1. [200219 Knapsack Pruning with Inner Distillation](papers/200219%20Knapsack%20Pruning%20with%20Inner%20Distillation.md) #pruning #lightweight
 1. [200221 Residual Knowledge Distillation](papers/200221%20Residual%20Knowledge%20Distillation.md)
 1. [200309 Knowledge distillation via adaptive instance normalization](papers/200309%20Knowledge%20distillation%20via%20adaptive%20instance%20normalization.md) #normalization
+1. [200405 FastBERT](papers/200405%20FastBERT.md) #bert #lightweight
+1. [200408 DynaBERT](papers/200408%20DynaBERT.md) #bert #pruning
+1. [200408 Improving BERT with Self-Supervised Attention](papers/200408%20Improving%20BERT%20with%20Self-Supervised%20Attention.md) #bert #self_supervised
+1. [200412 XtremeDistil](papers/200412%20XtremeDistil.md) #bert #lightweight
 1. [200521 Why distillation helps](papers/200521%20Why%20distillation%20helps.md) #calibration
 1. [200629 An EM Approach to Non-autoregressive Conditional Sequence Generation](papers/200629%20An%20EM%20Approach%20to%20Non-autoregressive%20Conditional%20Sequence%20Generation.md) #non-autoregressive
 1. [200701 Go Wide, Then Narrow](papers/200701%20Go%20Wide%2C%20Then%20Narrow.md) #lightweight
 1. [200702 Interactive Knowledge Distillation](papers/200702%20Interactive%20Knowledge%20Distillation.md)
+1. [210726 Text is Text, No Matter What](papers/210726%20Text%20is%20Text%2C%20No%20Matter%20What.md) #multitask
 ## distributed training
 1. [210510 GSPMD](papers/210510%20GSPMD.md)
 ## domain adaptation
@@ -393,6 +404,8 @@
 1. [210603 Luna](papers/210603%20Luna.md)
 1. [210623 Stable, Fast and Accurate](papers/210623%20Stable%2C%20Fast%20and%20Accurate.md)
 1. [210705 Long-Short Transformer](papers/210705%20Long-Short%20Transformer.md) #local_attention
+1. [210712 Combiner](papers/210712%20Combiner.md) #sparse_attention #local_attention
+1. [210725 H-Transformer-1D](papers/210725%20H-Transformer-1D.md)
 ## embedding
 1. [200424 All Word Embeddings from One Embedding](papers/200424%20All%20Word%20Embeddings%20from%20One%20Embedding.md)
 1. [200717 A Unifying Perspective on Neighbor Embeddings along the](papers/200717%20A%20Unifying%20Perspective%20on%20Neighbor%20Embeddings%20along%20the.md)
@@ -400,6 +413,7 @@
 1. [200605 End-to-End Adversarial Text-to-Speech](papers/200605%20End-to-End%20Adversarial%20Text-to-Speech.md) #tts
 1. [200608 FastSpeech 2](papers/200608%20FastSpeech%202.md) #tts
 1. [201106 Wave-Tacotron](papers/201106%20Wave-Tacotron.md) #tts
+1. [210716 Autonomy 2.0](papers/210716%20Autonomy%202.0.md)
 ## energy based model
 1. [200504 How to Train Your Energy-Based Model for Regression](papers/200504%20How%20to%20Train%20Your%20Energy-Based%20Model%20for%20Regression.md)
 1. [201124 Energy-Based Models for Continual Learning](papers/201124%20Energy-Based%20Models%20for%20Continual%20Learning.md) #continual_learning
@@ -593,6 +607,7 @@
 1. [210503 ISTR](papers/210503%20ISTR.md) #end2end
 1. [210505 QueryInst](papers/210505%20QueryInst.md) #end2end
 1. [210604 SOLQ](papers/210604%20SOLQ.md)
+1. [210713 Per-Pixel Classification is Not All You Need for Semantic Segmentation](papers/210713%20Per-Pixel%20Classification%20is%20Not%20All%20You%20Need%20for%20Semantic%20Segmentation.md) #panoptic_segmentation #semantic_segmentation #detr
 ## interpolation
 1. [200804 Autoencoder Image Interpolation by Shaping the Latent Space](papers/200804%20Autoencoder%20Image%20Interpolation%20by%20Shaping%20the%20Latent%20Space.md)
 ## knowledge base
@@ -632,6 +647,8 @@
 1. [210524 StructuralLM](papers/210524%20StructuralLM.md) #layout
 1. [210528 ByT5](papers/210528%20ByT5.md)
 1. [210623 Charformer](papers/210623%20Charformer.md) #tokenizer
+1. [210714 Deduplicating Training Data Makes Language Models Better](papers/210714%20Deduplicating%20Training%20Data%20Makes%20Language%20Models%20Better.md) #corpus
+1. [210714 HTLM](papers/210714%20HTLM.md)
 ## local attention
 1. [210323 Scaling Local Self-Attention for Parameter Efficient Visual Backbones](papers/210323%20Scaling%20Local%20Self-Attention%20for%20Parameter%20Efficient%20Visual%20Backbones.md)
 ## loss
@@ -659,6 +676,7 @@
 1. [200514 Behind the Scene](papers/200514%20Behind%20the%20Scene.md)
 1. [201130 Multimodal Pretraining Unmasked](papers/201130%20Multimodal%20Pretraining%20Unmasked.md)
 ## multitask
+1. [200508 Transforming task representations to perform novel tasks](papers/200508%20Transforming%20task%20representations%20to%20perform%20novel%20tasks.md) #continual_learning
 1. [200625 MTAdam](papers/200625%20MTAdam.md)
 ## nas
 1. [200324 BigNAS](papers/200324%20BigNAS.md)
@@ -703,10 +721,8 @@
 1. [210319 Paint by Word](papers/210319%20Paint%20by%20Word.md)
 1. [210512 Enhancing Photorealism Enhancement](papers/210512%20Enhancing%20Photorealism%20Enhancement.md)
 ## nlp
-1. [200129 Meena](papers/200129%20Meena.md) #dialog
 1. [200518 (Re)construing Meaning in NLP](papers/200518%20%28Re%29construing%20Meaning%20in%20NLP.md)
 1. [200715 Towards Debiasing Sentence Representations](papers/200715%20Towards%20Debiasing%20Sentence%20Representations.md) #bias
-1. [201117 Neural Semi-supervised Learning for Text Classification Under](papers/201117%20Neural%20Semi-supervised%20Learning%20for%20Text%20Classification%20Under.md) #self_supervised
 ## nmt
 1. [200207 A Multilingual View of Unsupervised Machine Translation](papers/200207%20A%20Multilingual%20View%20of%20Unsupervised%20Machine%20Translation.md) #multilingual
 1. [200427 Lexically Constrained Neural Machine Translation with Levenshtein Transformer](papers/200427%20Lexically%20Constrained%20Neural%20Machine%20Translation%20with%20Levenshtein%20Transformer.md)
@@ -793,6 +809,8 @@
 1. [210601 You Only Look at One Sequence](papers/210601%20You%20Only%20Look%20at%20One%20Sequence.md) #vit
 1. [210606 Rethinking Training from Scratch for Object Detection](papers/210606%20Rethinking%20Training%20from%20Scratch%20for%20Object%20Detection.md) #pretraining
 1. [210615 Dynamic Head](papers/210615%20Dynamic%20Head.md) #attention
+1. [210718 YOLOX](papers/210718%20YOLOX.md) #yolo
+1. [210728 SimROD](papers/210728%20SimROD.md) #domain_adaptation #self_supervised
 ## ocr
 1. [191231 LayoutLM](papers/191231%20LayoutLM.md)
 1. [200217 Text Perceptron](papers/200217%20Text%20Perceptron.md)
@@ -840,6 +858,8 @@
 1. [210408 Modulated Periodic Activations for Generalizable Local Functional](papers/210408%20Modulated%20Periodic%20Activations%20for%20Generalizable%20Local%20Functional.md) #periodic_activation #implicit_representation
 1. [210506 ACORN](papers/210506%20ACORN.md) #implicit_representation
 1. [210706 Rethinking Positional Encoding](papers/210706%20Rethinking%20Positional%20Encoding.md)
+## practice
+1. [210630 Using AntiPatterns to avoid MLOps Mistakes](papers/210630%20Using%20AntiPatterns%20to%20avoid%20MLOps%20Mistakes.md)
 ## pretraining
 1. [190620 XLNet](papers/190620%20XLNet.md) #language_model
 1. [190729 RoBERTa](papers/190729%20RoBERTa.md) #language_model
@@ -945,6 +965,8 @@
 1. [200420 Bringing Old Photos Back to Life](papers/200420%20Bringing%20Old%20Photos%20Back%20to%20Life.md) #vae
 1. [201123 Cross-Camera Convolutional Color Constancy](papers/201123%20Cross-Camera%20Convolutional%20Color%20Constancy.md)
 1. [201123 Dissecting Image Crops](papers/201123%20Dissecting%20Image%20Crops.md)
+## retrieval
+1. [210715 Internet-Augmented Dialogue Generation](papers/210715%20Internet-Augmented%20Dialogue%20Generation.md) #dialog
 ## review
 1. [191210 Thoughts on recent papers](papers/191210%20Thoughts%20on%20recent%20papers.md)
 1. [200130 Filter Response Normalization](papers/200130%20Filter%20Response%20Normalization.md)
@@ -1020,7 +1042,9 @@
 1. [200224 Self-Adaptive Training](papers/200224%20Self-Adaptive%20Training.md) #noise #dataset
 1. [200722 CrossTransformers](papers/200722%20CrossTransformers.md) #few_shot
 1. [201015 Representation Learning via Invariant Causal Mechanisms](papers/201015%20Representation%20Learning%20via%20Invariant%20Causal%20Mechanisms.md) #causality
+1. [201117 Neural Semi-supervised Learning for Text Classification Under](papers/201117%20Neural%20Semi-supervised%20Learning%20for%20Text%20Classification%20Under.md) #nlp
 1. [201224 Self-supervised Pre-training with Hard Examples Improves Visual](papers/201224%20Self-supervised%20Pre-training%20with%20Hard%20Examples%20Improves%20Visual.md) #mixup
+1. [210726 Continental-Scale Building Detection from High Resolution Satellite Imagery](papers/210726%20Continental-Scale%20Building%20Detection%20from%20High%20Resolution%20Satellite%20Imagery.md)
 ## self supervised discovery
 1. [200403 Self-Supervised Viewpoint Learning From Image Collections](papers/200403%20Self-Supervised%20Viewpoint%20Learning%20From%20Image%20Collections.md) #viewpoint
 1. [201127 Unsupervised part representation by Flow Capsules](papers/201127%20Unsupervised%20part%20representation%20by%20Flow%20Capsules.md)
@@ -1130,11 +1154,14 @@
 1. [210509 FNet](papers/210509%20FNet.md) #efficient_attention #fourier
 1. [210613 Thinking Like Transformers](papers/210613%20Thinking%20Like%20Transformers.md)
 1. [210617 Multi-head or Single-head](papers/210617%20Multi-head%20or%20Single-head.md)
+1. [210730 Perceiver IO](papers/210730%20Perceiver%20IO.md)
 ## tropical geometry
 1. [200220 On the Decision Boundaries of Neural Networks](papers/200220%20On%20the%20Decision%20Boundaries%20of%20Neural%20Networks.md)
 ## tts
 1. [200512 Flowtron](papers/200512%20Flowtron.md) #flow
 1. [210617 WaveGrad 2](papers/210617%20WaveGrad%202.md)
+## uncertainty
+1. [210727 A Tale Of Two Long Tails](papers/210727%20A%20Tale%20Of%20Two%20Long%20Tails.md)
 ## unsupervised img2img
 1. [200310 Unpaired Image-to-Image Translation using Adversarial Consistency Loss](papers/200310%20Unpaired%20Image-to-Image%20Translation%20using%20Adversarial%20Consistency%20Loss.md)
 1. [200611 Rethinking the Truly Unsupervised Image-to-Image Translation](papers/200611%20Rethinking%20the%20Truly%20Unsupervised%20Image-to-Image%20Translation.md)
@@ -1156,6 +1183,7 @@
 1. [201212 MiniVLM](papers/201212%20MiniVLM.md)
 1. [201222 Seeing past words](papers/201222%20Seeing%20past%20words.md)
 1. [210407 Multimodal Fusion Refiner Networks](papers/210407%20Multimodal%20Fusion%20Refiner%20Networks.md)
+1. [210727 Is Object Detection Necessary for Human-Object Interaction Recognition](papers/210727%20Is%20Object%20Detection%20Necessary%20for%20Human-Object%20Interaction%20Recognition.md) #human-object-interaction
 ## vision transformer
 1. [201127 General Multi-label Image Classification with Transformers](papers/201127%20General%20Multi-label%20Image%20Classification%20with%20Transformers.md)
 1. [201223 A Survey on Visual Transformer](papers/201223%20A%20Survey%20on%20Visual%20Transformer.md)
@@ -1200,6 +1228,8 @@
 1. [210624 Video Swin Transformer](papers/210624%20Video%20Swin%20Transformer.md) #local_attention #video #video_transformer
 1. [210701 CSWin Transformer](papers/210701%20CSWin%20Transformer.md) #efficient_attention #local_attention
 1. [210701 Focal Self-attention for Local-Global Interactions in Vision Transformers](papers/210701%20Focal%20Self-attention%20for%20Local-Global%20Interactions%20in%20Vision%20Transformers.md) #local_attention
+1. [210713 Visual Parser](papers/210713%20Visual%20Parser.md) #local_attention
+1. [210731 CrossFormer](papers/210731%20CrossFormer.md)
 ## vocoder
 1. [200512 FeatherWave](papers/200512%20FeatherWave.md)
 1. [201118 Universal MelGAN](papers/201118%20Universal%20MelGAN.md)
