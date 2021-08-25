@@ -25,6 +25,7 @@
 1. [ddpm](#ddpm)
 1. [decoding](#decoding)
 1. [deep prior](#deep-prior)
+1. [detr](#detr)
 1. [dialog](#dialog)
 1. [differentiable operator](#differentiable-operator)
 1. [differentiable tree](#differentiable-tree)
@@ -224,6 +225,7 @@
 1. [210429 Ensembling with Deep Generative Views](papers/210429%20Ensembling%20with%20Deep%20Generative%20Views.md) #ensemble #gan_inversion
 ## autoregressive model
 1. [200129 Semi Autorgressive Training](papers/200129%20Semi%20Autorgressive%20Training.md)
+1. [201027 Scaling Laws for Autoregressive Generative Modeling](papers/201027%20Scaling%20Laws%20for%20Autoregressive%20Generative%20Modeling.md) #scale
 ## backbone
 1. [190724 MixNet](papers/190724%20MixNet.md) #convolution
 1. [200123 Antialiasing](papers/200123%20Antialiasing.md) #invariance
@@ -352,12 +354,15 @@
 1. [210612 D2C](papers/210612%20D2C.md)
 1. [210701 Variational Diffusion Models](papers/210701%20Variational%20Diffusion%20Models.md)
 1. [210802 SDEdit](papers/210802%20SDEdit.md)
+1. [210819 ImageBART](papers/210819%20ImageBART.md) #vq #autoregressive_model
 ## decoding
 1. [200516 Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](papers/200516%20Layer-Wise%20Cross-View%20Decoding%20for%20Sequence-to-Sequence%20Learning.md)
 1. [200601 Cascaded Text Generation with Markov Transformers](papers/200601%20Cascaded%20Text%20Generation%20with%20Markov%20Transformers.md) #text_generation
 1. [210608 FastSeq](papers/210608%20FastSeq.md)
 ## deep prior
 1. [200408 Deep Manifold Prior](papers/200408%20Deep%20Manifold%20Prior.md)
+## detr
+1. [210813 Conditional DETR for Fast Training Convergence](papers/210813%20Conditional%20DETR%20for%20Fast%20Training%20Convergence.md)
 ## dialog
 1. [200129 Meena](papers/200129%20Meena.md) #NLP
 1. [210715 Beyond Goldfish Memory](papers/210715%20Beyond%20Goldfish%20Memory.md)
@@ -649,6 +654,9 @@
 1. [210623 Charformer](papers/210623%20Charformer.md) #tokenizer
 1. [210714 Deduplicating Training Data Makes Language Models Better](papers/210714%20Deduplicating%20Training%20Data%20Makes%20Language%20Models%20Better.md) #corpus
 1. [210714 HTLM](papers/210714%20HTLM.md)
+1. [210811 DEMix Layers](papers/210811%20DEMix%20Layers.md) #mixture_of_experts
+1. [210813 Curriculum Learning](papers/210813%20Curriculum%20Learning.md) #curriculum
+1. [210816 On the Opportunities and Risks of Foundation Models](papers/210816%20On%20the%20Opportunities%20and%20Risks%20of%20Foundation%20Models.md)
 ## local attention
 1. [210323 Scaling Local Self-Attention for Parameter Efficient Visual Backbones](papers/210323%20Scaling%20Local%20Self-Attention%20for%20Parameter%20Efficient%20Visual%20Backbones.md)
 ## loss
@@ -686,7 +694,6 @@
 1. [200428 Angle-based Search Space Shrinking for Neural Architecture Search](papers/200428%20Angle-based%20Search%20Space%20Shrinking%20for%20Neural%20Architecture%20Search.md)
 1. [200506 Local Search is State of the Art for Neural Architecture Search](papers/200506%20Local%20Search%20is%20State%20of%20the%20Art%20for%20Neural%20Architecture%20Search.md)
 1. [200507 Noisy Differentiable Architecture Search](papers/200507%20Noisy%20Differentiable%20Architecture%20Search.md)
-1. [200512 Neural Architecture Transfer](papers/200512%20Neural%20Architecture%20Transfer.md) #transfer
 1. [200602 FBNetV3](papers/200602%20FBNetV3.md) #hyperparameter #training #swa
 1. [200720 NSGANetV2](papers/200720%20NSGANetV2.md)
 ## nerf
@@ -705,6 +712,7 @@
 1. [210325 KiloNeRF](papers/210325%20KiloNeRF.md)
 1. [210325 PlenOctrees for Real-time Rendering of Neural Radiance Fields](papers/210325%20PlenOctrees%20for%20Real-time%20Rendering%20of%20Neural%20Radiance%20Fields.md)
 1. [210706 Depth-supervised NeRF](papers/210706%20Depth-supervised%20NeRF.md)
+1. [210809 NeuralMVS](papers/210809%20NeuralMVS.md)
 ## neural computer
 1. [200720 Distributed Associative Memory Network with Memory Refreshing Loss](papers/200720%20Distributed%20Associative%20Memory%20Network%20with%20Memory%20Refreshing%20Loss.md)
 ## neural ode
@@ -947,7 +955,6 @@
 1. [200707 Remix](papers/200707%20Remix.md) #imbalanced
 1. [200721 Improving compute efficacy frontiers with SliceOut](papers/200721%20Improving%20compute%20efficacy%20frontiers%20with%20SliceOut.md) #efficient_training
 1. [201122 Stable Weight Decay Regularization](papers/201122%20Stable%20Weight%20Decay%20Regularization.md)
-1. [210603 When Vision Transformers Outperform ResNets without Pretraining or Strong Data Augmentations](papers/210603%20When%20Vision%20Transformers%20Outperform%20ResNets%20without%20Pretraining%20or%20Strong%20Data%20Augmentations.md) #vit
 ## reinforcement learning
 1. [191120 Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](papers/191120%20Mastering%20Atari%2C%20Go%2C%20Chess%20and%20Shogi%20by%20Planning%20with%20a%20Learned%20Model.md)
 1. [200130 Mastering Atari, Go, Chess, Shogi](papers/200130%20Mastering%20Atari%2C%20Go%2C%20Chess%2C%20Shogi.md)
@@ -1030,7 +1037,6 @@
 1. [200518 U$^2$-Net](papers/200518%20U%24%5E2%24-Net.md)
 ## scale
 1. [200712 Learning to Learn Parameterized Classification Networks for Scalable](papers/200712%20Learning%20to%20Learn%20Parameterized%20Classification%20Networks%20for%20Scalable.md) #hypernetwork
-1. [201027 Scaling Laws for Autoregressive Generative Modeling](papers/201027%20Scaling%20Laws%20for%20Autoregressive%20Generative%20Modeling.md) #autoregressive_model
 1. [201130 Towards Better Accuracy-efficiency Trade-offs](papers/201130%20Towards%20Better%20Accuracy-efficiency%20Trade-offs.md)
 1. [210502 Larger-Scale Transformers for Multilingual Masked Language Modeling](papers/210502%20Larger-Scale%20Transformers%20for%20Multilingual%20Masked%20Language%20Modeling.md) #mlm #multilingual
 ## score
@@ -1105,6 +1111,7 @@
 1. [200519 A New Training Pipeline for an Improved Neural Transducer](papers/200519%20A%20New%20Training%20Pipeline%20for%20an%20Improved%20Neural%20Transducer.md)
 ## transfer
 1. [200130 BiT ResNet](papers/200130%20BiT%20ResNet.md) #resnet
+1. [200512 Neural Architecture Transfer](papers/200512%20Neural%20Architecture%20Transfer.md) #nas
 1. [200711 Adversarially-Trained Deep Nets Transfer Better](papers/200711%20Adversarially-Trained%20Deep%20Nets%20Transfer%20Better.md) #adversarial_training
 1. [200716 Do Adversarially Robust ImageNet Models Transfer Better](papers/200716%20Do%20Adversarially%20Robust%20ImageNet%20Models%20Transfer%20Better.md) #robust
 1. [200721 Adversarial Training Reduces Information and Improves Transferability](papers/200721%20Adversarial%20Training%20Reduces%20Information%20and%20Improves%20Transferability.md) #adversarial_training
@@ -1155,6 +1162,8 @@
 1. [210613 Thinking Like Transformers](papers/210613%20Thinking%20Like%20Transformers.md)
 1. [210617 Multi-head or Single-head](papers/210617%20Multi-head%20or%20Single-head.md)
 1. [210730 Perceiver IO](papers/210730%20Perceiver%20IO.md)
+1. [210809 Making Transformers Solve Compositional Tasks](papers/210809%20Making%20Transformers%20Solve%20Compositional%20Tasks.md)
+1. [210812 Mobile-Former](papers/210812%20Mobile-Former.md) #backbone
 ## tropical geometry
 1. [200220 On the Decision Boundaries of Neural Networks](papers/200220%20On%20the%20Decision%20Boundaries%20of%20Neural%20Networks.md)
 ## tts
@@ -1216,6 +1225,7 @@
 1. [210526 Aggregating Nested Transformers](papers/210526%20Aggregating%20Nested%20Transformers.md) #local_attention
 1. [210529 Less is More](papers/210529%20Less%20is%20More.md)
 1. [210603 DynamicViT](papers/210603%20DynamicViT.md) #sparse_attention
+1. [210603 When Vision Transformers Outperform ResNets without Pretraining or Strong Data Augmentations](papers/210603%20When%20Vision%20Transformers%20Outperform%20ResNets%20without%20Pretraining%20or%20Strong%20Data%20Augmentations.md) #regularization
 1. [210604 RegionViT](papers/210604%20RegionViT.md) #local_attention
 1. [210607 Shuffle Transformer](papers/210607%20Shuffle%20Transformer.md)
 1. [210608 Scaling Vision Transformers](papers/210608%20Scaling%20Vision%20Transformers.md) #scale
@@ -1230,6 +1240,8 @@
 1. [210701 Focal Self-attention for Local-Global Interactions in Vision Transformers](papers/210701%20Focal%20Self-attention%20for%20Local-Global%20Interactions%20in%20Vision%20Transformers.md) #local_attention
 1. [210713 Visual Parser](papers/210713%20Visual%20Parser.md) #local_attention
 1. [210731 CrossFormer](papers/210731%20CrossFormer.md)
+1. [210811 ConvNets vs. Transformers](papers/210811%20ConvNets%20vs.%20Transformers.md) #robustness #transfer
+1. [210819 Do Vision Transformers See Like Convolutional Neural Networks](papers/210819%20Do%20Vision%20Transformers%20See%20Like%20Convolutional%20Neural%20Networks.md) #resnet
 ## vocoder
 1. [200512 FeatherWave](papers/200512%20FeatherWave.md)
 1. [201118 Universal MelGAN](papers/201118%20Universal%20MelGAN.md)
