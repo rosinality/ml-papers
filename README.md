@@ -8,6 +8,7 @@
 1. [antialiasing](#antialiasing)
 1. [asr](#asr)
 1. [attention](#attention)
+1. [audio source separation](#audio-source-separation)
 1. [augmentation](#augmentation)
 1. [autoregressive model](#autoregressive-model)
 1. [backbone](#backbone)
@@ -90,6 +91,7 @@
 1. [normalization](#normalization)
 1. [object detection](#object-detection)
 1. [ocr](#ocr)
+1. [open set recognition](#open-set-recognition)
 1. [optimization](#optimization)
 1. [optimizer](#optimizer)
 1. [oriented object detection](#oriented-object-detection)
@@ -124,6 +126,7 @@
 1. [semantic segmentation](#semantic-segmentation)
 1. [semi supervised learning](#semi-supervised-learning)
 1. [sgld](#sgld)
+1. [singing voice synthesis](#singing-voice-synthesis)
 1. [single image](#single-image)
 1. [speech](#speech)
 1. [structure learning](#structure-learning)
@@ -190,6 +193,7 @@
 1. [210524 Unsupervised Speech Recognition](papers/210524%20Unsupervised%20Speech%20Recognition.md) #unsupervised_training
 1. [210608 SpeechBrain](papers/210608%20SpeechBrain.md)
 1. [210827 Injecting Text in Self-Supervised Speech Pretraining](papers/210827%20Injecting%20Text%20in%20Self-Supervised%20Speech%20Pretraining.md) #self_supervised
+1. [211012 Word Order Does Not Matter For Speech Recognition](papers/211012%20Word%20Order%20Does%20Not%20Matter%20For%20Speech%20Recognition.md) #weak_supervision
 ## attention
 1. [200122 Object Contextual Representations](papers/200122%20Object%20Contextual%20Representations.md) #semantic_segmentation
 1. [200129 Empirical Attention](papers/200129%20Empirical%20Attention.md)
@@ -216,6 +220,8 @@
 1. [210607 Refiner](papers/210607%20Refiner.md) #vit
 1. [210705 What Makes for Hierarchical Vision Transformer](papers/210705%20What%20Makes%20for%20Hierarchical%20Vision%20Transformer.md) #vit #mlp #local_attention
 1. [210826 Train Short, Test Long](papers/210826%20Train%20Short%2C%20Test%20Long.md) #positional_encoding
+## audio source separation
+1. [211019 The Cocktail Fork Problem](papers/211019%20The%20Cocktail%20Fork%20Problem.md)
 ## augmentation
 1. [200122 FixMatch](papers/200122%20FixMatch.md) #semi_supervised_learning #manifold #mixup
 1. [200220 Affinity and Diversity](papers/200220%20Affinity%20and%20Diversity.md)
@@ -273,6 +279,8 @@
 1. [210628 Early Convolutions Help Transformers See Better](papers/210628%20Early%20Convolutions%20Help%20Transformers%20See%20Better.md) #cnn #vit
 1. [210718 AS-MLP](papers/210718%20AS-MLP.md) #mlp
 1. [210726 Contextual Transformer Networks for Visual Recognition](papers/210726%20Contextual%20Transformer%20Networks%20for%20Visual%20Recognition.md)
+1. [211014 Non-deep Networks](papers/211014%20Non-deep%20Networks.md)
+1. [211018 HRFormer](papers/211018%20HRFormer.md) #vit
 ## bayesian
 1. [200207 Bayes Posterior](papers/200207%20Bayes%20Posterior.md)
 1. [200210 Liberty or Depth](papers/200210%20Liberty%20or%20Depth.md) #mean_field
@@ -344,6 +352,7 @@
 1. [210511 VICReg](papers/210511%20VICReg.md)
 1. [210517 Divide and Contrast](papers/210517%20Divide%20and%20Contrast.md) #self_supervised #dataset #distillation
 1. [210601 Exploring the Diversity and Invariance in Yourself for Visual Pre-Training Task](papers/210601%20Exploring%20the%20Diversity%20and%20Invariance%20in%20Yourself%20for%20Visual%20Pre-Training%20Task.md)
+1. [211018 Understanding Dimensional Collapse in Contrastive Self-supervised Learning](papers/211018%20Understanding%20Dimensional%20Collapse%20in%20Contrastive%20Self-supervised%20Learning.md)
 ## convolution
 1. [200316 SlimConv](papers/200316%20SlimConv.md)
 1. [210429 Decoupled Dynamic Filter Networks](papers/210429%20Decoupled%20Dynamic%20Filter%20Networks.md)
@@ -439,7 +448,6 @@
 ## few shot
 1. [200228 AdarGCN](papers/200228%20AdarGCN.md) #graph
 1. [200627 Laplacian Regularized Few-Shot Learning](papers/200627%20Laplacian%20Regularized%20Few-Shot%20Learning.md) #semi_supervised_learning
-1. [210524 True Few-Shot Learning with Language Models](papers/210524%20True%20Few-Shot%20Learning%20with%20Language%20Models.md) #lm
 1. [210608 Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks](papers/210608%20Parameter-efficient%20Multi-task%20Fine-tuning%20for%20Transformers%20via%20Shared%20Hypernetworks.md) #adapter #multitask
 1. [210910 LibFewShot](papers/210910%20LibFewShot.md)
 ## finetuning
@@ -543,6 +551,7 @@
 1. [210623 Alias-Free Generative Adversarial Networks](papers/210623%20Alias-Free%20Generative%20Adversarial%20Networks.md) #antialiasing
 1. [210910 Instance-Conditioned GAN](papers/210910%20Instance-Conditioned%20GAN.md)
 1. [210927 WarpedGANSpace](papers/210927%20WarpedGANSpace.md)
+1. [211017 AE-StyleGAN](papers/211017%20AE-StyleGAN.md) #gan_inversion
 ## gan inversion
 1. [200331 In-Domain GAN Inversion for Real Image Editing](papers/200331%20In-Domain%20GAN%20Inversion%20for%20Real%20Image%20Editing.md)
 1. [200703 Collaborative Learning for Faster StyleGAN Embedding](papers/200703%20Collaborative%20Learning%20for%20Faster%20StyleGAN%20Embedding.md)
@@ -574,6 +583,7 @@
 1. [210305 Fixing Data Augmentation to Improve Adversarial Robustness 2](papers/210305%20Fixing%20Data%20Augmentation%20to%20Improve%20Adversarial%20Robustness%202.md) #robustness #augmentation #ddpm
 1. [210318 Few-shot Semantic Image  Synthesis Using StyleGAN Prior](papers/210318%20Few-shot%20Semantic%20Image%20%20Synthesis%20Using%20StyleGAN%20Prior.md) #stylegan #few_shot
 1. [210824 SimVLM](papers/210824%20SimVLM.md) #vision-language
+1. [211015 MaGNET](papers/211015%20MaGNET.md) #sampling
 ## graph
 1. [200129 Multi-Graph Transformer](papers/200129%20Multi-Graph%20Transformer.md)
 ## hallucination
@@ -630,6 +640,7 @@
 1. [210713 Per-Pixel Classification is Not All You Need for Semantic Segmentation](papers/210713%20Per-Pixel%20Classification%20is%20Not%20All%20You%20Need%20for%20Semantic%20Segmentation.md) #panoptic_segmentation #semantic_segmentation #detr
 ## interpolation
 1. [200804 Autoencoder Image Interpolation by Shaping the Latent Space](papers/200804%20Autoencoder%20Image%20Interpolation%20by%20Shaping%20the%20Latent%20Space.md)
+1. [211018 Learning in High Dimension Always Amounts to Extrapolation](papers/211018%20Learning%20in%20High%20Dimension%20Always%20Amounts%20to%20Extrapolation.md) #extrapolation
 ## knowledge base
 1. [200214 Scalable Neural Methods for Reasoning With a Symbolic Knowledge Base](papers/200214%20Scalable%20Neural%20Methods%20for%20Reasoning%20With%20a%20Symbolic%20Knowledge%20Base.md)
 ## language generation
@@ -668,6 +679,7 @@
 1. [210601 Towards Real-time and Light-weight Line Segment Detection](papers/210601%20Towards%20Real-time%20and%20Light-weight%20Line%20Segment%20Detection.md)
 ## lm
 1. [210524 StructuralLM](papers/210524%20StructuralLM.md) #layout
+1. [210524 True Few-Shot Learning with Language Models](papers/210524%20True%20Few-Shot%20Learning%20with%20Language%20Models.md) #few_shot
 1. [210528 ByT5](papers/210528%20ByT5.md)
 1. [210623 Charformer](papers/210623%20Charformer.md) #tokenizer
 1. [210714 Deduplicating Training Data Makes Language Models Better](papers/210714%20Deduplicating%20Training%20Data%20Makes%20Language%20Models%20Better.md) #corpus
@@ -678,6 +690,10 @@
 1. [210902 Do Prompt-Based Models Really Understand the Meaning of their Prompts](papers/210902%20Do%20Prompt-Based%20Models%20Really%20Understand%20the%20Meaning%20of%20their%20Prompts.md) #prompt
 1. [210903 Finetuned Language Models Are Zero-Shot Learners](papers/210903%20Finetuned%20Language%20Models%20Are%20Zero-Shot%20Learners.md) #zero-shot
 1. [210908 A Recipe For Arbitrary Text Style Transfer with Large Language Models](papers/210908%20A%20Recipe%20For%20Arbitrary%20Text%20Style%20Transfer%20with%20Large%20Language%20Models.md) #prompt
+1. [211011 Unsupervised Neural Machine Translation with Generative Language Models Only](papers/211011%20Unsupervised%20Neural%20Machine%20Translation%20with%20Generative%20Language%20Models%20Only.md) #unsupervised_nmt
+1. [211015 Multitask Prompted Training Enables Zero-Shot Task Generalization](papers/211015%20Multitask%20Prompted%20Training%20Enables%20Zero-Shot%20Task%20Generalization.md) #zero-shot
+1. [211016 Invariant Language Modeling](papers/211016%20Invariant%20Language%20Modeling.md) #irm
+1. [211016 MarkupLM](papers/211016%20MarkupLM.md) #layout
 ## local attention
 1. [210323 Scaling Local Self-Attention for Parameter Efficient Visual Backbones](papers/210323%20Scaling%20Local%20Self-Attention%20for%20Parameter%20Efficient%20Visual%20Backbones.md)
 ## loss
@@ -693,7 +709,6 @@
 1. [200221 Learning to Continually Learn](papers/200221%20Learning%20to%20Continually%20Learn.md) #continual_learning
 1. [200312 Online Fast Adaptation and Knowledge Accumulation](papers/200312%20Online%20Fast%20Adaptation%20and%20Knowledge%20Accumulation.md)
 1. [200401 Editable Neural Networks](papers/200401%20Editable%20Neural%20Networks.md)
-1. [200402 Tracking by Instance Detection](papers/200402%20Tracking%20by%20Instance%20Detection.md) #tracking
 1. [200706 Meta-Learning Symmetries by Reparameterization](papers/200706%20Meta-Learning%20Symmetries%20by%20Reparameterization.md) #group_equivariance
 ## metric learning
 1. [200319 A unifying mutual information view of metric learning](papers/200319%20A%20unifying%20mutual%20information%20view%20of%20metric%20learning.md)
@@ -717,7 +732,6 @@
 1. [200428 Angle-based Search Space Shrinking for Neural Architecture Search](papers/200428%20Angle-based%20Search%20Space%20Shrinking%20for%20Neural%20Architecture%20Search.md)
 1. [200506 Local Search is State of the Art for Neural Architecture Search](papers/200506%20Local%20Search%20is%20State%20of%20the%20Art%20for%20Neural%20Architecture%20Search.md)
 1. [200507 Noisy Differentiable Architecture Search](papers/200507%20Noisy%20Differentiable%20Architecture%20Search.md)
-1. [200512 Neural Architecture Transfer](papers/200512%20Neural%20Architecture%20Transfer.md) #transfer
 1. [200602 FBNetV3](papers/200602%20FBNetV3.md) #hyperparameter #training #swa
 1. [200720 NSGANetV2](papers/200720%20NSGANetV2.md)
 ## nerf
@@ -737,6 +751,7 @@
 1. [210325 PlenOctrees for Real-time Rendering of Neural Radiance Fields](papers/210325%20PlenOctrees%20for%20Real-time%20Rendering%20of%20Neural%20Radiance%20Fields.md)
 1. [210706 Depth-supervised NeRF](papers/210706%20Depth-supervised%20NeRF.md)
 1. [210809 NeuralMVS](papers/210809%20NeuralMVS.md)
+1. [211019 CIPS-3D](papers/211019%20CIPS-3D.md) #stylegan
 ## neural computer
 1. [200720 Distributed Associative Memory Network with Memory Refreshing Loss](papers/200720%20Distributed%20Associative%20Memory%20Network%20with%20Memory%20Refreshing%20Loss.md)
 ## neural ode
@@ -752,6 +767,7 @@
 1. [201130 Animating Pictures with Eulerian Motion Fields](papers/201130%20Animating%20Pictures%20with%20Eulerian%20Motion%20Fields.md) #single_image
 1. [210319 Paint by Word](papers/210319%20Paint%20by%20Word.md)
 1. [210512 Enhancing Photorealism Enhancement](papers/210512%20Enhancing%20Photorealism%20Enhancement.md)
+1. [211013 ADOP](papers/211013%20ADOP.md)
 ## nlp
 1. [200518 (Re)construing Meaning in NLP](papers/200518%20%28Re%29construing%20Meaning%20in%20NLP.md)
 1. [200715 Towards Debiasing Sentence Representations](papers/200715%20Towards%20Debiasing%20Sentence%20Representations.md) #bias
@@ -760,6 +776,7 @@
 1. [200427 Lexically Constrained Neural Machine Translation with Levenshtein Transformer](papers/200427%20Lexically%20Constrained%20Neural%20Machine%20Translation%20with%20Levenshtein%20Transformer.md)
 1. [200710 Learn to Use Future Information in Simultaneous Translation](papers/200710%20Learn%20to%20Use%20Future%20Information%20in%20Simultaneous%20Translation.md) #simultaneous_translation
 1. [201224 Why Neural Machine Translation Prefers Empty Outputs](papers/201224%20Why%20Neural%20Machine%20Translation%20Prefers%20Empty%20Outputs.md) #hallucination
+1. [211015 Breaking Down Multilingual Machine Translation](papers/211015%20Breaking%20Down%20Multilingual%20Machine%20Translation.md) #multilingual
 ## noise
 1. [201223 Noisy Labels Can Induce Good Representations](papers/201223%20Noisy%20Labels%20Can%20Induce%20Good%20Representations.md) #representation
 ## non autoregressive
@@ -823,7 +840,6 @@
 1. [200723 The Devil is in Classification](papers/200723%20The%20Devil%20is%20in%20Classification.md) #longtail
 1. [200727 Corner Proposal Network for Anchor-free, Two-stage Object Detection](papers/200727%20Corner%20Proposal%20Network%20for%20Anchor-free%2C%20Two-stage%20Object%20Detection.md) #anchor_free #2stage
 1. [201116 Scaled-YOLOv4](papers/201116%20Scaled-YOLOv4.md)
-1. [201117 UP-DETR](papers/201117%20UP-DETR.md) #detr #end2end #pretraining
 1. [201118 End-to-End Object Detection with Adaptive Clustering Transformer](papers/201118%20End-to-End%20Object%20Detection%20with%20Adaptive%20Clustering%20Transformer.md) #detr #end2end #efficiency
 1. [201121 Rethinking Transformer-based Set Prediction for Object Detection](papers/201121%20Rethinking%20Transformer-based%20Set%20Prediction%20for%20Object%20Detection.md) #detr #end2end #efficiency
 1. [201124 Sparse R-CNN](papers/201124%20Sparse%20R-CNN.md)
@@ -838,7 +854,6 @@
 1. [210420 PP-YOLOv2](papers/210420%20PP-YOLOv2.md) #yolo
 1. [210426 MDETR -- Modulated Detection for End-to-End Multi-Modal Understanding](papers/210426%20MDETR%20--%20Modulated%20Detection%20for%20End-to-End%20Multi-Modal%20Understanding.md) #detr #visual_grounding
 1. [210601 You Only Look at One Sequence](papers/210601%20You%20Only%20Look%20at%20One%20Sequence.md) #vit
-1. [210606 Rethinking Training from Scratch for Object Detection](papers/210606%20Rethinking%20Training%20from%20Scratch%20for%20Object%20Detection.md) #pretraining
 1. [210615 Dynamic Head](papers/210615%20Dynamic%20Head.md) #attention
 1. [210718 YOLOX](papers/210718%20YOLOX.md) #yolo
 1. [210728 SimROD](papers/210728%20SimROD.md) #domain_adaptation #self_supervised
@@ -848,6 +863,8 @@
 1. [191231 LayoutLM](papers/191231%20LayoutLM.md)
 1. [200217 Text Perceptron](papers/200217%20Text%20Perceptron.md)
 1. [210415 Rethinking Text Line Recognition Models](papers/210415%20Rethinking%20Text%20Line%20Recognition%20Models.md)
+## open set recognition
+1. [211012 Open-Set Recognition](papers/211012%20Open-Set%20Recognition.md)
 ## optimization
 1. [200221 The Break-Even Point on Optimization Trajectories of Deep Neural Networks](papers/200221%20The%20Break-Even%20Point%20on%20Optimization%20Trajectories%20of%20Deep%20Neural%20Networks.md) #loss #training
 1. [200224 The Early Phase of Neural Network Training](papers/200224%20The%20Early%20Phase%20of%20Neural%20Network%20Training.md)
@@ -931,6 +948,7 @@
 1. [201021 Self-training and Pre-training are Complementary for Speech Recognition](papers/201021%20Self-training%20and%20Pre-training%20are%20Complementary%20for%20Speech%20Recognition.md) #self_supervised #asr
 1. [201022 mT5](papers/201022%20mT5.md) #language_model #multilingual
 1. [201109 When Do You Need Billions of Words of Pretraining Data](papers/201109%20When%20Do%20You%20Need%20Billions%20of%20Words%20of%20Pretraining%20Data.md) #language_model
+1. [201117 UP-DETR](papers/201117%20UP-DETR.md) #detr #end2end #object_detection
 1. [201127 Progressively Stacking 2.0](papers/201127%20Progressively%20Stacking%202.0.md) #efficiency
 1. [201201 Pre-Trained Image Processing Transformer](papers/201201%20Pre-Trained%20Image%20Processing%20Transformer.md) #contrastive_learning #vision_transformer #restoration
 1. [201201 StructFormer](papers/201201%20StructFormer.md) #parse #attention #mlm
@@ -946,6 +964,7 @@
 1. [210422 ImageNet-21K Pretraining for the Masses](papers/210422%20ImageNet-21K%20Pretraining%20for%20the%20Masses.md) #backbone
 1. [210510 Are Pre-trained Convolutions Better than Pre-trained Transformers](papers/210510%20Are%20Pre-trained%20Convolutions%20Better%20than%20Pre-trained%20Transformers.md) #nlp #convolution #transformer
 1. [210606 On the Effectiveness of Adapter-based Tuning for Pretrained Language Model Adaptation](papers/210606%20On%20the%20Effectiveness%20of%20Adapter-based%20Tuning%20for%20Pretrained%20Language%20Model%20Adaptation.md) #finetuning #adapter
+1. [210606 Rethinking Training from Scratch for Object Detection](papers/210606%20Rethinking%20Training%20from%20Scratch%20for%20Object%20Detection.md) #object_detection
 1. [210608 DETReg](papers/210608%20DETReg.md) #detr
 1. [210614 SAS](papers/210614%20SAS.md)
 1. [210615 BEiT](papers/210615%20BEiT.md) #vit #bert
@@ -956,6 +975,7 @@
 1. [210914 Task-adaptive Pre-training and Self-training are Complementary for Natural Language Understanding](papers/210914%20Task-adaptive%20Pre-training%20and%20Self-training%20are%20Complementary%20for%20Natural%20Language%20Understanding.md) #finetuning #semi_supervised_learning #few_shot
 1. [210927 BigSSL](papers/210927%20BigSSL.md) #asr #semi_supervised_learning #unsupervised_training
 1. [211005 Exploring the Limits of Large Scale Pre-training](papers/211005%20Exploring%20the%20Limits%20of%20Large%20Scale%20Pre-training.md) #classificiation #scaling
+1. [211018 Unsupervised Finetuning](papers/211018%20Unsupervised%20Finetuning.md) #unsupervised_training #finetuning
 ## probabilistic model
 1. [200413 Einsum Networks](papers/200413%20Einsum%20Networks.md)
 1. [200419 Roundtrip](papers/200419%20Roundtrip.md)
@@ -989,6 +1009,7 @@
 1. [200707 Remix](papers/200707%20Remix.md) #imbalanced
 1. [200721 Improving compute efficacy frontiers with SliceOut](papers/200721%20Improving%20compute%20efficacy%20frontiers%20with%20SliceOut.md) #efficient_training
 1. [201122 Stable Weight Decay Regularization](papers/201122%20Stable%20Weight%20Decay%20Regularization.md)
+1. [211016 Sharpness-Aware Minimization Improves Language Model Generalization](papers/211016%20Sharpness-Aware%20Minimization%20Improves%20Language%20Model%20Generalization.md) #lm
 ## reinforcement learning
 1. [191120 Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](papers/191120%20Mastering%20Atari%2C%20Go%2C%20Chess%20and%20Shogi%20by%20Planning%20with%20a%20Learned%20Model.md)
 1. [200130 Mastering Atari, Go, Chess, Shogi](papers/200130%20Mastering%20Atari%2C%20Go%2C%20Chess%2C%20Shogi.md)
@@ -1111,6 +1132,8 @@
 1. [201118 FROST](papers/201118%20FROST.md)
 ## sgld
 1. [200706 Kernel Stein Generative Modeling](papers/200706%20Kernel%20Stein%20Generative%20Modeling.md) #svgd
+## singing voice synthesis
+1. [211008 KaraSinger](papers/211008%20KaraSinger.md)
 ## single image
 1. [200405 Structural-analogy from a Single Image Pair](papers/200405%20Structural-analogy%20from%20a%20Single%20Image%20Pair.md)
 ## speech
@@ -1141,19 +1164,23 @@
 1. [200413 Topology of deep neural networks](papers/200413%20Topology%20of%20deep%20neural%20networks.md) #theory
 ## tracking
 1. [200402 Tracking Objects as Points](papers/200402%20Tracking%20Objects%20as%20Points.md) #keypoint
+1. [200402 Tracking by Instance Detection](papers/200402%20Tracking%20by%20Instance%20Detection.md) #meta_learning
 1. [200403 FairMOT](papers/200403%20FairMOT.md)
 1. [200506 PeTra](papers/200506%20PeTra.md)
 1. [201215 Detecting Invisible People](papers/201215%20Detecting%20Invisible%20People.md)
+1. [211013 ByteTrack](papers/211013%20ByteTrack.md)
 ## training
 1. [200702 Beyond Signal Propagation](papers/200702%20Beyond%20Signal%20Propagation.md)
 ## transducer
 1. [200519 A New Training Pipeline for an Improved Neural Transducer](papers/200519%20A%20New%20Training%20Pipeline%20for%20an%20Improved%20Neural%20Transducer.md)
 ## transfer
 1. [200130 BiT ResNet](papers/200130%20BiT%20ResNet.md) #resnet
+1. [200512 Neural Architecture Transfer](papers/200512%20Neural%20Architecture%20Transfer.md) #nas
 1. [200711 Adversarially-Trained Deep Nets Transfer Better](papers/200711%20Adversarially-Trained%20Deep%20Nets%20Transfer%20Better.md) #adversarial_training
 1. [200716 Do Adversarially Robust ImageNet Models Transfer Better](papers/200716%20Do%20Adversarially%20Robust%20ImageNet%20Models%20Transfer%20Better.md) #robust
 1. [200721 Adversarial Training Reduces Information and Improves Transferability](papers/200721%20Adversarial%20Training%20Reduces%20Information%20and%20Improves%20Transferability.md) #adversarial_training
 1. [201122 Ranking Neural Checkpoints](papers/201122%20Ranking%20Neural%20Checkpoints.md)
+1. [211012 Rethinking supervised pre-training for better downstream transferring](papers/211012%20Rethinking%20supervised%20pre-training%20for%20better%20downstream%20transferring.md) #classificiation #metric_learning
 ## transformer
 1. [200129 Are Transformers universal approximator](papers/200129%20Are%20Transformers%20universal%20approximator.md)
 1. [200129 Product Key Memory](papers/200129%20Product%20Key%20Memory.md) #attention
@@ -1208,6 +1235,7 @@
 1. [210909 Bag of Tricks for Optimizing Transformer Efficiency](papers/210909%20Bag%20of%20Tricks%20for%20Optimizing%20Transformer%20Efficiency.md) #nmt #lightweight
 1. [210917 Primer](papers/210917%20Primer.md) #lm #nas
 1. [210922 Scale Efficiently](papers/210922%20Scale%20Efficiently.md)
+1. [211018 NormFormer](papers/211018%20NormFormer.md)
 ## tropical geometry
 1. [200220 On the Decision Boundaries of Neural Networks](papers/200220%20On%20the%20Decision%20Boundaries%20of%20Neural%20Networks.md)
 ## tts
