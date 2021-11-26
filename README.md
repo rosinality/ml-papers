@@ -20,6 +20,7 @@
 1. [channel attention](#channel-attention)
 1. [chat](#chat)
 1. [computation](#computation)
+1. [continual learning](#continual-learning)
 1. [contrastive learning](#contrastive-learning)
 1. [convolution](#convolution)
 1. [dataset](#dataset)
@@ -27,6 +28,7 @@
 1. [decoding](#decoding)
 1. [deep prior](#deep-prior)
 1. [detr](#detr)
+1. [dewarping](#dewarping)
 1. [dialog](#dialog)
 1. [differentiable operator](#differentiable-operator)
 1. [differentiable tree](#differentiable-tree)
@@ -59,6 +61,7 @@
 1. [image generation](#image-generation)
 1. [img2img](#img2img)
 1. [implicit model](#implicit-model)
+1. [implicit representation](#implicit-representation)
 1. [instance segmentation](#instance-segmentation)
 1. [interpolation](#interpolation)
 1. [knowledge base](#knowledge-base)
@@ -74,9 +77,12 @@
 1. [matting](#matting)
 1. [memory](#memory)
 1. [meta learning](#meta-learning)
+1. [metric](#metric)
 1. [metric learning](#metric-learning)
 1. [mixup](#mixup)
+1. [multilingual](#multilingual)
 1. [multimodal](#multimodal)
+1. [multimodal generation](#multimodal-generation)
 1. [multitask](#multitask)
 1. [nas](#nas)
 1. [nerf](#nerf)
@@ -129,6 +135,7 @@
 1. [singing voice synthesis](#singing-voice-synthesis)
 1. [single image](#single-image)
 1. [speech](#speech)
+1. [state space model](#state-space-model)
 1. [structure learning](#structure-learning)
 1. [style transfer](#style-transfer)
 1. [stylegan](#stylegan)
@@ -194,6 +201,7 @@
 1. [210608 SpeechBrain](papers/210608%20SpeechBrain.md)
 1. [210827 Injecting Text in Self-Supervised Speech Pretraining](papers/210827%20Injecting%20Text%20in%20Self-Supervised%20Speech%20Pretraining.md) #self_supervised
 1. [211012 Word Order Does Not Matter For Speech Recognition](papers/211012%20Word%20Order%20Does%20Not%20Matter%20For%20Speech%20Recognition.md) #weak_supervision
+1. [211030 Pseudo-Labeling for Massively Multilingual Speech Recognition](papers/211030%20Pseudo-Labeling%20for%20Massively%20Multilingual%20Speech%20Recognition.md) #semi_supervised_learning #multilingual
 ## attention
 1. [200122 Object Contextual Representations](papers/200122%20Object%20Contextual%20Representations.md) #semantic_segmentation
 1. [200129 Empirical Attention](papers/200129%20Empirical%20Attention.md)
@@ -228,7 +236,6 @@
 1. [200621 AdvAug](papers/200621%20AdvAug.md) #mixup #nlp #adversarial_training
 1. [200710 Meta-Learning Requires Meta-Augmentation](papers/200710%20Meta-Learning%20Requires%20Meta-Augmentation.md) #metalearning
 1. [201117 Sequence-Level Mixed Sample Data Augmentation](papers/201117%20Sequence-Level%20Mixed%20Sample%20Data%20Augmentation.md) #nlp
-1. [201125 Can Temporal Information Help with Contrastive Self-Supervised Learning](papers/201125%20Can%20Temporal%20Information%20Help%20with%20Contrastive%20Self-Supervised%20Learning.md) #video #self_supervised
 1. [201213 Simple Copy-Paste is a Strong Data Augmentation Method for Instance](papers/201213%20Simple%20Copy-Paste%20is%20a%20Strong%20Data%20Augmentation%20Method%20for%20Instance.md) #instance_segmentation
 1. [201214 Improving Panoptic Segmentation at All Scales](papers/201214%20Improving%20Panoptic%20Segmentation%20at%20All%20Scales.md) #panoptic_segmentation
 1. [210318 AlignMix](papers/210318%20AlignMix.md) #mixup
@@ -316,6 +323,9 @@
 ## computation
 1. [200213 Training Large Neural Networks with Constant Memory using a New Execution Algorithm](papers/200213%20Training%20Large%20Neural%20Networks%20with%20Constant%20Memory%20using%20a%20New%20Execution%20Algorithm.md)
 1. [201204 Nimble](papers/201204%20Nimble.md)
+## continual learning
+1. [201124 Energy-Based Models for Continual Learning](papers/201124%20Energy-Based%20Models%20for%20Continual%20Learning.md) #energy_based_model
+1. [211103 One Pass ImageNet](papers/211103%20One%20Pass%20ImageNet.md) #online_learning
 ## contrastive learning
 1. [200213 A Simple Framework for Contrastive Learning of Visual Representations](papers/200213%20A%20Simple%20Framework%20for%20Contrastive%20Learning%20of%20Visual%20Representations.md) #augmentation
 1. [200309 Improved Baselines with Momentum Contrastive Learning](papers/200309%20Improved%20Baselines%20with%20Momentum%20Contrastive%20Learning.md)
@@ -363,6 +373,7 @@
 1. [210601 Comparing Test Sets with Item Response Theory](papers/210601%20Comparing%20Test%20Sets%20with%20Item%20Response%20Theory.md)
 1. [210907 Datasets](papers/210907%20Datasets.md)
 1. [210927 PASS](papers/210927%20PASS.md)
+1. [211103 LAION-400M](papers/211103%20LAION-400M.md)
 ## ddpm
 1. [200619 Denoising Diffusion Probabilistic Models](papers/200619%20Denoising%20Diffusion%20Probabilistic%20Models.md)
 1. [201214 Learning Energy-Based Models by Diffusion Recovery Likelihood](papers/201214%20Learning%20Energy-Based%20Models%20by%20Diffusion%20Recovery%20Likelihood.md) #energy_based_model
@@ -385,6 +396,9 @@
 1. [200408 Deep Manifold Prior](papers/200408%20Deep%20Manifold%20Prior.md)
 ## detr
 1. [210813 Conditional DETR for Fast Training Convergence](papers/210813%20Conditional%20DETR%20for%20Fast%20Training%20Convergence.md)
+## dewarping
+1. [211025 DocTr](papers/211025%20DocTr.md)
+1. [211028 DocScanner](papers/211028%20DocScanner.md)
 ## dialog
 1. [200129 Meena](papers/200129%20Meena.md) #NLP
 1. [210715 Beyond Goldfish Memory](papers/210715%20Beyond%20Goldfish%20Memory.md)
@@ -440,21 +454,18 @@
 1. [210716 Autonomy 2.0](papers/210716%20Autonomy%202.0.md)
 ## energy based model
 1. [200504 How to Train Your Energy-Based Model for Regression](papers/200504%20How%20to%20Train%20Your%20Energy-Based%20Model%20for%20Regression.md)
-1. [201124 Energy-Based Models for Continual Learning](papers/201124%20Energy-Based%20Models%20for%20Continual%20Learning.md) #continual_learning
 ## ensemble
 1. [200217 BatchEnsemble](papers/200217%20BatchEnsemble.md)
 ## federated learning
 1. [210415 See through Gradients](papers/210415%20See%20through%20Gradients.md)
 ## few shot
 1. [200228 AdarGCN](papers/200228%20AdarGCN.md) #graph
-1. [200627 Laplacian Regularized Few-Shot Learning](papers/200627%20Laplacian%20Regularized%20Few-Shot%20Learning.md) #semi_supervised_learning
 1. [210608 Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks](papers/210608%20Parameter-efficient%20Multi-task%20Fine-tuning%20for%20Transformers%20via%20Shared%20Hypernetworks.md) #adapter #multitask
 1. [210910 LibFewShot](papers/210910%20LibFewShot.md)
 ## finetuning
 1. [200214 AutoLR](papers/200214%20AutoLR.md) #pruning
 1. [200426 Masking as an Efficient Alternative to Finetuning for Pretrained](papers/200426%20Masking%20as%20an%20Efficient%20Alternative%20to%20Finetuning%20for%20Pretrained.md)
 1. [200709 Sample-based Regularization](papers/200709%20Sample-based%20Regularization.md) #transfer
-1. [210617 LoRA](papers/210617%20LoRA.md) #adapter #lm
 ## flow
 1. [200220 Regularized Autoencoders via Relaxed Injective Probability Flow](papers/200220%20Regularized%20Autoencoders%20via%20Relaxed%20Injective%20Probability%20Flow.md)
 1. [200227 Woodbury Transformations for Deep Generative Flows](papers/200227%20Woodbury%20Transformations%20for%20Deep%20Generative%20Flows.md)
@@ -552,6 +563,7 @@
 1. [210910 Instance-Conditioned GAN](papers/210910%20Instance-Conditioned%20GAN.md)
 1. [210927 WarpedGANSpace](papers/210927%20WarpedGANSpace.md)
 1. [211017 AE-StyleGAN](papers/211017%20AE-StyleGAN.md) #gan_inversion
+1. [211101 Projected GANs Converge Faster](papers/211101%20Projected%20GANs%20Converge%20Faster.md)
 ## gan inversion
 1. [200331 In-Domain GAN Inversion for Real Image Editing](papers/200331%20In-Domain%20GAN%20Inversion%20for%20Real%20Image%20Editing.md)
 1. [200703 Collaborative Learning for Faster StyleGAN Embedding](papers/200703%20Collaborative%20Learning%20for%20Faster%20StyleGAN%20Embedding.md)
@@ -620,6 +632,10 @@
 1. [201205 Spatially-Adaptive Pixelwise Networks for Fast Image Translation](papers/201205%20Spatially-Adaptive%20Pixelwise%20Networks%20for%20Fast%20Image%20Translation.md) #implicit_representation
 ## implicit model
 1. [200615 Multiscale Deep Equilibrium Models](papers/200615%20Multiscale%20Deep%20Equilibrium%20Models.md)
+## implicit representation
+1. [210506 ACORN](papers/210506%20ACORN.md) #positional_encoding
+1. [211026 NeRV](papers/211026%20NeRV.md)
+1. [211122 Neural Fields in Visual Computing and Beyond](papers/211122%20Neural%20Fields%20in%20Visual%20Computing%20and%20Beyond.md)
 ## instance segmentation
 1. [200129 BlendMask](papers/200129%20BlendMask.md)
 1. [200129 COCO 2018 Instance Segmentation](papers/200129%20COCO%202018%20Instance%20Segmentation.md) #challenge
@@ -681,6 +697,7 @@
 1. [210524 StructuralLM](papers/210524%20StructuralLM.md) #layout
 1. [210524 True Few-Shot Learning with Language Models](papers/210524%20True%20Few-Shot%20Learning%20with%20Language%20Models.md) #few_shot
 1. [210528 ByT5](papers/210528%20ByT5.md)
+1. [210617 LoRA](papers/210617%20LoRA.md) #adapter #finetuning
 1. [210623 Charformer](papers/210623%20Charformer.md) #tokenizer
 1. [210714 Deduplicating Training Data Makes Language Models Better](papers/210714%20Deduplicating%20Training%20Data%20Makes%20Language%20Models%20Better.md) #corpus
 1. [210714 HTLM](papers/210714%20HTLM.md)
@@ -694,6 +711,8 @@
 1. [211015 Multitask Prompted Training Enables Zero-Shot Task Generalization](papers/211015%20Multitask%20Prompted%20Training%20Enables%20Zero-Shot%20Task%20Generalization.md) #zero-shot
 1. [211016 Invariant Language Modeling](papers/211016%20Invariant%20Language%20Modeling.md) #irm
 1. [211016 MarkupLM](papers/211016%20MarkupLM.md) #layout
+1. [211020 Shaking the foundations](papers/211020%20Shaking%20the%20foundations.md) #causality
+1. [211027 Training Verifiers to Solve Math Word Problems](papers/211027%20Training%20Verifiers%20to%20Solve%20Math%20Word%20Problems.md)
 ## local attention
 1. [210323 Scaling Local Self-Attention for Parameter Efficient Visual Backbones](papers/210323%20Scaling%20Local%20Self-Attention%20for%20Parameter%20Efficient%20Visual%20Backbones.md)
 ## loss
@@ -710,16 +729,24 @@
 1. [200312 Online Fast Adaptation and Knowledge Accumulation](papers/200312%20Online%20Fast%20Adaptation%20and%20Knowledge%20Accumulation.md)
 1. [200401 Editable Neural Networks](papers/200401%20Editable%20Neural%20Networks.md)
 1. [200706 Meta-Learning Symmetries by Reparameterization](papers/200706%20Meta-Learning%20Symmetries%20by%20Reparameterization.md) #group_equivariance
+## metric
+1. [211025 The Efficiency Misnomer](papers/211025%20The%20Efficiency%20Misnomer.md)
 ## metric learning
 1. [200319 A unifying mutual information view of metric learning](papers/200319%20A%20unifying%20mutual%20information%20view%20of%20metric%20learning.md)
 ## mixup
 1. [201220 ResizeMix](papers/201220%20ResizeMix.md)
+## multilingual
+1. [210502 Larger-Scale Transformers for Multilingual Masked Language Modeling](papers/210502%20Larger-Scale%20Transformers%20for%20Multilingual%20Masked%20Language%20Modeling.md) #mlm #scale
 ## multimodal
 1. [200401 Pixel-BERT](papers/200401%20Pixel-BERT.md)
 1. [200513 INFOTABS](papers/200513%20INFOTABS.md)
 1. [200514 Behind the Scene](papers/200514%20Behind%20the%20Scene.md)
 1. [201130 Multimodal Pretraining Unmasked](papers/201130%20Multimodal%20Pretraining%20Unmasked.md)
 1. [210928 VideoCLIP](papers/210928%20VideoCLIP.md) #video_transformer #retrieval
+1. [211103 An Empirical Study of Training End-to-End Vision-and-Language Transformers](papers/211103%20An%20Empirical%20Study%20of%20Training%20End-to-End%20Vision-and-Language%20Transformers.md) #vision-language
+## multimodal generation
+1. [211122 L-Verse](papers/211122%20L-Verse.md)
+1. [211124 NÜWA](papers/211124%20N%C3%9CWA.md)
 ## multitask
 1. [200508 Transforming task representations to perform novel tasks](papers/200508%20Transforming%20task%20representations%20to%20perform%20novel%20tasks.md) #continual_learning
 1. [200625 MTAdam](papers/200625%20MTAdam.md)
@@ -799,6 +826,7 @@
 1. [200406 Evolving Normalization-Activation Layers](papers/200406%20Evolving%20Normalization-Activation%20Layers.md) #nas #activation
 1. [200427 A Batch Normalized Inference Network Keeps the KL Vanishing Away](papers/200427%20A%20Batch%20Normalized%20Inference%20Network%20Keeps%20the%20KL%20Vanishing%20Away.md)
 1. [201128 Batch Normalization with Enhanced Linear Transformation](papers/201128%20Batch%20Normalization%20with%20Enhanced%20Linear%20Transformation.md)
+1. [211026 Revisiting Batch Normalization](papers/211026%20Revisiting%20Batch%20Normalization.md)
 ## object detection
 1. [191118 Anchor-Free](papers/191118%20Anchor-Free.md)
 1. [191118 CenterMask](papers/191118%20CenterMask.md) #instance_segmentation #backbone #1stage
@@ -859,6 +887,9 @@
 1. [210728 SimROD](papers/210728%20SimROD.md) #domain_adaptation #self_supervised
 1. [210922 Pix2seq](papers/210922%20Pix2seq.md) #detr #autoregressive_model
 1. [210929 Localizing Objects with Self-Supervised Transformers and no Labels](papers/210929%20Localizing%20Objects%20with%20Self-Supervised%20Transformers%20and%20no%20Labels.md) #self_supervised #self_supervised_discovery #salient_object_detection
+1. [211101 PP-PicoDet](papers/211101%20PP-PicoDet.md) #lightweight
+1. [211122 Benchmarking Detection Transfer Learning with Vision Transformers](papers/211122%20Benchmarking%20Detection%20Transfer%20Learning%20with%20Vision%20Transformers.md) #unsupervised_training #vit
+1. [211123 Dynamic DETR](papers/211123%20Dynamic%20DETR.md)
 ## ocr
 1. [191231 LayoutLM](papers/191231%20LayoutLM.md)
 1. [200217 Text Perceptron](papers/200217%20Text%20Perceptron.md)
@@ -909,7 +940,6 @@
 ## positional encoding
 1. [200628 Rethinking Positional Encoding in Language Pre-training](papers/200628%20Rethinking%20Positional%20Encoding%20in%20Language%20Pre-training.md)
 1. [210408 Modulated Periodic Activations for Generalizable Local Functional](papers/210408%20Modulated%20Periodic%20Activations%20for%20Generalizable%20Local%20Functional.md) #periodic_activation #implicit_representation
-1. [210506 ACORN](papers/210506%20ACORN.md) #implicit_representation
 1. [210706 Rethinking Positional Encoding](papers/210706%20Rethinking%20Positional%20Encoding.md)
 ## practice
 1. [210630 Using AntiPatterns to avoid MLOps Mistakes](papers/210630%20Using%20AntiPatterns%20to%20avoid%20MLOps%20Mistakes.md)
@@ -976,6 +1006,11 @@
 1. [210927 BigSSL](papers/210927%20BigSSL.md) #asr #semi_supervised_learning #unsupervised_training
 1. [211005 Exploring the Limits of Large Scale Pre-training](papers/211005%20Exploring%20the%20Limits%20of%20Large%20Scale%20Pre-training.md) #classificiation #scaling
 1. [211018 Unsupervised Finetuning](papers/211018%20Unsupervised%20Finetuning.md) #unsupervised_training #finetuning
+1. [211026 WavLM](papers/211026%20WavLM.md) #speech
+1. [211103 VLMo](papers/211103%20VLMo.md) #mixture_of_experts #vision-language
+1. [211111 Masked Autoencoders Are Scalable Vision Learners](papers/211111%20Masked%20Autoencoders%20Are%20Scalable%20Vision%20Learners.md) #vit
+1. [211122 ExT5](papers/211122%20ExT5.md) #multitask
+1. [211122 Florence](papers/211122%20Florence.md) #vision-language #transfer
 ## probabilistic model
 1. [200413 Einsum Networks](papers/200413%20Einsum%20Networks.md)
 1. [200419 Roundtrip](papers/200419%20Roundtrip.md)
@@ -1015,6 +1050,7 @@
 1. [200130 Mastering Atari, Go, Chess, Shogi](papers/200130%20Mastering%20Atari%2C%20Go%2C%20Chess%2C%20Shogi.md)
 1. [200626 Critic Regularized Regression](papers/200626%20Critic%20Regularized%20Regression.md)
 1. [210929 Vision-Guided Quadrupedal Locomotion in the Wild with Multi-Modal Delay Randomization](papers/210929%20Vision-Guided%20Quadrupedal%20Locomotion%20in%20the%20Wild%20with%20Multi-Modal%20Delay%20Randomization.md)
+1. [211030 Mastering Atari Games with Limited Data](papers/211030%20Mastering%20Atari%20Games%20with%20Limited%20Data.md)
 ## rendering
 1. [200130 Textured Neural Avatars](papers/200130%20Textured%20Neural%20Avatars.md)
 ## representation
@@ -1094,7 +1130,6 @@
 ## scale
 1. [200712 Learning to Learn Parameterized Classification Networks for Scalable](papers/200712%20Learning%20to%20Learn%20Parameterized%20Classification%20Networks%20for%20Scalable.md) #hypernetwork
 1. [201130 Towards Better Accuracy-efficiency Trade-offs](papers/201130%20Towards%20Better%20Accuracy-efficiency%20Trade-offs.md)
-1. [210502 Larger-Scale Transformers for Multilingual Masked Language Modeling](papers/210502%20Larger-Scale%20Transformers%20for%20Multilingual%20Masked%20Language%20Modeling.md) #mlm #multilingual
 ## score
 1. [200319 GIQA](papers/200319%20GIQA.md)
 1. [200426 Evaluation Metrics for Conditional Image Generation](papers/200426%20Evaluation%20Metrics%20for%20Conditional%20Image%20Generation.md)
@@ -1105,9 +1140,11 @@
 1. [200722 CrossTransformers](papers/200722%20CrossTransformers.md) #few_shot
 1. [201015 Representation Learning via Invariant Causal Mechanisms](papers/201015%20Representation%20Learning%20via%20Invariant%20Causal%20Mechanisms.md) #causality
 1. [201117 Neural Semi-supervised Learning for Text Classification Under](papers/201117%20Neural%20Semi-supervised%20Learning%20for%20Text%20Classification%20Under.md) #nlp
+1. [201125 Can Temporal Information Help with Contrastive Self-Supervised Learning](papers/201125%20Can%20Temporal%20Information%20Help%20with%20Contrastive%20Self-Supervised%20Learning.md) #video #augmentation
 1. [201224 Self-supervised Pre-training with Hard Examples Improves Visual](papers/201224%20Self-supervised%20Pre-training%20with%20Hard%20Examples%20Improves%20Visual.md) #mixup
 1. [210726 Continental-Scale Building Detection from High Resolution Satellite Imagery](papers/210726%20Continental-Scale%20Building%20Detection%20from%20High%20Resolution%20Satellite%20Imagery.md)
 1. [210927 Compressive Visual Representations](papers/210927%20Compressive%20Visual%20Representations.md)
+1. [211027 Neural Analysis and Synthesis](papers/211027%20Neural%20Analysis%20and%20Synthesis.md) #audio_synthesis
 ## self supervised discovery
 1. [200403 Self-Supervised Viewpoint Learning From Image Collections](papers/200403%20Self-Supervised%20Viewpoint%20Learning%20From%20Image%20Collections.md) #viewpoint
 1. [201127 Unsupervised part representation by Flow Capsules](papers/201127%20Unsupervised%20part%20representation%20by%20Flow%20Capsules.md)
@@ -1127,6 +1164,7 @@
 1. [200218 DivideMix](papers/200218%20DivideMix.md) #mixup #noise #dataset
 1. [200306 Semi-Supervised StyleGAN for Disentanglement Learning](papers/200306%20Semi-Supervised%20StyleGAN%20for%20Disentanglement%20Learning.md) #stylegan #mixup
 1. [200323 Meta Pseudo Labels](papers/200323%20Meta%20Pseudo%20Labels.md) #meta_learning
+1. [200627 Laplacian Regularized Few-Shot Learning](papers/200627%20Laplacian%20Regularized%20Few-Shot%20Learning.md) #few_shot
 1. [200724 Deep Co-Training with Task Decomposition for Semi-Supervised Domain](papers/200724%20Deep%20Co-Training%20with%20Task%20Decomposition%20for%20Semi-Supervised%20Domain.md) #domain_adaptation
 1. [201116 On the Marginal Benefit of Active Learning](papers/201116%20On%20the%20Marginal%20Benefit%20of%20Active%20Learning.md) #active_learning #unsupervised_training
 1. [201118 FROST](papers/201118%20FROST.md)
@@ -1139,6 +1177,8 @@
 ## speech
 1. [200129 Speech Recognition](papers/200129%20Speech%20Recognition.md)
 1. [200129 WaveFlow](papers/200129%20WaveFlow.md) #conditional_generative_model
+## state space model
+1. [211031 Efficiently Modeling Long Sequences with Structured State Spaces](papers/211031%20Efficiently%20Modeling%20Long%20Sequences%20with%20Structured%20State%20Spaces.md)
 ## structure learning
 1. [200518 Large-scale empirical validation of Bayesian Network structure learning](papers/200518%20Large-scale%20empirical%20validation%20of%20Bayesian%20Network%20structure%20learning.md)
 ## style transfer
@@ -1236,6 +1276,8 @@
 1. [210917 Primer](papers/210917%20Primer.md) #lm #nas
 1. [210922 Scale Efficiently](papers/210922%20Scale%20Efficiently.md)
 1. [211018 NormFormer](papers/211018%20NormFormer.md)
+1. [211026 Hierarchical Transformers Are More Efficient Language Models](papers/211026%20Hierarchical%20Transformers%20Are%20More%20Efficient%20Language%20Models.md) #lm #efficient_attention
+1. [211122 MetaFormer is Actually What You Need for Vision](papers/211122%20MetaFormer%20is%20Actually%20What%20You%20Need%20for%20Vision.md) #vit
 ## tropical geometry
 1. [200220 On the Decision Boundaries of Neural Networks](papers/200220%20On%20the%20Decision%20Boundaries%20of%20Neural%20Networks.md)
 ## tts
@@ -1315,6 +1357,7 @@
 1. [210811 ConvNets vs. Transformers](papers/210811%20ConvNets%20vs.%20Transformers.md) #robustness #transfer
 1. [210819 Do Vision Transformers See Like Convolutional Neural Networks](papers/210819%20Do%20Vision%20Transformers%20See%20Like%20Convolutional%20Neural%20Networks.md) #resnet
 1. [210908 Scaled ReLU Matters for Training Vision Transformers](papers/210908%20Scaled%20ReLU%20Matters%20for%20Training%20Vision%20Transformers.md) #cnn
+1. [211118 Swin Transformer V2](papers/211118%20Swin%20Transformer%20V2.md)
 ## vocoder
 1. [200512 FeatherWave](papers/200512%20FeatherWave.md)
 1. [201118 Universal MelGAN](papers/201118%20Universal%20MelGAN.md)
@@ -1327,3 +1370,4 @@
 1. [210607 ViTAE](papers/210607%20ViTAE.md)
 1. [210614 Non Gaussian Denoising Diffusion Models](papers/210614%20Non%20Gaussian%20Denoising%20Diffusion%20Models.md)
 1. [210909 PIMNet](papers/210909%20PIMNet.md)
+1. [211026 Combining Recurrent, Convolutional, and Continuous-time Models with Linear State-Space Layers](papers/211026%20Combining%20Recurrent%2C%20Convolutional%2C%20and%20Continuous-time%20Models%20with%20Linear%20State-Space%20Layers.md)
