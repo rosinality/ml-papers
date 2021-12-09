@@ -388,6 +388,8 @@
 1. [210701 Variational Diffusion Models](papers/210701%20Variational%20Diffusion%20Models.md)
 1. [210802 SDEdit](papers/210802%20SDEdit.md)
 1. [210819 ImageBART](papers/210819%20ImageBART.md) #vq #autoregressive_model
+1. [211129 Blended Diffusion for Text-driven Editing of Natural Images](papers/211129%20Blended%20Diffusion%20for%20Text-driven%20Editing%20of%20Natural%20Images.md) #clip #image_editing
+1. [211130 Diffusion Autoencoders](papers/211130%20Diffusion%20Autoencoders.md)
 ## decoding
 1. [200516 Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](papers/200516%20Layer-Wise%20Cross-View%20Decoding%20for%20Sequence-to-Sequence%20Learning.md)
 1. [200601 Cascaded Text Generation with Markov Transformers](papers/200601%20Cascaded%20Text%20Generation%20with%20Markov%20Transformers.md) #text_generation
@@ -779,8 +781,12 @@
 1. [210706 Depth-supervised NeRF](papers/210706%20Depth-supervised%20NeRF.md)
 1. [210809 NeuralMVS](papers/210809%20NeuralMVS.md)
 1. [211019 CIPS-3D](papers/211019%20CIPS-3D.md) #stylegan
+1. [211129 Deblur-NeRF](papers/211129%20Deblur-NeRF.md)
+1. [211129 HDR-NeRF](papers/211129%20HDR-NeRF.md)
+1. [211129 Urban Radiance Fields](papers/211129%20Urban%20Radiance%20Fields.md)
 ## neural computer
 1. [200720 Distributed Associative Memory Network with Memory Refreshing Loss](papers/200720%20Distributed%20Associative%20Memory%20Network%20with%20Memory%20Refreshing%20Loss.md)
+1. [211130 Show Your Work](papers/211130%20Show%20Your%20Work.md)
 ## neural ode
 1. [200207 How to train your neural ODE](papers/200207%20How%20to%20train%20your%20neural%20ODE.md)
 1. [200520 Neural Controlled Differential Equations](papers/200520%20Neural%20Controlled%20Differential%20Equations.md)
@@ -890,6 +896,7 @@
 1. [211101 PP-PicoDet](papers/211101%20PP-PicoDet.md) #lightweight
 1. [211122 Benchmarking Detection Transfer Learning with Vision Transformers](papers/211122%20Benchmarking%20Detection%20Transfer%20Learning%20with%20Vision%20Transformers.md) #unsupervised_training #vit
 1. [211123 Dynamic DETR](papers/211123%20Dynamic%20DETR.md)
+1. [211129 Sparse DETR](papers/211129%20Sparse%20DETR.md) #detr
 ## ocr
 1. [191231 LayoutLM](papers/191231%20LayoutLM.md)
 1. [200217 Text Perceptron](papers/200217%20Text%20Perceptron.md)
@@ -925,6 +932,7 @@
 1. [201201 MaX-DeepLab](papers/201201%20MaX-DeepLab.md) #detr #end2end
 1. [201202 Single-shot Path Integrated Panoptic Segmentation](papers/201202%20Single-shot%20Path%20Integrated%20Panoptic%20Segmentation.md) #dynamic_conv
 1. [210910 Panoptic Narrative Grounding](papers/210910%20Panoptic%20Narrative%20Grounding.md) #visual_grounding
+1. [211202 Masked-attention Mask Transformer for Universal Image Segmentation](papers/211202%20Masked-attention%20Mask%20Transformer%20for%20Universal%20Image%20Segmentation.md) #detr
 ## perceptual loss
 1. [200206 Image Fine-grained Inpainting](papers/200206%20Image%20Fine-grained%20Inpainting.md) #inpainting
 1. [200330 Exploiting Deep Generative Prior for Versatile Image Restoration and](papers/200330%20Exploiting%20Deep%20Generative%20Prior%20for%20Versatile%20Image%20Restoration%20and.md) #gan_inversion
@@ -1011,6 +1019,7 @@
 1. [211111 Masked Autoencoders Are Scalable Vision Learners](papers/211111%20Masked%20Autoencoders%20Are%20Scalable%20Vision%20Learners.md) #vit
 1. [211122 ExT5](papers/211122%20ExT5.md) #multitask
 1. [211122 Florence](papers/211122%20Florence.md) #vision-language #transfer
+1. [211201 Revisiting the Transferability of Supervised Pretraining](papers/211201%20Revisiting%20the%20Transferability%20of%20Supervised%20Pretraining.md) #transfer
 ## probabilistic model
 1. [200413 Einsum Networks](papers/200413%20Einsum%20Networks.md)
 1. [200419 Roundtrip](papers/200419%20Roundtrip.md)
@@ -1278,6 +1287,7 @@
 1. [211018 NormFormer](papers/211018%20NormFormer.md)
 1. [211026 Hierarchical Transformers Are More Efficient Language Models](papers/211026%20Hierarchical%20Transformers%20Are%20More%20Efficient%20Language%20Models.md) #lm #efficient_attention
 1. [211122 MetaFormer is Actually What You Need for Vision](papers/211122%20MetaFormer%20is%20Actually%20What%20You%20Need%20for%20Vision.md) #vit
+1. [211124 Sparse is Enough in Scaling Transformers](papers/211124%20Sparse%20is%20Enough%20in%20Scaling%20Transformers.md) #sparsity #efficiency
 ## tropical geometry
 1. [200220 On the Decision Boundaries of Neural Networks](papers/200220%20On%20the%20Decision%20Boundaries%20of%20Neural%20Networks.md)
 ## tts
@@ -1358,6 +1368,7 @@
 1. [210819 Do Vision Transformers See Like Convolutional Neural Networks](papers/210819%20Do%20Vision%20Transformers%20See%20Like%20Convolutional%20Neural%20Networks.md) #resnet
 1. [210908 Scaled ReLU Matters for Training Vision Transformers](papers/210908%20Scaled%20ReLU%20Matters%20for%20Training%20Vision%20Transformers.md) #cnn
 1. [211118 Swin Transformer V2](papers/211118%20Swin%20Transformer%20V2.md)
+1. [211202 Improved Multiscale Vision Transformers for Classification and Detection](papers/211202%20Improved%20Multiscale%20Vision%20Transformers%20for%20Classification%20and%20Detection.md)
 ## vocoder
 1. [200512 FeatherWave](papers/200512%20FeatherWave.md)
 1. [201118 Universal MelGAN](papers/201118%20Universal%20MelGAN.md)

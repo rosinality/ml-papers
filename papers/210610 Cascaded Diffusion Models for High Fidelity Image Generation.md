@@ -1,3 +1,4 @@
+https://arxiv.org/abs/2106.15282
 https://cascaded-diffusion.github.io/
 
 Cascaded Diffusion Models for High Fidelity Image Generation (Jonathan Ho, Chitwan Saharia, William Chan, David J. Fleet, Mohammad Norouzi, Tim Salimans)
