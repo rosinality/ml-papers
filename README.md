@@ -65,6 +65,7 @@
 1. [img2img](#img2img)
 1. [implicit model](#implicit-model)
 1. [implicit representation](#implicit-representation)
+1. [in context learning](#in-context-learning)
 1. [instance segmentation](#instance-segmentation)
 1. [interpolation](#interpolation)
 1. [knowledge base](#knowledge-base)
@@ -73,6 +74,7 @@
 1. [layout](#layout)
 1. [lightweight](#lightweight)
 1. [line](#line)
+1. [llm](#llm)
 1. [lm](#lm)
 1. [local attention](#local-attention)
 1. [loss](#loss)
@@ -85,6 +87,7 @@
 1. [mixture of experts](#mixture-of-experts)
 1. [mixup](#mixup)
 1. [mlm](#mlm)
+1. [multilingual](#multilingual)
 1. [multimodal](#multimodal)
 1. [multimodal generation](#multimodal-generation)
 1. [multitask](#multitask)
@@ -95,7 +98,6 @@
 1. [neural rendering](#neural-rendering)
 1. [nlp](#nlp)
 1. [nmt](#nmt)
-1. [noise](#noise)
 1. [non autoregressive](#non-autoregressive)
 1. [norm free](#norm-free)
 1. [normalization](#normalization)
@@ -118,6 +120,7 @@
 1. [prompt](#prompt)
 1. [pruning](#pruning)
 1. [qa](#qa)
+1. [quantization](#quantization)
 1. [reasoning](#reasoning)
 1. [regularization](#regularization)
 1. [reinforcement learning](#reinforcement-learning)
@@ -170,10 +173,13 @@
 1. [visual grounding](#visual-grounding)
 1. [vit](#vit)
 1. [vocoder](#vocoder)
+1. [vqa](#vqa)
 1. [weak supervision](#weak-supervision)
 1. [uncategorized](#uncategorized)
 ## 3d generative model
 1. [211220 3D-aware Image Synthesis via Learning Structural and Textural Representations](papers/2021/211220%203D-aware%20Image%20Synthesis%20via%20Learning%20Structural%20and%20Textural%20Representations.md)
+1. [220615 GRAM-HD](papers/2022/220615%20GRAM-HD.md)
+1. [220621 EpiGRAF](papers/2022/220621%20EpiGRAF.md)
 ## activation
 1. [201019 Smooth activations and reproducibility in deep networks](papers/2020/201019%20Smooth%20activations%20and%20reproducibility%20in%20deep%20networks.md) #stability
 ## active learning
@@ -184,6 +190,7 @@
 1. [200130 Once for All](papers/2020/200130%20Once%20for%20All.md) #deploy
 ## adapter
 1. [210608 Compacter](papers/2021/210608%20Compacter.md)
+1. [220524 AdaMix](papers/2022/220524%20AdaMix.md) #moe
 ## adversarial training
 1. [200130 Adversarial Examples Improve Image Recognition](papers/2020/200130%20Adversarial%20Examples%20Improve%20Image%20Recognition.md)
 1. [200625 Smooth Adversarial Training](papers/2020/200625%20Smooth%20Adversarial%20Training.md)
@@ -207,10 +214,11 @@
 1. [201125 Streaming end-to-end multi-talker speech recognition](papers/2020/201125%20Streaming%20end-to-end%20multi-talker%20speech%20recognition.md) #transducer
 1. [210524 Unsupervised Speech Recognition](papers/2021/210524%20Unsupervised%20Speech%20Recognition.md) #unsupervised_training
 1. [210608 SpeechBrain](papers/2021/210608%20SpeechBrain.md)
-1. [210827 Injecting Text in Self-Supervised Speech Pretraining](papers/2021/210827%20Injecting%20Text%20in%20Self-Supervised%20Speech%20Pretraining.md) #self_supervised
 1. [211012 Word Order Does Not Matter For Speech Recognition](papers/2021/211012%20Word%20Order%20Does%20Not%20Matter%20For%20Speech%20Recognition.md) #weak_supervision
 1. [211030 Pseudo-Labeling for Massively Multilingual Speech Recognition](papers/2021/211030%20Pseudo-Labeling%20for%20Massively%20Multilingual%20Speech%20Recognition.md) #semi_supervised_learning #multilingual
 1. [211210 Building a great multi-lingual teacher with sparsely-gated mixture of experts for speech recognition](papers/2021/211210%20Building%20a%20great%20multi-lingual%20teacher%20with%20sparsely-gated%20mixture%20of%20experts%20for%20speech%20recognition.md) #moe
+1. [220829 A Language Agnostic Multilingual Streaming On-Device ASR System](papers/2022/220829%20A%20Language%20Agnostic%20Multilingual%20Streaming%20On-Device%20ASR%20System.md) #multilingual
+1. [220922 Whisper](papers/2022/220922%20Whisper.md)
 ## attention
 1. [200122 Object Contextual Representations](papers/2020/200122%20Object%20Contextual%20Representations.md) #semantic_segmentation
 1. [200129 Empirical Attention](papers/2020/200129%20Empirical%20Attention.md)
@@ -234,8 +242,6 @@
 1. [210225 LazyFormer](papers/2021/210225%20LazyFormer.md) #bert
 1. [210517 Pay Attention to MLPs](papers/2021/210517%20Pay%20Attention%20to%20MLPs.md) #mlp
 1. [210524 Self-Attention Networks Can Process Bounded Hierarchical Languages](papers/2021/210524%20Self-Attention%20Networks%20Can%20Process%20Bounded%20Hierarchical%20Languages.md) #nlp
-1. [210607 Refiner](papers/2021/210607%20Refiner.md) #vit
-1. [210705 What Makes for Hierarchical Vision Transformer](papers/2021/210705%20What%20Makes%20for%20Hierarchical%20Vision%20Transformer.md) #vit #mlp #local_attention
 1. [210826 Train Short, Test Long](papers/2021/210826%20Train%20Short%2C%20Test%20Long.md) #positional_encoding
 ## audio generation
 1. [220220 It's Raw! Audio Generation with State-Space Models](papers/2022/220220%20It%27s%20Raw%21%20Audio%20Generation%20with%20State-Space%20Models.md)
@@ -252,10 +258,12 @@
 1. [210318 AlignMix](papers/2021/210318%20AlignMix.md) #mixup
 1. [210318 TrivialAugment](papers/2021/210318%20TrivialAugment.md)
 1. [210429 Ensembling with Deep Generative Views](papers/2021/210429%20Ensembling%20with%20Deep%20Generative%20Views.md) #ensemble #gan_inversion
+1. [220830 Augraphy](papers/2022/220830%20Augraphy.md)
 ## autoregressive model
 1. [200129 Semi Autorgressive Training](papers/2020/200129%20Semi%20Autorgressive%20Training.md)
 1. [201027 Scaling Laws for Autoregressive Generative Modeling](papers/2020/201027%20Scaling%20Laws%20for%20Autoregressive%20Generative%20Modeling.md) #scale
 1. [211216 Characterizing and addressing the issue of oversmoothing in neural autoregressive sequence modeling](papers/2021/211216%20Characterizing%20and%20addressing%20the%20issue%20of%20oversmoothing%20in%20neural%20autoregressive%20sequence%20modeling.md)
+1. [220622 Scaling Autoregressive Models for Content-Rich Text-to-Image Generation](papers/2022/220622%20Scaling%20Autoregressive%20Models%20for%20Content-Rich%20Text-to-Image%20Generation.md) #image_generation
 ## backbone
 1. [190724 MixNet](papers/2019/190724%20MixNet.md) #convolution
 1. [200123 Antialiasing](papers/2020/200123%20Antialiasing.md) #invariance
@@ -304,10 +312,10 @@
 1. [220110 A ConvNet for the 2020s](papers/2022/220110%20A%20ConvNet%20for%20the%202020s.md) #cnn #vit
 1. [220313 Scaling Up Your Kernels to 31x31](papers/2022/220313%20Scaling%20Up%20Your%20Kernels%20to%2031x31.md)
 1. [220318 Three things everyone should know about Vision Transformers](papers/2022/220318%20Three%20things%20everyone%20should%20know%20about%20Vision%20Transformers.md) #vit
+1. [220728 HorNet](papers/2022/220728%20HorNet.md) #cnn
 ## bayesian
 1. [200207 Bayes Posterior](papers/2020/200207%20Bayes%20Posterior.md)
 1. [200210 Liberty or Depth](papers/2020/200210%20Liberty%20or%20Depth.md) #mean_field
-1. [200220 Neural Bayes](papers/2020/200220%20Neural%20Bayes.md) #representation #clustering
 1. [200514 Efficient and Scalable Bayesian Neural Nets with Rank-1 Factors](papers/2020/200514%20Efficient%20and%20Scalable%20Bayesian%20Neural%20Nets%20with%20Rank-1%20Factors.md) #ensemble #variational_inference
 ## bert
 1. [200305 What the [MASK]](papers/2020/200305%20What%20the%20%5BMASK%5D.md)
@@ -324,6 +332,7 @@
 ## bias
 1. [200519 Identifying Statistical Bias in Dataset Replication](papers/2020/200519%20Identifying%20Statistical%20Bias%20in%20Dataset%20Replication.md)
 1. [201202 Learning from others' mistakes](papers/2020/201202%20Learning%20from%20others%27%20mistakes.md) #product_of_experts
+1. [220919 The Biased Artist](papers/2022/220919%20The%20Biased%20Artist.md) #image_generation
 ## calibration
 1. [200221 Calibrating Deep Neural Networks using Focal Loss](papers/2020/200221%20Calibrating%20Deep%20Neural%20Networks%20using%20Focal%20Loss.md) #loss
 1. [200223 Being Bayesian, Even Just a Bit, Fixes Overconfidence in ReLU Networks](papers/2020/200223%20Being%20Bayesian%2C%20Even%20Just%20a%20Bit%2C%20Fixes%20Overconfidence%20in%20ReLU%20Networks.md) #bayesian
@@ -380,6 +389,9 @@
 1. [210517 Divide and Contrast](papers/2021/210517%20Divide%20and%20Contrast.md) #self_supervised #dataset #distillation
 1. [210601 Exploring the Diversity and Invariance in Yourself for Visual Pre-Training Task](papers/2021/210601%20Exploring%20the%20Diversity%20and%20Invariance%20in%20Yourself%20for%20Visual%20Pre-Training%20Task.md)
 1. [211018 Understanding Dimensional Collapse in Contrastive Self-supervised Learning](papers/2021/211018%20Understanding%20Dimensional%20Collapse%20in%20Contrastive%20Self-supervised%20Learning.md)
+1. [220701 e-CLIP](papers/2022/220701%20e-CLIP.md) #vision-language #retrieval
+1. [220727 Contrastive Masked Autoencoders are Stronger Vision Learners](papers/2022/220727%20Contrastive%20Masked%20Autoencoders%20are%20Stronger%20Vision%20Learners.md) #self_supervised #mlm
+1. [220804 Fine-Grained Semantically Aligned Vision-Language Pre-Training](papers/2022/220804%20Fine-Grained%20Semantically%20Aligned%20Vision-Language%20Pre-Training.md) #vision-language
 ## convolution
 1. [200316 SlimConv](papers/2020/200316%20SlimConv.md)
 1. [210429 Decoupled Dynamic Filter Networks](papers/2021/210429%20Decoupled%20Dynamic%20Filter%20Networks.md)
@@ -391,6 +403,7 @@
 1. [210907 Datasets](papers/2021/210907%20Datasets.md)
 1. [210927 PASS](papers/2021/210927%20PASS.md)
 1. [211103 LAION-400M](papers/2021/211103%20LAION-400M.md)
+1. [220704 How Much More Data Do I Need](papers/2022/220704%20How%20Much%20More%20Data%20Do%20I%20Need.md)
 ## ddpm
 1. [200619 Denoising Diffusion Probabilistic Models](papers/2020/200619%20Denoising%20Diffusion%20Probabilistic%20Models.md)
 1. [201214 Learning Energy-Based Models by Diffusion Recovery Likelihood](papers/2020/201214%20Learning%20Energy-Based%20Models%20by%20Diffusion%20Recovery%20Likelihood.md) #energy_based_model
@@ -411,6 +424,13 @@
 1. [211220 High-Resolution Image Synthesis with Latent Diffusion Models](papers/2021/211220%20High-Resolution%20Image%20Synthesis%20with%20Latent%20Diffusion%20Models.md) #vae #vq
 1. [220201 Progressive Distillation for Fast Sampling of Diffusion Models](papers/2022/220201%20Progressive%20Distillation%20for%20Fast%20Sampling%20of%20Diffusion%20Models.md) #distillation
 1. [220316 Dual Diffusion Implicit Bridges for Image-to-Image Translation](papers/2022/220316%20Dual%20Diffusion%20Implicit%20Bridges%20for%20Image-to-Image%20Translation.md)
+1. [220524 Imagen](papers/2022/220524%20Imagen.md) #conditional_generative_model
+1. [220601 Elucidating the Design Space of Diffusion-Based Generative Models](papers/2022/220601%20Elucidating%20the%20Design%20Space%20of%20Diffusion-Based%20Generative%20Models.md)
+1. [220803 Pyramidal Denoising Diffusion Probabilistic Models](papers/2022/220803%20Pyramidal%20Denoising%20Diffusion%20Probabilistic%20Models.md)
+1. [220808 Analog Bits](papers/2022/220808%20Analog%20Bits.md)
+1. [220912 Blurring Diffusion Models](papers/2022/220912%20Blurring%20Diffusion%20Models.md)
+1. [220912 Soft Diffusion](papers/2022/220912%20Soft%20Diffusion.md)
+1. [220929 DreamFusion](papers/2022/220929%20DreamFusion.md) #3d_generative_model
 ## decoding
 1. [200516 Layer-Wise Cross-View Decoding for Sequence-to-Sequence Learning](papers/2020/200516%20Layer-Wise%20Cross-View%20Decoding%20for%20Sequence-to-Sequence%20Learning.md)
 1. [200601 Cascaded Text Generation with Markov Transformers](papers/2020/200601%20Cascaded%20Text%20Generation%20with%20Markov%20Transformers.md) #text_generation
@@ -419,6 +439,7 @@
 1. [200408 Deep Manifold Prior](papers/2020/200408%20Deep%20Manifold%20Prior.md)
 ## detr
 1. [210813 Conditional DETR for Fast Training Convergence](papers/2021/210813%20Conditional%20DETR%20for%20Fast%20Training%20Convergence.md)
+1. [220726 Group DETR](papers/2022/220726%20Group%20DETR.md) #efficient_training
 ## dewarping
 1. [211025 DocTr](papers/2021/211025%20DocTr.md)
 1. [211028 DocScanner](papers/2021/211028%20DocScanner.md)
@@ -468,6 +489,10 @@
 1. [210712 Combiner](papers/2021/210712%20Combiner.md) #sparse_attention #local_attention
 1. [210725 H-Transformer-1D](papers/2021/210725%20H-Transformer-1D.md)
 1. [211210 Self-attention Does Not Need $O(n^2)$ Memory](papers/2021/211210%20Self-attention%20Does%20Not%20Need%20%24O%28n%5E2%29%24%20Memory.md)
+1. [220527 FlashAttention](papers/2022/220527%20FlashAttention.md)
+1. [220726 DETRs with Hybrid Matching](papers/2022/220726%20DETRs%20with%20Hybrid%20Matching.md) #detr
+1. [220911 On The Computational Complexity of Self-Attention](papers/2022/220911%20On%20The%20Computational%20Complexity%20of%20Self-Attention.md)
+1. [220921 Mega](papers/2022/220921%20Mega.md)
 ## embedding
 1. [200424 All Word Embeddings from One Embedding](papers/2020/200424%20All%20Word%20Embeddings%20from%20One%20Embedding.md)
 1. [200717 A Unifying Perspective on Neighbor Embeddings along the](papers/2020/200717%20A%20Unifying%20Perspective%20on%20Neighbor%20Embeddings%20along%20the.md)
@@ -488,6 +513,7 @@
 1. [200228 AdarGCN](papers/2020/200228%20AdarGCN.md) #graph
 1. [210608 Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks](papers/2021/210608%20Parameter-efficient%20Multi-task%20Fine-tuning%20for%20Transformers%20via%20Shared%20Hypernetworks.md) #adapter #multitask
 1. [210910 LibFewShot](papers/2021/210910%20LibFewShot.md)
+1. [220715 Plex](papers/2022/220715%20Plex.md) #uncertainty #generalization
 ## finetuning
 1. [200214 AutoLR](papers/2020/200214%20AutoLR.md) #pruning
 1. [200426 Masking as an Efficient Alternative to Finetuning for Pretrained](papers/2020/200426%20Masking%20as%20an%20Efficient%20Alternative%20to%20Finetuning%20for%20Pretrained.md)
@@ -647,7 +673,11 @@
 ## image editing
 1. [200515 Semantic Photo Manipulation with a Generative Image Prior](papers/2020/200515%20Semantic%20Photo%20Manipulation%20with%20a%20Generative%20Image%20Prior.md)
 1. [201123 HistoGAN](papers/2020/201123%20HistoGAN.md)
+1. [201127 Navigating the GAN Parameter Space for Semantic Image Editing](papers/2020/201127%20Navigating%20the%20GAN%20Parameter%20Space%20for%20Semantic%20Image%20Editing.md) #semantic_factor
 1. [210318 Using latent space regression to analyze and leverage compositionality](papers/2021/210318%20Using%20latent%20space%20regression%20to%20analyze%20and%20leverage%20compositionality.md)
+1. [220531 IDE-3D](papers/2022/220531%20IDE-3D.md) #3d_generative_model
+1. [220802 An Image is Worth One Word](papers/2022/220802%20An%20Image%20is%20Worth%20One%20Word.md)
+1. [220802 Prompt-to-Prompt Image Editing with Cross Attention Control](papers/2022/220802%20Prompt-to-Prompt%20Image%20Editing%20with%20Cross%20Attention%20Control.md)
 ## image generation
 1. [200426 Disentangled Image Generation Through Structured Noise Injection](papers/2020/200426%20Disentangled%20Image%20Generation%20Through%20Structured%20Noise%20Injection.md)
 ## img2img
@@ -670,10 +700,15 @@
 ## implicit model
 1. [200615 Multiscale Deep Equilibrium Models](papers/2020/200615%20Multiscale%20Deep%20Equilibrium%20Models.md)
 ## implicit representation
+1. [210408 Modulated Periodic Activations for Generalizable Local Functional](papers/2021/210408%20Modulated%20Periodic%20Activations%20for%20Generalizable%20Local%20Functional.md) #positional_encoding #periodic_activation
 1. [210506 ACORN](papers/2021/210506%20ACORN.md) #positional_encoding
 1. [211026 NeRV](papers/2021/211026%20NeRV.md)
 1. [211122 Neural Fields in Visual Computing and Beyond](papers/2021/211122%20Neural%20Fields%20in%20Visual%20Computing%20and%20Beyond.md)
 1. [220117 Instant Neural Graphics Primitives with a Multiresolution Hash Encoding](papers/2022/220117%20Instant%20Neural%20Graphics%20Primitives%20with%20a%20Multiresolution%20Hash%20Encoding.md)
+1. [220522 ReLU Fields](papers/2022/220522%20ReLU%20Fields.md)
+## in context learning
+1. [220520 Prototypical Calibration for Few-shot Learning of Language Models](papers/2022/220520%20Prototypical%20Calibration%20for%20Few-shot%20Learning%20of%20Language%20Models.md)
+1. [220522 Instruction Induction](papers/2022/220522%20Instruction%20Induction.md)
 ## instance segmentation
 1. [200129 BlendMask](papers/2020/200129%20BlendMask.md)
 1. [200129 COCO 2018 Instance Segmentation](papers/2020/200129%20COCO%202018%20Instance%20Segmentation.md) #challenge
@@ -724,12 +759,24 @@
 1. [210601 Incorporating Visual Layout Structures for Scientific Text Classification](papers/2021/210601%20Incorporating%20Visual%20Layout%20Structures%20for%20Scientific%20Text%20Classification.md)
 1. [210902 Skim-Attention](papers/2021/210902%20Skim-Attention.md)
 1. [220418 LayoutLMv3](papers/2022/220418%20LayoutLMv3.md)
+1. [220517 MATrIX -- Modality-Aware Transformer for Information eXtraction](papers/2022/220517%20MATrIX%20--%20Modality-Aware%20Transformer%20for%20Information%20eXtraction.md)
+1. [220912 PreSTU](papers/2022/220912%20PreSTU.md)
+1. [220918 ERNIE-mmLayout](papers/2022/220918%20ERNIE-mmLayout.md)
 ## lightweight
 1. [200624 Neural Architecture Design for GPU-Efficient Networks](papers/2020/200624%20Neural%20Architecture%20Design%20for%20GPU-Efficient%20Networks.md)
 1. [201124 MicroNet](papers/2020/201124%20MicroNet.md)
 1. [210507 Pareto-Optimal Quantized ResNet Is Mostly 4-bit](papers/2021/210507%20Pareto-Optimal%20Quantized%20ResNet%20Is%20Mostly%204-bit.md) #quantization
+1. [220409 Searching for Efficient Neural Architectures for On-Device ML on Edge TPUs](papers/2022/220409%20Searching%20for%20Efficient%20Neural%20Architectures%20for%20On-Device%20ML%20on%20Edge%20TPUs.md)
 ## line
 1. [210601 Towards Real-time and Light-weight Line Segment Detection](papers/2021/210601%20Towards%20Real-time%20and%20Light-weight%20Line%20Segment%20Detection.md)
+## llm
+1. [220521 Scaling Laws and Interpretability of Learning from Repeated Data](papers/2022/220521%20Scaling%20Laws%20and%20Interpretability%20of%20Learning%20from%20Repeated%20Data.md)
+1. [220522 Memorization Without Overfitting](papers/2022/220522%20Memorization%20Without%20Overfitting.md)
+1. [220524 Large Language Models are Zero-Shot Reasoners](papers/2022/220524%20Large%20Language%20Models%20are%20Zero-Shot%20Reasoners.md) #prompt
+1. [220711 Exploring Length Generalization in Large Language Models](papers/2022/220711%20Exploring%20Length%20Generalization%20in%20Large%20Language%20Models.md)
+1. [220711 Language Models (Mostly) Know What They Know](papers/2022/220711%20Language%20Models%20%28Mostly%29%20Know%20What%20They%20Know.md)
+1. [220926 Can Large Language Models Truly Understand Prompts](papers/2022/220926%20Can%20Large%20Language%20Models%20Truly%20Understand%20Prompts.md)
+1. [220929 Compositional Semantic Parsing with Large Language Models](papers/2022/220929%20Compositional%20Semantic%20Parsing%20with%20Large%20Language%20Models.md) #semantic_parsing
 ## lm
 1. [210524 StructuralLM](papers/2021/210524%20StructuralLM.md) #layout
 1. [210524 True Few-Shot Learning with Language Models](papers/2021/210524%20True%20Few-Shot%20Learning%20with%20Language%20Models.md) #few_shot
@@ -760,6 +807,11 @@
 1. [220329 Training Compute-Optimal Large Language Models](papers/2022/220329%20Training%20Compute-Optimal%20Large%20Language%20Models.md)
 1. [220413 METRO](papers/2022/220413%20METRO.md)
 1. [220414 GPT-NeoX-20B](papers/2022/220414%20GPT-NeoX-20B.md)
+1. [220502 OPT](papers/2022/220502%20OPT.md)
+1. [220524 On the Role of Bidirectionality in Language Model Pre-Training](papers/2022/220524%20On%20the%20Role%20of%20Bidirectionality%20in%20Language%20Model%20Pre-Training.md) #bert
+1. [220728 Efficient Training of Language Models to Fill in the Middle](papers/2022/220728%20Efficient%20Training%20of%20Language%20Models%20to%20Fill%20in%20the%20Middle.md) #mlm
+1. [220805 Branch-Train-Merge](papers/2022/220805%20Branch-Train-Merge.md) #product_of_experts #ensemble
+1. [220805 Few-shot Learning with Retrieval Augmented Language Model](papers/2022/220805%20Few-shot%20Learning%20with%20Retrieval%20Augmented%20Language%20Model.md) #retrieval #few_shot
 ## local attention
 1. [210323 Scaling Local Self-Attention for Parameter Efficient Visual Backbones](papers/2021/210323%20Scaling%20Local%20Self-Attention%20for%20Parameter%20Efficient%20Visual%20Backbones.md)
 ## loss
@@ -789,13 +841,18 @@
 1. [200424 Probabilistically Masked Language Model Capable of Autoregressive Generation in Arbitrary Word Order](papers/2020/200424%20Probabilistically%20Masked%20Language%20Model%20Capable%20of%20Autoregressive%20Generation%20in%20Arbitrary%20Word%20Order.md) #language_generation
 1. [210502 Larger-Scale Transformers for Multilingual Masked Language Modeling](papers/2021/210502%20Larger-Scale%20Transformers%20for%20Multilingual%20Masked%20Language%20Modeling.md) #multilingual #scale
 1. [220216 Should You Mask 15% in Masked Language Modeling](papers/2022/220216%20Should%20You%20Mask%2015%25%20in%20Masked%20Language%20Modeling.md)
+1. [220715 Position Prediction as an Effective Pretraining Strategy](papers/2022/220715%20Position%20Prediction%20as%20an%20Effective%20Pretraining%20Strategy.md) #unsupervised_training
+1. [220929 Bidirectional Language Models Are Also Few-shot Learners](papers/2022/220929%20Bidirectional%20Language%20Models%20Are%20Also%20Few-shot%20Learners.md) #in_context_learning
+## multilingual
+1. [220512 Lifting the Curse of Multilinguality by Pre-training Modular Transformers](papers/2022/220512%20Lifting%20the%20Curse%20of%20Multilinguality%20by%20Pre-training%20Modular%20Transformers.md) #adapter #mixture_of_experts
 ## multimodal
 1. [200401 Pixel-BERT](papers/2020/200401%20Pixel-BERT.md)
 1. [200513 INFOTABS](papers/2020/200513%20INFOTABS.md)
 1. [200514 Behind the Scene](papers/2020/200514%20Behind%20the%20Scene.md)
 1. [201130 Multimodal Pretraining Unmasked](papers/2020/201130%20Multimodal%20Pretraining%20Unmasked.md)
 1. [210928 VideoCLIP](papers/2021/210928%20VideoCLIP.md) #video_transformer #retrieval
-1. [211103 An Empirical Study of Training End-to-End Vision-and-Language Transformers](papers/2021/211103%20An%20Empirical%20Study%20of%20Training%20End-to-End%20Vision-and-Language%20Transformers.md) #vision-language
+1. [220512 A Generalist Agent](papers/2022/220512%20A%20Generalist%20Agent.md) #reinforcement_learning
+1. [220527 GIT](papers/2022/220527%20GIT.md)
 ## multimodal generation
 1. [211122 L-Verse](papers/2021/211122%20L-Verse.md)
 1. [211124 NÜWA](papers/2021/211124%20N%C3%9CWA.md)
@@ -803,6 +860,7 @@
 1. [200508 Transforming task representations to perform novel tasks](papers/2020/200508%20Transforming%20task%20representations%20to%20perform%20novel%20tasks.md) #continual_learning
 1. [200625 MTAdam](papers/2020/200625%20MTAdam.md)
 1. [210825 Multi-Task Self-Training for Learning General Representations](papers/2021/210825%20Multi-Task%20Self-Training%20for%20Learning%20General%20Representations.md)
+1. [220520 UViM](papers/2022/220520%20UViM.md)
 ## nas
 1. [200324 BigNAS](papers/2020/200324%20BigNAS.md)
 1. [200326 Are Labels Necessary for Neural Architecture Search](papers/2020/200326%20Are%20Labels%20Necessary%20for%20Neural%20Architecture%20Search.md) #unsupervised_training
@@ -813,6 +871,7 @@
 1. [200507 Noisy Differentiable Architecture Search](papers/2020/200507%20Noisy%20Differentiable%20Architecture%20Search.md)
 1. [200602 FBNetV3](papers/2020/200602%20FBNetV3.md) #hyperparameter #training #swa
 1. [200720 NSGANetV2](papers/2020/200720%20NSGANetV2.md)
+1. [220831 Efficient Sparsely Activated Transformers](papers/2022/220831%20Efficient%20Sparsely%20Activated%20Transformers.md) #moe
 ## nerf
 1. [201014 NeRF++](papers/2020/201014%20NeRF%2B%2B.md)
 1. [201125 Neural Scene Flow Fields for Space-Time View Synthesis of Dynamic Scenes](papers/2020/201125%20Neural%20Scene%20Flow%20Fields%20for%20Space-Time%20View%20Synthesis%20of%20Dynamic%20Scenes.md)
@@ -852,17 +911,17 @@
 1. [210319 Paint by Word](papers/2021/210319%20Paint%20by%20Word.md)
 1. [210512 Enhancing Photorealism Enhancement](papers/2021/210512%20Enhancing%20Photorealism%20Enhancement.md)
 1. [211013 ADOP](papers/2021/211013%20ADOP.md)
+1. [220728 Neural Strands](papers/2022/220728%20Neural%20Strands.md)
 ## nlp
 1. [200518 (Re)construing Meaning in NLP](papers/2020/200518%20%28Re%29construing%20Meaning%20in%20NLP.md)
 1. [200715 Towards Debiasing Sentence Representations](papers/2020/200715%20Towards%20Debiasing%20Sentence%20Representations.md) #bias
+1. [220826 What Do NLP Researchers Believe](papers/2022/220826%20What%20Do%20NLP%20Researchers%20Believe.md)
 ## nmt
 1. [200207 A Multilingual View of Unsupervised Machine Translation](papers/2020/200207%20A%20Multilingual%20View%20of%20Unsupervised%20Machine%20Translation.md) #multilingual
 1. [200427 Lexically Constrained Neural Machine Translation with Levenshtein Transformer](papers/2020/200427%20Lexically%20Constrained%20Neural%20Machine%20Translation%20with%20Levenshtein%20Transformer.md)
 1. [200710 Learn to Use Future Information in Simultaneous Translation](papers/2020/200710%20Learn%20to%20Use%20Future%20Information%20in%20Simultaneous%20Translation.md) #simultaneous_translation
 1. [201224 Why Neural Machine Translation Prefers Empty Outputs](papers/2020/201224%20Why%20Neural%20Machine%20Translation%20Prefers%20Empty%20Outputs.md) #hallucination
 1. [211015 Breaking Down Multilingual Machine Translation](papers/2021/211015%20Breaking%20Down%20Multilingual%20Machine%20Translation.md) #multilingual
-## noise
-1. [201223 Noisy Labels Can Induce Good Representations](papers/2020/201223%20Noisy%20Labels%20Can%20Induce%20Good%20Representations.md) #representation
 ## non autoregressive
 1. [200403 Aligned Cross Entropy for Non-Autoregressive Machine Translation](papers/2020/200403%20Aligned%20Cross%20Entropy%20for%20Non-Autoregressive%20Machine%20Translation.md)
 1. [200415 Non-Autoregressive Machine Translation with Latent Alignments](papers/2020/200415%20Non-Autoregressive%20Machine%20Translation%20with%20Latent%20Alignments.md) #nmt #ctc
@@ -872,6 +931,8 @@
 1. [201125 FBWave](papers/2020/201125%20FBWave.md) #vocoder #lightweight
 1. [201207 EfficientTTS](papers/2020/201207%20EfficientTTS.md) #tts
 1. [211213 Step-unrolled Denoising Autoencoders for Text Generation](papers/2021/211213%20Step-unrolled%20Denoising%20Autoencoders%20for%20Text%20Generation.md)
+1. [220520 Lossless Acceleration for Seq2seq Generation with Aggressive Decoding](papers/2022/220520%20Lossless%20Acceleration%20for%20Seq2seq%20Generation%20with%20Aggressive%20Decoding.md) #efficiency
+1. [220909 Improved Masked Image Generation with Token-Critic](papers/2022/220909%20Improved%20Masked%20Image%20Generation%20with%20Token-Critic.md) #mlm
 ## norm free
 1. [200310 ReZero is All You Need](papers/2020/200310%20ReZero%20is%20All%20You%20Need.md) #initialization
 ## normalization
@@ -952,6 +1013,7 @@
 1. [211129 Sparse DETR](papers/2021/211129%20Sparse%20DETR.md) #detr
 1. [220107 Detecting Twenty-thousand Classes using Image-level Supervision](papers/2022/220107%20Detecting%20Twenty-thousand%20Classes%20using%20Image-level%20Supervision.md) #weak_supervision
 1. [220330 Exploring Plain Vision Transformer Backbones for Object Detection](papers/2022/220330%20Exploring%20Plain%20Vision%20Transformer%20Backbones%20for%20Object%20Detection.md) #vit #instance_segmentation
+1. [220615 A Unified Sequence Interface for Vision Tasks](papers/2022/220615%20A%20Unified%20Sequence%20Interface%20for%20Vision%20Tasks.md) #multitask #instance_segmentation #keypoint
 ## ocr
 1. [191231 LayoutLM](papers/2019/191231%20LayoutLM.md)
 1. [200217 Text Perceptron](papers/2020/200217%20Text%20Perceptron.md)
@@ -1006,7 +1068,6 @@
 1. [210913 Pose with Style](papers/2021/210913%20Pose%20with%20Style.md)
 ## positional encoding
 1. [200628 Rethinking Positional Encoding in Language Pre-training](papers/2020/200628%20Rethinking%20Positional%20Encoding%20in%20Language%20Pre-training.md)
-1. [210408 Modulated Periodic Activations for Generalizable Local Functional](papers/2021/210408%20Modulated%20Periodic%20Activations%20for%20Generalizable%20Local%20Functional.md) #periodic_activation #implicit_representation
 1. [210706 Rethinking Positional Encoding](papers/2021/210706%20Rethinking%20Positional%20Encoding.md)
 ## practice
 1. [210630 Using AntiPatterns to avoid MLOps Mistakes](papers/2021/210630%20Using%20AntiPatterns%20to%20avoid%20MLOps%20Mistakes.md)
@@ -1081,11 +1142,14 @@
 1. [211201 Revisiting the Transferability of Supervised Pretraining](papers/2021/211201%20Revisiting%20the%20Transferability%20of%20Supervised%20Pretraining.md) #transfer
 1. [211216 Masked Feature Prediction for Self-Supervised Visual Pre-Training](papers/2021/211216%20Masked%20Feature%20Prediction%20for%20Self-Supervised%20Visual%20Pre-Training.md) #self_supervised
 1. [211220 Are Large-scale Datasets Necessary for Self-Supervised Pre-training](papers/2021/211220%20Are%20Large-scale%20Datasets%20Necessary%20for%20Self-Supervised%20Pre-training.md) #self_supervised #transfer
+1. [220429 Vision-Language Pre-Training for Boosting Scene Text Detectors](papers/2022/220429%20Vision-Language%20Pre-Training%20for%20Boosting%20Scene%20Text%20Detectors.md)
+1. [220914 PaLI](papers/2022/220914%20PaLI.md) #vision-language
 ## probabilistic model
 1. [200413 Einsum Networks](papers/2020/200413%20Einsum%20Networks.md)
 1. [200419 Roundtrip](papers/2020/200419%20Roundtrip.md)
 ## prompt
 1. [220118 ZeroPrompt](papers/2022/220118%20ZeroPrompt.md) #zero-shot
+1. [220916 Text and Patterns](papers/2022/220916%20Text%20and%20Patterns.md)
 ## pruning
 1. [200130 Rethinking Pruning](papers/2020/200130%20Rethinking%20Pruning.md)
 1. [200218 Picking Winning Tickets Before Training by Preserving Gradient Flow](papers/2020/200218%20Picking%20Winning%20Tickets%20Before%20Training%20by%20Preserving%20Gradient%20Flow.md) #lottery_ticket
@@ -1099,6 +1163,8 @@
 1. [200710 To Filter Prune, or to Layer Prune, That Is The Question](papers/2020/200710%20To%20Filter%20Prune%2C%20or%20to%20Layer%20Prune%2C%20That%20Is%20The%20Question.md)
 ## qa
 1. [200222 Unsupervised Question Decomposition for Question Answering](papers/2020/200222%20Unsupervised%20Question%20Decomposition%20for%20Question%20Answering.md)
+## quantization
+1. [220815 LLM.int8()](papers/2022/220815%20LLM.int8%28%29.md)
 ## reasoning
 1. [200129 Neural Arithmetic Units](papers/2020/200129%20Neural%20Arithmetic%20Units.md)
 1. [200409 Injecting Numerical Reasoning Skills into Language Models](papers/2020/200409%20Injecting%20Numerical%20Reasoning%20Skills%20into%20Language%20Models.md)
@@ -1116,6 +1182,7 @@
 1. [200707 Remix](papers/2020/200707%20Remix.md) #imbalanced
 1. [200721 Improving compute efficacy frontiers with SliceOut](papers/2020/200721%20Improving%20compute%20efficacy%20frontiers%20with%20SliceOut.md) #efficient_training
 1. [201122 Stable Weight Decay Regularization](papers/2020/201122%20Stable%20Weight%20Decay%20Regularization.md)
+1. [220527 Sharpness-Aware Training for Free](papers/2022/220527%20Sharpness-Aware%20Training%20for%20Free.md)
 ## reinforcement learning
 1. [191120 Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](papers/2019/191120%20Mastering%20Atari%2C%20Go%2C%20Chess%20and%20Shogi%20by%20Planning%20with%20a%20Learned%20Model.md)
 1. [200130 Mastering Atari, Go, Chess, Shogi](papers/2020/200130%20Mastering%20Atari%2C%20Go%2C%20Chess%2C%20Shogi.md)
@@ -1125,7 +1192,9 @@
 ## rendering
 1. [200130 Textured Neural Avatars](papers/2020/200130%20Textured%20Neural%20Avatars.md)
 ## representation
+1. [200220 Neural Bayes](papers/2020/200220%20Neural%20Bayes.md) #bayesian #clustering
 1. [200412 Gradients as Features for Deep Representation Learning](papers/2020/200412%20Gradients%20as%20Features%20for%20Deep%20Representation%20Learning.md)
+1. [201223 Noisy Labels Can Induce Good Representations](papers/2020/201223%20Noisy%20Labels%20Can%20Induce%20Good%20Representations.md) #noise
 ## resampling
 1. [200512 Invertible Image Rescaling](papers/2020/200512%20Invertible%20Image%20Rescaling.md)
 ## restoration
@@ -1195,6 +1264,7 @@
 1. [200211 Fundamental Tradeoffs between Invariance and Sensitivity to Adversarial](papers/2020/200211%20Fundamental%20Tradeoffs%20between%20Invariance%20and%20Sensitivity%20to%20Adversarial.md) #adversarial_training
 1. [200304 A Closer Look at Accuracy vs. Robustness](papers/2020/200304%20A%20Closer%20Look%20at%20Accuracy%20vs.%20Robustness.md) #adversarial_training
 1. [200810 Informative Dropout for Robust Representation Learning](papers/2020/200810%20Informative%20Dropout%20for%20Robust%20Representation%20Learning.md)
+1. [220607 Can CNNs Be More Robust Than Transformers](papers/2022/220607%20Can%20CNNs%20Be%20More%20Robust%20Than%20Transformers.md)
 ## saliency
 1. [200406 There and Back Again](papers/2020/200406%20There%20and%20Back%20Again.md)
 ## salient object detection
@@ -1216,10 +1286,17 @@
 1. [201125 Can Temporal Information Help with Contrastive Self-Supervised Learning](papers/2020/201125%20Can%20Temporal%20Information%20Help%20with%20Contrastive%20Self-Supervised%20Learning.md) #video #augmentation
 1. [201224 Self-supervised Pre-training with Hard Examples Improves Visual](papers/2020/201224%20Self-supervised%20Pre-training%20with%20Hard%20Examples%20Improves%20Visual.md) #mixup
 1. [210726 Continental-Scale Building Detection from High Resolution Satellite Imagery](papers/2021/210726%20Continental-Scale%20Building%20Detection%20from%20High%20Resolution%20Satellite%20Imagery.md)
+1. [210827 Injecting Text in Self-Supervised Speech Pretraining](papers/2021/210827%20Injecting%20Text%20in%20Self-Supervised%20Speech%20Pretraining.md) #asr
 1. [210927 Compressive Visual Representations](papers/2021/210927%20Compressive%20Visual%20Representations.md)
 1. [211027 Neural Analysis and Synthesis](papers/2021/211027%20Neural%20Analysis%20and%20Synthesis.md) #audio_synthesis
 1. [220124 data2vec](papers/2022/220124%20data2vec.md)
 1. [220216 Vision Models Are More Robust And Fair When Pretrained On Uncurated Images Without Supervision](papers/2022/220216%20Vision%20Models%20Are%20More%20Robust%20And%20Fair%20When%20Pretrained%20On%20Uncurated%20Images%20Without%20Supervision.md)
+1. [220520 Uniform Masking](papers/2022/220520%20Uniform%20Masking.md)
+1. [220526 Green Hierarchical Vision Transformer for Masked Image Modeling](papers/2022/220526%20Green%20Hierarchical%20Vision%20Transformer%20for%20Masked%20Image%20Modeling.md)
+1. [220526 MixMIM](papers/2022/220526%20MixMIM.md)
+1. [220526 Revealing the Dark Secrets of Masked Image Modeling](papers/2022/220526%20Revealing%20the%20Dark%20Secrets%20of%20Masked%20Image%20Modeling.md) #representation
+1. [220715 Is a Caption Worth a Thousand Images](papers/2022/220715%20Is%20a%20Caption%20Worth%20a%20Thousand%20Images.md) #clip
+1. [220803 Masked Vision and Language Modeling for Multi-modal Representation Learning](papers/2022/220803%20Masked%20Vision%20and%20Language%20Modeling%20for%20Multi-modal%20Representation%20Learning.md) #mlm
 ## self supervised discovery
 1. [200403 Self-Supervised Viewpoint Learning From Image Collections](papers/2020/200403%20Self-Supervised%20Viewpoint%20Learning%20From%20Image%20Collections.md) #viewpoint
 1. [201127 Unsupervised part representation by Flow Capsules](papers/2020/201127%20Unsupervised%20part%20representation%20by%20Flow%20Capsules.md)
@@ -1228,13 +1305,13 @@
 1. [200307 StyleGAN2 Distillation for Feed-forward Image Manipulation](papers/2020/200307%20StyleGAN2%20Distillation%20for%20Feed-forward%20Image%20Manipulation.md) #stylegan
 1. [200308 PULSE](papers/2020/200308%20PULSE.md) #stylegan
 1. [200406 GANSpace](papers/2020/200406%20GANSpace.md)
-1. [201127 Navigating the GAN Parameter Space for Semantic Image Editing](papers/2020/201127%20Navigating%20the%20GAN%20Parameter%20Space%20for%20Semantic%20Image%20Editing.md) #image_editing
 1. [201222 Time-Travel Rephotography](papers/2020/201222%20Time-Travel%20Rephotography.md) #restoration #stylegan
 ## semantic segmentation
 1. [200323 Learning Dynamic Routing for Semantic Segmentation](papers/2020/200323%20Learning%20Dynamic%20Routing%20for%20Semantic%20Segmentation.md)
 1. [200516 Single-Stage Semantic Segmentation from Image Labels](papers/2020/200516%20Single-Stage%20Semantic%20Segmentation%20from%20Image%20Labels.md)
 1. [200826 EfficientFCN](papers/2020/200826%20EfficientFCN.md)
 1. [210512 Segmenter](papers/2021/210512%20Segmenter.md)
+1. [220918 SegNeXt](papers/2022/220918%20SegNeXt.md)
 ## semi supervised learning
 1. [200218 DivideMix](papers/2020/200218%20DivideMix.md) #mixup #noise #dataset
 1. [200306 Semi-Supervised StyleGAN for Disentanglement Learning](papers/2020/200306%20Semi-Supervised%20StyleGAN%20for%20Disentanglement%20Learning.md) #stylegan #mixup
@@ -1243,6 +1320,9 @@
 1. [200724 Deep Co-Training with Task Decomposition for Semi-Supervised Domain](papers/2020/200724%20Deep%20Co-Training%20with%20Task%20Decomposition%20for%20Semi-Supervised%20Domain.md) #domain_adaptation
 1. [201116 On the Marginal Benefit of Active Learning](papers/2020/201116%20On%20the%20Marginal%20Benefit%20of%20Active%20Learning.md) #active_learning #unsupervised_training
 1. [201118 FROST](papers/2020/201118%20FROST.md)
+1. [220811 Semi-supervised Vision Transformers at Scale](papers/2022/220811%20Semi-supervised%20Vision%20Transformers%20at%20Scale.md)
+1. [220829 Open-Set Semi-Supervised Object Detection](papers/2022/220829%20Open-Set%20Semi-Supervised%20Object%20Detection.md) #open_set_recognition
+1. [220918 The Geometry of Self-supervised Learning Models and its Impact on Transfer Learning](papers/2022/220918%20The%20Geometry%20of%20Self-supervised%20Learning%20Models%20and%20its%20Impact%20on%20Transfer%20Learning.md)
 ## sgld
 1. [200706 Kernel Stein Generative Modeling](papers/2020/200706%20Kernel%20Stein%20Generative%20Modeling.md) #svgd
 ## singing voice synthesis
@@ -1268,6 +1348,7 @@
 1. [200323 Deep Unfolding Network for Image Super-Resolution](papers/2020/200323%20Deep%20Unfolding%20Network%20for%20Image%20Super-Resolution.md)
 ## table
 1. [210906 Parsing Table Structures in the Wild](papers/2021/210906%20Parsing%20Table%20Structures%20in%20the%20Wild.md)
+1. [220809 TSRFormer](papers/2022/220809%20TSRFormer.md)
 ## text generation
 1. [200130 Unlikelihood Training](papers/2020/200130%20Unlikelihood%20Training.md)
 1. [200605 CoCon](papers/2020/200605%20CoCon.md)
@@ -1357,6 +1438,7 @@
 1. [220221 Transformer Quality in Linear Time](papers/2022/220221%20Transformer%20Quality%20in%20Linear%20Time.md) #efficient_attention #linear_attention #local_attention
 1. [220301 DeepNet](papers/2022/220301%20DeepNet.md) #normalization
 1. [220330 Transformer Language Models without Positional Encodings Still Learn Positional Information](papers/2022/220330%20Transformer%20Language%20Models%20without%20Positional%20Encodings%20Still%20Learn%20Positional%20Information.md) #lm #positional_encoding
+1. [220924 In-context Learning and Induction Heads](papers/2022/220924%20In-context%20Learning%20and%20Induction%20Heads.md) #in_context_learning
 ## tropical geometry
 1. [200220 On the Decision Boundaries of Neural Networks](papers/2020/200220%20On%20the%20Decision%20Boundaries%20of%20Neural%20Networks.md)
 ## tts
@@ -1386,7 +1468,15 @@
 1. [201222 Seeing past words](papers/2020/201222%20Seeing%20past%20words.md)
 1. [210407 Multimodal Fusion Refiner Networks](papers/2021/210407%20Multimodal%20Fusion%20Refiner%20Networks.md)
 1. [210727 Is Object Detection Necessary for Human-Object Interaction Recognition](papers/2021/210727%20Is%20Object%20Detection%20Necessary%20for%20Human-Object%20Interaction%20Recognition.md) #human-object-interaction
+1. [211103 An Empirical Study of Training End-to-End Vision-and-Language Transformers](papers/2021/211103%20An%20Empirical%20Study%20of%20Training%20End-to-End%20Vision-and-Language%20Transformers.md) #multimodal
 1. [220221 Vision-Language Pre-Training with Triple Contrastive Learning](papers/2022/220221%20Vision-Language%20Pre-Training%20with%20Triple%20Contrastive%20Learning.md)
+1. [220504 CoCa](papers/2022/220504%20CoCa.md)
+1. [220612 GLIPv2](papers/2022/220612%20GLIPv2.md)
+1. [220615 Coarse-to-Fine Vision-Language Pre-training with Fusion in the Backbone](papers/2022/220615%20Coarse-to-Fine%20Vision-Language%20Pre-training%20with%20Fusion%20in%20the%20Backbone.md)
+1. [220617 Bridge-Tower](papers/2022/220617%20Bridge-Tower.md)
+1. [220617 Unified-IO](papers/2022/220617%20Unified-IO.md) #multitask
+1. [220810 Patching open-vocabulary models by interpolating weights](papers/2022/220810%20Patching%20open-vocabulary%20models%20by%20interpolating%20weights.md) #clip #multitask #domain
+1. [220822 Image as a Foreign Language](papers/2022/220822%20Image%20as%20a%20Foreign%20Language.md) #mlm
 ## vision transformer
 1. [201127 General Multi-label Image Classification with Transformers](papers/2020/201127%20General%20Multi-label%20Image%20Classification%20with%20Transformers.md)
 1. [201223 A Survey on Visual Transformer](papers/2020/201223%20A%20Survey%20on%20Visual%20Transformer.md)
@@ -1421,6 +1511,7 @@
 1. [210603 DynamicViT](papers/2021/210603%20DynamicViT.md) #sparse_attention
 1. [210603 When Vision Transformers Outperform ResNets without Pretraining or Strong Data Augmentations](papers/2021/210603%20When%20Vision%20Transformers%20Outperform%20ResNets%20without%20Pretraining%20or%20Strong%20Data%20Augmentations.md) #regularization
 1. [210604 RegionViT](papers/2021/210604%20RegionViT.md) #local_attention
+1. [210607 Refiner](papers/2021/210607%20Refiner.md) #attention
 1. [210607 Shuffle Transformer](papers/2021/210607%20Shuffle%20Transformer.md)
 1. [210608 Scaling Vision Transformers](papers/2021/210608%20Scaling%20Vision%20Transformers.md) #scale
 1. [210609 CoAtNet](papers/2021/210609%20CoAtNet.md)
@@ -1432,6 +1523,7 @@
 1. [210624 Video Swin Transformer](papers/2021/210624%20Video%20Swin%20Transformer.md) #local_attention #video #video_transformer
 1. [210701 CSWin Transformer](papers/2021/210701%20CSWin%20Transformer.md) #efficient_attention #local_attention
 1. [210701 Focal Self-attention for Local-Global Interactions in Vision Transformers](papers/2021/210701%20Focal%20Self-attention%20for%20Local-Global%20Interactions%20in%20Vision%20Transformers.md) #local_attention
+1. [210705 What Makes for Hierarchical Vision Transformer](papers/2021/210705%20What%20Makes%20for%20Hierarchical%20Vision%20Transformer.md) #attention #mlp #local_attention
 1. [210713 Visual Parser](papers/2021/210713%20Visual%20Parser.md) #local_attention
 1. [210731 CrossFormer](papers/2021/210731%20CrossFormer.md)
 1. [210811 ConvNets vs. Transformers](papers/2021/210811%20ConvNets%20vs.%20Transformers.md) #robustness #transfer
@@ -1443,9 +1535,13 @@
 1. [211217 A Simple Single-Scale Vision Transformer for Object Localization and Instance Segmentation](papers/2021/211217%20A%20Simple%20Single-Scale%20Vision%20Transformer%20for%20Object%20Localization%20and%20Instance%20Segmentation.md) #multiscale
 1. [220214 How Do Vision Transformers Work](papers/2022/220214%20How%20Do%20Vision%20Transformers%20Work.md) #cnn
 1. [220414 DeiT III](papers/2022/220414%20DeiT%20III.md)
+1. [220722 An Impartial Take to the CNN vs Transformer Robustness Contest](papers/2022/220722%20An%20Impartial%20Take%20to%20the%20CNN%20vs%20Transformer%20Robustness%20Contest.md) #robustness #cnn
+1. [220812 BEiT v2](papers/2022/220812%20BEiT%20v2.md) #self_supervised #mlm
 ## vocoder
 1. [200512 FeatherWave](papers/2020/200512%20FeatherWave.md)
 1. [201118 Universal MelGAN](papers/2020/201118%20Universal%20MelGAN.md)
+## vqa
+1. [220914 MUST-VQA](papers/2022/220914%20MUST-VQA.md)
 ## weak supervision
 1. [201126 SelfText Beyond Polygon](papers/2020/201126%20SelfText%20Beyond%20Polygon.md) #ocr
 ## uncategorized
@@ -1464,3 +1560,16 @@
 1. [220329 Few Could Be Better Than All](papers/2022/220329%20Few%20Could%20Be%20Better%20Than%20All.md)
 1. [220405 Text Spotting Transformers](papers/2022/220405%20Text%20Spotting%20Transformers.md)
 1. [220416 Benchmarking Generalization via In-Context Instructions on 1,600+ Language Tasks](papers/2022/220416%20Benchmarking%20Generalization%20via%20In-Context%20Instructions%20on%201%2C600%2B%20Language%20Tasks.md)
+1. [220610 A Multi-Task Benchmark for Korean Legal Language Understanding and Judgement Prediction](papers/2022/220610%20A%20Multi-Task%20Benchmark%20for%20Korean%20Legal%20Language%20Understanding%20and%20Judgement%20Prediction.md)
+1. [220614 RDU](papers/2022/220614%20RDU.md)
+1. [220630 DeepSpeed Inference](papers/2022/220630%20DeepSpeed%20Inference.md)
+1. [220712 Inner Monologue](papers/2022/220712%20Inner%20Monologue.md)
+1. [220720 NUWA-Infinity](papers/2022/220720%20NUWA-Infinity.md)
+1. [220722 Multiface](papers/2022/220722%20Multiface.md)
+1. [220725 CelebV-HQ](papers/2022/220725%20CelebV-HQ.md)
+1. [220725 Neural Generation Meets Real People](papers/2022/220725%20Neural%20Generation%20Meets%20Real%20People.md)
+1. [220725 Towards Complex Document Understanding By Discrete Reasoning](papers/2022/220725%20Towards%20Complex%20Document%20Understanding%20By%20Discrete%20Reasoning.md)
+1. [220823 CLOWER](papers/2022/220823%20CLOWER.md)
+1. [220912 FP8 Formats for Deep Learning](papers/2022/220912%20FP8%20Formats%20for%20Deep%20Learning.md)
+1. [220923 Diffusion](papers/2022/220923%20Diffusion.md)
+1. [220928 The Change You Want to See](papers/2022/220928%20The%20Change%20You%20Want%20to%20See.md)
