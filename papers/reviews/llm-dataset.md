@@ -90,7 +90,7 @@ GPT-3 같은 경우 WebText 데이터를 높은 퀄리티의 데이터로 임의
 | WebText2 | 19B | 22% | 2.9 | Reddit 카르마 3 아웃바운드 링크, WebText 1: ~ 2017.12, 45M 링크, - Dragnet & Newspaper Extractor, 8M 필터링 후 문서, 40 GB, WebText2: 2018.10 ~, Newspaper3k, 20.3M 문서, 96 GB |
 | Books1 | 12B | 8% | 1.9 | 정체 불명 |
 | Books2 | 55B | 8% | 0.43 | 정체 불명 |
-| Wikipedia | 3B | 3% | 3.4 | 정체 불명 |
+| Wikipedia | 3B | 3% | 3.4 | |
 
 ### 프리프로세싱
 
