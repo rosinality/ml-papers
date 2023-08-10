@@ -1,0 +1,5 @@
+[https://www.inference.vc/autoregressive-models-in-out-of-distribution/](https://www.inference.vc/autoregressive-models-in-out-of-distribution/)  
+  
+Ferenc Huszár가 최근 Likelihood/Autoregressive 모델에 대해 쓰고 있는데 이 글도 흥미로워서 공유. 학습 데이터를 충분히 잘 모델링하는 모델이 있을 때, 학습 데이터에 없거나 혹은 확률이 낮은 프롬프트(condition)이 주어진다면 그 모델은 어떻게 반응할 것인가? 이것은 일종의 extrapolation 상황이다. 그 모델이 어떤 샘플을 생성할 것인지를 규정하는 것은 없다. 그렇다면 이렇게 학습 데이터가 모델의 모든 특성을 규정하지 못하는 상황에서(underdetermined) 모델이 어떻게 동작하게 되는가? 어떤 학습 메커니즘과 inductive bias가 모델이 그렇게 동작하게 만드는가?  
+  
+비트겐슈타인의 규칙을 따르는 방법은 무한하게 많다는 서술을 생각하게 된다. 이것이 Likelihood/Autoregressive 모델의 근본적인 한계이고 이 글은 그것에 대한 비판으로 생각해야 할까? 나는 그보다는 데이터의 패턴을 따른다는 것과 모델이 습득하는 inductive bias, 그리고 모델이 특정한 패턴을 따르도록 가이드하는 RLHF에 대해 다른 측면에서 생각해볼 수 있는 단서라고 본다. Shaking the foundations 같이 Autoregressive 모델의 근본적인 한계에 대한 설득력 있는 지적은 많이 있다. (https://arxiv.org/abs/2110.10819) 흥미로운 것은 이 한계나 특성을 넘어 지금 모델이 보여주고 있는 패턴이라고 보인다.

@@ -1,0 +1,3 @@
+https://arxiv.org/abs/2308.03905
+
+Intelligent Assistant Language Understanding On Device (Cecilia Aas, Hisham Abdelsalam, Irina Belousova, Shruti Bhargava, Jianpeng Cheng, Robert Daland, Joris Driesen, Federico Flego, Tristan Guigue, Anders Johannsen, Partha Lal, Jiarui Lu, Joel Ruben Antony Moniz, Nathan Perkins, Dhivya Piraviperumal, Stephen Pulman, Diarmuid Ó Séaghdha, David Q. Sun, John Torr, Marco Del Vecchio, Jay Wacker, Jason D. Williams, Hong Yu)

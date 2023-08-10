@@ -64,7 +64,7 @@ GPT-3 같은 경우 WebText 데이터를 높은 퀄리티의 데이터로 임의
 
 ### 중복 문서 제거
 
-문서 레벨에서 중복된 샘플들을 제거. MinHashLSH가 자주 사용되고 MassiveText의 경우에는 n-gram Jaccard similarity를 사용.
+문서 레벨에서 중복된 샘플들을 제거. MinHashLSH (n-gram Jaccard similarity)가가 자주 사용됨.
 
 ### 테스트셋 문서 제거
 
@@ -138,7 +138,7 @@ Spark 토크나이저 & HashingTF 피처 기반 로지스틱 분류기. MinHashL
 
 반복 텍스트 제거: 반복된 라인, 문단, n-gram의 비율이 높은 문서 제거. 라인과 문단에 대해서는 중복인 경우의 비율과 중복 내부의 문자의 비율을 고려. 2\~4-gram에 대해서는 가장 자주 등장하는 n-gram에 들어있는 문자의 비율, 5\~10-gram에 대해서는 모든 중복된 n-gram에 포함된 문자의 비율을 고려하되 중복되는 n-gram에 등장하는 문자를 한 번 이상 계산하지 않도록 주의. 이 비율이 특정 역치를 넘어가면 필터링.
 
-중복 문서 제거: 13-gram Jaccard similarity. 공백과 구두점 제거. similarity가 0.8 이상은 경우 둘 중 한 문서를 랜덤하게 제거.
+중복 문서 제거: MinHash (13-gram Jaccard similarity). 공백과 구두점 제거. similarity가 0.8 이상은 경우 둘 중 한 문서를 랜덤하게 제거.
 
 ## PaLM
 
